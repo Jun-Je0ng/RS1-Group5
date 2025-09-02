@@ -1,0 +1,26 @@
+<sdf version="1.7">
+  <model name="forest_terrain">
+    <static>true</static>
+    <link name="link">
+      <!-- what you see -->
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://forest_terrain/materials/textures/Elevated_Terrain_Test.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- what the robot collides with (same mesh is fine) -->
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://forest_terrain/materials/textures/Elevated_Terrain_Test.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
