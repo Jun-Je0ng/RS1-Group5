@@ -1,6 +1,6 @@
 INSTRUCTIONS FOR MOVE_BOT NODE
 
-1. make sure you have src folder that contains controller, skidsteer and main
+1. make sure you have src folder that contains controller, skidsteer and main & CMAKE file updated
 2. run no.3 for running the world with main spawn point
 3. ros2 launch 41068_ignition_bringup 41068_ignition.launch.py world:=large_demo rviz:=true robot_x:=8.0 robot_y:=62.0 robot_z:=0.5
 4. open new terminal and go to 41068_ignition_bringup path
