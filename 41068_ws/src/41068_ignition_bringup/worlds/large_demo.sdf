@@ -53,90 +53,84 @@
     
 
  <!-- Forest wall -->
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall1</name>
-      <pose>12.5 0 2 1.570796 0 -1.570796</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall2</name>
-      <pose>12.5 -9.32 2 1.570796 0 -1.570796</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall3</name>
-      <pose>12.5 +9.32 2 1.570796 0 -1.570796</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall4</name>
-      <pose>-12.5 0 2 1.570796 0 1.570796</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall5</name>
-      <pose>-12.5 -9.32 2 1.570796 0 1.570796</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall6</name>
-      <pose>-12.5 +9.32 2 1.570796 0 1.570796</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall7</name>
-      <pose>0 -12.5 2 1.570796 0 0</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall8</name>
-      <pose>-9.32 -12.5 2 1.570796 0 0</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall9</name>
-      <pose>+9.32 -12.5 2 1.570796 0 0</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall10</name>
-      <pose>0 12.5 2 1.570796 0 0</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall11</name>
-      <pose>-9.32 12.5 2 1.570796 0 0</pose>
-    </include>
-    <include>
-      <uri>
-        model://forest_wall
-      </uri>
-      <name>forest_wall12</name>
-      <pose>+9.32 12.5 2 1.570796 0 0</pose>
-    </include>
+<!-- Forest walls around terrain edge (~±80) -->
+
+<!-- Bottom row (Y = -80) -->
+<include><uri>model://forest_wall</uri><name>wall_bottom_01</name><pose>-75 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_02</name><pose>-65 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_03</name><pose>-55 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_04</name><pose>-45 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_05</name><pose>-35 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_06</name><pose>-25 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_07</name><pose>-15 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_08</name><pose>-5 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_09</name><pose>5 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_10</name><pose>15 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_11</name><pose>25 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_12</name><pose>35 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_13</name><pose>45 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_14</name><pose>55 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_15</name><pose>65 -80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_bottom_16</name><pose>75 -80 2 1.570796 0 0</pose></include>
+
+<!-- Top row (Y = +80) -->
+<include><uri>model://forest_wall</uri><name>wall_top_01</name><pose>-75 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_02</name><pose>-65 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_03</name><pose>-55 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_04</name><pose>-45 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_05</name><pose>-35 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_06</name><pose>-25 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_07</name><pose>-15 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_08</name><pose>-5 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_09</name><pose>5 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_10</name><pose>15 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_11</name><pose>25 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_12</name><pose>35 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_13</name><pose>45 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_14</name><pose>55 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_15</name><pose>65 80 2 1.570796 0 0</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_top_16</name><pose>75 80 2 1.570796 0 0</pose></include>
+
+<!-- Left column (X = -80, yaw = +90°) -->
+<include><uri>model://forest_wall</uri><name>wall_left_01</name><pose>-80 -75 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_02</name><pose>-80 -65 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_03</name><pose>-80 -55 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_04</name><pose>-80 -45 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_05</name><pose>-80 -35 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_06</name><pose>-80 -25 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_07</name><pose>-80 -15 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_08</name><pose>-80 -5 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_09</name><pose>-80 5 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_10</name><pose>-80 15 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_11</name><pose>-80 25 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_12</name><pose>-80 35 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_13</name><pose>-80 45 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_14</name><pose>-80 55 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_15</name><pose>-80 65 2 1.570796 0 1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_left_16</name><pose>-80 75 2 1.570796 0 1.570796</pose></include>
+
+<!-- Right column (X = +80, yaw = -90°) -->
+<include><uri>model://forest_wall</uri><name>wall_right_01</name><pose>80 -75 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_02</name><pose>80 -65 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_03</name><pose>80 -55 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_04</name><pose>80 -45 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_05</name><pose>80 -35 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_06</name><pose>80 -25 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_07</name><pose>80 -15 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_08</name><pose>80 -5 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_09</name><pose>80 5 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_10</name><pose>80 15 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_11</name><pose>80 25 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_12</name><pose>80 35 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_13</name><pose>80 45 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_14</name><pose>80 55 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_15</name><pose>80 65 2 1.570796 0 -1.570796</pose></include>
+<include><uri>model://forest_wall</uri><name>wall_right_16</name><pose>80 75 2 1.570796 0 -1.570796</pose></include>
+
+
+
+
+
 
     <!-- Oak trees -->
     <!-- <include> 
