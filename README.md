@@ -14,3 +14,7 @@ INSTRUCTIONS FOR MOVE_BOT NODE
 12. x movement: ros2 param set /move_bot lin_x 0.0
 13. z movement: ros2 param set /move_bot ang_z 0.0
 14. values must be a double value you can do negative value for going the opposite direction
+
+COMMAND FOR PARROT DRONE
+
+ros2 launch 41068_ignition_bringup 41068_ignition_drone.launch.py world:=large_demo rviz:=true robot_x:=8.0 robot_y:=62.0 robot_z:=5.0 robot_yaw:=1.57
