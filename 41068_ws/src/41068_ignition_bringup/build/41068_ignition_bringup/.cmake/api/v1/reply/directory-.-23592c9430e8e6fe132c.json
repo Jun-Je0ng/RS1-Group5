@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 22,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 25,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -251,7 +251,8 @@
 				"launch",
 				"models",
 				"urdf",
-				"worlds"
+				"worlds",
+				"urdf_drone"
 			],
 			"type" : "directory"
 		},

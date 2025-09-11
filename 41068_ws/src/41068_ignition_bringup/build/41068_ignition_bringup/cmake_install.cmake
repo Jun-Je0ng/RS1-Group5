@@ -69,6 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/models"
     "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/urdf"
     "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/worlds"
+    "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/urdf_drone"
     )
 endif()
 
