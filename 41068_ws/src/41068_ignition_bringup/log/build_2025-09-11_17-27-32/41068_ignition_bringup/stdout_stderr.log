@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeCache.txt is different than the directory /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:335: cmake_check_build_system] Error 1

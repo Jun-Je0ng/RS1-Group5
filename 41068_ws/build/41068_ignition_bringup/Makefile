@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup
+CMAKE_SOURCE_DIR = /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup
+CMAKE_BINARY_DIR = /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,6 +197,104 @@ uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/41068_ignition_bringup_uninstall.dir/build.make CMakeFiles/41068_ignition_bringup_uninstall.dir/build
 .PHONY : 41068_ignition_bringup_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named controller
+
+# Build rule for target.
+controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controller
+.PHONY : controller
+
+# fast build rule for target.
+controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/build
+.PHONY : controller/fast
+
+#=============================================================================
+# Target rules for targets named move_bot
+
+# Build rule for target.
+move_bot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_bot
+.PHONY : move_bot
+
+# fast build rule for target.
+move_bot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/build
+.PHONY : move_bot/fast
+
+src/controller.o: src/controller.cpp.o
+.PHONY : src/controller.o
+
+# target to build an object file
+src/controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.o
+.PHONY : src/controller.cpp.o
+
+src/controller.i: src/controller.cpp.i
+.PHONY : src/controller.i
+
+# target to preprocess a source file
+src/controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.i
+.PHONY : src/controller.cpp.i
+
+src/controller.s: src/controller.cpp.s
+.PHONY : src/controller.s
+
+# target to generate assembly for a file
+src/controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.s
+.PHONY : src/controller.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/skidsteer.o: src/skidsteer.cpp.o
+.PHONY : src/skidsteer.o
+
+# target to build an object file
+src/skidsteer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.o
+.PHONY : src/skidsteer.cpp.o
+
+src/skidsteer.i: src/skidsteer.cpp.i
+.PHONY : src/skidsteer.i
+
+# target to preprocess a source file
+src/skidsteer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.i
+.PHONY : src/skidsteer.cpp.i
+
+src/skidsteer.s: src/skidsteer.cpp.s
+.PHONY : src/skidsteer.s
+
+# target to generate assembly for a file
+src/skidsteer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.s
+.PHONY : src/skidsteer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +310,17 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... controller"
+	@echo "... move_bot"
+	@echo "... src/controller.o"
+	@echo "... src/controller.i"
+	@echo "... src/controller.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/skidsteer.o"
+	@echo "... src/skidsteer.i"
+	@echo "... src/skidsteer.s"
 .PHONY : help
 
 
