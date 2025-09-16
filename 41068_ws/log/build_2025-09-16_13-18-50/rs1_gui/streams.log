@@ -1,0 +1,26 @@
+[1.887s] Invoking command in '/home/student/RS1-Group5/41068_ws/build/rs1_gui': PYTHONPATH=/home/student/RS1-Group5/41068_ws/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/RS1-Group5/41068_ws/build/rs1_gui/build --no-deps symlink_data
+[2.666s] running develop
+[3.122s] running egg_info
+[3.123s] creating rs1_gui.egg-info
+[3.125s] writing rs1_gui.egg-info/PKG-INFO
+[3.127s] writing dependency_links to rs1_gui.egg-info/dependency_links.txt
+[3.128s] writing entry points to rs1_gui.egg-info/entry_points.txt
+[3.130s] writing requirements to rs1_gui.egg-info/requires.txt
+[3.131s] writing top-level names to rs1_gui.egg-info/top_level.txt
+[3.131s] writing manifest file 'rs1_gui.egg-info/SOURCES.txt'
+[3.137s] reading manifest file 'rs1_gui.egg-info/SOURCES.txt'
+[3.138s] writing manifest file 'rs1_gui.egg-info/SOURCES.txt'
+[3.143s] running build_ext
+[3.145s] Creating /home/student/RS1-Group5/41068_ws/install/rs1_gui/lib/python3.10/site-packages/rs1-gui.egg-link (link to .)
+[3.147s] Installing gui_node script to /home/student/RS1-Group5/41068_ws/install/rs1_gui/lib/rs1_gui
+[3.149s] 
+[3.151s] Installed /home/student/RS1-Group5/41068_ws/build/rs1_gui
+[3.152s] running symlink_data
+[3.153s] creating /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/ament_index
+[3.154s] creating /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/ament_index/resource_index
+[3.155s] creating /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/ament_index/resource_index/packages
+[3.155s] symbolically linking /home/student/RS1-Group5/41068_ws/build/rs1_gui/resource/rs1_gui -> /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/ament_index/resource_index/packages
+[3.156s] symbolically linking /home/student/RS1-Group5/41068_ws/build/rs1_gui/package.xml -> /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/rs1_gui
+[3.156s] creating /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/rs1_gui/launch
+[3.156s] symbolically linking /home/student/RS1-Group5/41068_ws/build/rs1_gui/launch/gui_launch.py -> /home/student/RS1-Group5/41068_ws/install/rs1_gui/share/rs1_gui/launch
+[3.234s] Invoked command in '/home/student/RS1-Group5/41068_ws/build/rs1_gui' returned '0': PYTHONPATH=/home/student/RS1-Group5/41068_ws/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/RS1-Group5/41068_ws/build/rs1_gui/build --no-deps symlink_data

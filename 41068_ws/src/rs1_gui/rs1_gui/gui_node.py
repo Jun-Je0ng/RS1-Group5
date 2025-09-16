@@ -7,7 +7,7 @@ import rclpy
 from rclpy.node import Node
 
 from geometry_msgs.msg import Twist, PoseStamped, Pose, Point, Quaternion
-from nav_msgs.msg import Path
+from nav_msgs.msg import Path, Odometry
 from std_srvs.srv import Trigger
 from sensor_msgs.msg import LaserScan
 from rcl_interfaces.srv import SetParameters
@@ -42,6 +42,9 @@ class RosBackend(Node):
 
         self.start_cli = self.create_client(Trigger, topics.follower_start)
         self.stop_cli  = self.create_client(Trigger, topics.follower_stop)
+
+        # store latest pose
+        self.latest_pose = (0.0, 0.0, 0.0)  # x, y, yaw (rad)
         self.odom_sub = self.create_subscription(
             Odometry, '/odom', self.odom_cb, 10
         )
@@ -57,7 +60,17 @@ class RosBackend(Node):
         # quick-and-safe min range (ignore inf/nan)
         vals = [r for r in msg.ranges if r == r and r != float('inf')]
         self.min_range = min(vals) if vals else float('inf')
-
+    
+    def odom_cb(self, msg: Odometry):
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+        q = msg.pose.pose.orientation
+        # yaw from quaternion (assuming ENU)
+        t3 = 2.0 * (q.w * q.z + q.x * q.y)
+        t4 = 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
+        yaw = math.atan2(t3, t4)
+        self.latest_pose = (x, y, yaw)
+    
     async def set_move_bot_speeds(self, lin_x: float, ang_z: float):
         # Build parameter array request
         if not self.param_cli.service_is_ready():
