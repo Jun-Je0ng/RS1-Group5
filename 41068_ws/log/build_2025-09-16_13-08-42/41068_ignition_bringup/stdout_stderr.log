@@ -49,10 +49,10 @@ WARNING: Package name "41068_ignition_bringup" does not follow the naming conven
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup
-[ 37%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
 [ 37%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o[0m
-[ 37%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
 [ 62%] [32m[1mLinking CXX static library libcontroller.a[0m
 [ 62%] Built target controller
 [ 75%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o[0m
