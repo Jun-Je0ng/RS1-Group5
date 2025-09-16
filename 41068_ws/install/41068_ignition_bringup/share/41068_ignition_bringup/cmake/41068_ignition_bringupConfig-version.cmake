@@ -1,1 +1,1 @@
-/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/ament_cmake_core/41068_ignition_bringupConfig-version.cmake
+/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_core/41068_ignition_bringupConfig-version.cmake

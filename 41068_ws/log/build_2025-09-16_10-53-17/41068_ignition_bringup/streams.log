@@ -1,0 +1,172 @@
+[0.011s] Invoking command in '/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup
+[0.836s] -- The C compiler identification is GNU 11.4.0
+[1.321s] -- The CXX compiler identification is GNU 11.4.0
+[1.425s] -- Detecting C compiler ABI info
+[1.558s] -- Detecting C compiler ABI info - done
+[1.566s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.570s] -- Detecting C compile features
+[1.576s] -- Detecting C compile features - done
+[1.596s] -- Detecting CXX compiler ABI info
+[1.714s] -- Detecting CXX compiler ABI info - done
+[1.723s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.723s] -- Detecting CXX compile features
+[1.723s] -- Detecting CXX compile features - done
+[1.757s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.020s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.203s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.455s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[2.781s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.812s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.886s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.989s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.095s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.398s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.424s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.756s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.808s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.856s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.934s] -- Looking for pthread.h
+[4.201s] -- Looking for pthread.h - found
+[4.201s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.291s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.293s] -- Found Threads: TRUE  
+[4.636s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.731s] -- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)
+[4.938s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.004s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[5.182s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.213s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.213s] -- Configured cppcheck include dirs: 
+[5.213s] -- Configured cppcheck exclude dirs and/or files: 
+[5.244s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.244s] -- Configured cpplint exclude dirs and/or files: 
+[5.251s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.261s] -- Added test 'lint_cmake' to check CMake code style
+[5.268s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.299s] -- Added test 'uncrustify' to check C / C++ code style
+[5.299s] -- Configured uncrustify additional arguments: 
+[5.305s] -- Added test 'xmllint' to check XML markup files
+[5.313s] -- Configuring done
+[5.326s] -- Generating done
+[5.331s] -- Build files have been written to: /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup
+[5.343s] Invoked command in '/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup
+[5.345s] Invoking command in '/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j8 -l8
+[5.400s] [ 20%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
+[5.400s] [ 40%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[6.340s] [ 60%] [32m[1mLinking CXX static library libcontroller.a[0m
+[6.402s] [ 60%] Built target controller
+[6.425s] [ 80%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main.cpp.o[0m
+[12.743s] [100%] [32m[1mLinking CXX executable move_bot[0m
+[13.400s] [100%] Built target move_bot
+[13.413s] Invoked command in '/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j8 -l8
+[13.424s] Invoking command in '/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup
+[13.432s] -- Install configuration: ""
+[13.432s] -- Execute custom install script
+[13.433s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/move_bot
+[13.442s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz
+[13.451s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml
+[13.459s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml
+[13.468s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/robot_localization.yaml
+[13.476s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/slam_params.yaml
+[13.485s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py
+[13.495s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition_drone.launch.py
+[13.503s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py
+[13.512s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[13.512s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[13.512s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[13.512s]   Use the cmake_policy command to set the policy and suppress this warning.
+[13.512s] Call Stack (most recent call first):
+[13.512s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+[13.512s]   cmake_install.cmake:46 (include)
+[13.512s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[13.512s] [0m
+[13.512s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png
+[13.520s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png
+[13.529s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png
+[13.537s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png
+[13.545s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.config
+[13.553s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.sdf
+[13.562s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/.built_by
+[13.570s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/COLCON_IGNORE
+[13.578s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/.colcon_install_layout
+[13.587s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/COLCON_IGNORE
+[13.596s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_ps1.py
+[13.604s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_sh.py
+[13.612s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.bash
+[13.620s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.ps1
+[13.628s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.sh
+[13.636s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.zsh
+[13.644s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.bash
+[13.652s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.ps1
+[13.660s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.sh
+[13.669s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.zsh
+[13.677s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/COLCON_IGNORE
+[13.685s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/events.log
+[13.693s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/logger_all.log
+[13.702s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/events.log
+[13.710s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/logger_all.log
+[13.718s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/events.log
+[13.726s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/logger_all.log
+[13.734s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest/events.log
+[13.742s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest/logger_all.log
+[13.750s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build/events.log
+[13.758s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build/logger_all.log
+[13.766s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.dae
+[13.775s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm/forest_overhead.png
+[13.783s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbx
+[13.792s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/forest_overhead.png
+[13.800s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.config
+[13.808s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.sdf
+[13.817s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.config
+[13.825s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.sdf
+[13.833s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png
+[13.841s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png
+[13.850s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png
+[13.858s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.config
+[13.866s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.sdf
+[13.873s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png
+[13.882s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.config
+[13.891s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.sdf
+[13.900s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/common_properties.urdf.xacro
+[13.909s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.gazebo.xacro
+[13.918s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.urdf.xacro
+[13.926s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/base_link.dae
+[13.935s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/bumper.dae
+[13.944s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl
+[13.953s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_chassis.dae
+[13.963s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_plate.dae
+[13.972s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/wheel.dae
+[13.981s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/wheel.urdf.xacro
+[13.991s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/large_demo.sdf
+[14.000s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf
+[14.010s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/common_properties.urdf.xacro
+[14.018s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/hull.dae
+[14.026s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fl.dae
+[14.034s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fr.dae
+[14.042s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rl.dae
+[14.050s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rr.dae
+[14.058s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.config
+[14.066s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.sdf
+[14.074s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.gazebo.xacro
+[14.082s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.urdf.xacro
+[14.092s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/1.png
+[14.100s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/2.png
+[14.110s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/3.png
+[14.121s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/4.png
+[14.130s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/5.png
+[14.138s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup
+[14.147s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup
+[14.155s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.sh
+[14.164s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.dsv
+[14.172s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.sh
+[14.180s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.dsv
+[14.189s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.bash
+[14.198s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.sh
+[14.206s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.zsh
+[14.215s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.dsv
+[14.223s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv
+[14.232s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/packages/41068_ignition_bringup
+[14.240s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig.cmake
+[14.248s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig-version.cmake
+[14.256s] -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.xml
+[14.267s] Invoked command in '/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup

@@ -1,7 +1,7 @@
 # generated from
 # ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in
 
-set(install_manifest "/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/symlink_install_manifest.txt")
+set(install_manifest "/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/symlink_install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find symlink install manifest: ${install_manifest}")
 endif()

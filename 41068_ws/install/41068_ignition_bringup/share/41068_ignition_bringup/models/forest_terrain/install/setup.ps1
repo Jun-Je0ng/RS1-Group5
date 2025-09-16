@@ -1,1 +1,1 @@
-/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models/forest_terrain/install/setup.ps1
+/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup/models/forest_terrain/install/setup.ps1
