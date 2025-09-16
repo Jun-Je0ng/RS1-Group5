@@ -211,19 +211,6 @@ controller/fast:
 .PHONY : controller/fast
 
 #=============================================================================
-# Target rules for targets named gui_node
-
-# Build rule for target.
-gui_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui_node
-.PHONY : gui_node
-
-# fast build rule for target.
-gui_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/build
-.PHONY : gui_node/fast
-
-#=============================================================================
 # Target rules for targets named move_bot
 
 # Build rule for target.
@@ -259,30 +246,6 @@ src/controller.s: src/controller.cpp.s
 src/controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
-
-src/gui_node.o: src/gui_node.cpp.o
-.PHONY : src/gui_node.o
-
-# target to build an object file
-src/gui_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/src/gui_node.cpp.o
-.PHONY : src/gui_node.cpp.o
-
-src/gui_node.i: src/gui_node.cpp.i
-.PHONY : src/gui_node.i
-
-# target to preprocess a source file
-src/gui_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/src/gui_node.cpp.i
-.PHONY : src/gui_node.cpp.i
-
-src/gui_node.s: src/gui_node.cpp.s
-.PHONY : src/gui_node.s
-
-# target to generate assembly for a file
-src/gui_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/src/gui_node.cpp.s
-.PHONY : src/gui_node.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -348,14 +311,10 @@ help:
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
 	@echo "... controller"
-	@echo "... gui_node"
 	@echo "... move_bot"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
-	@echo "... src/gui_node.o"
-	@echo "... src/gui_node.i"
-	@echo "... src/gui_node.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringu
 
 # The main recursive "all" target.
 all: CMakeFiles/controller.dir/all
-all: CMakeFiles/gui_node.dir/all
 all: CMakeFiles/move_bot.dir/all
 .PHONY : all
 
@@ -76,7 +75,6 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/41068_ignition_bringup_uninstall.dir/clean
 clean: CMakeFiles/controller.dir/clean
-clean: CMakeFiles/gui_node.dir/clean
 clean: CMakeFiles/move_bot.dir/clean
 .PHONY : clean
 
@@ -159,39 +157,13 @@ CMakeFiles/controller.dir/clean:
 .PHONY : CMakeFiles/controller.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/gui_node.dir
-
-# All Build rule for target.
-CMakeFiles/gui_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=4,5 "Built target gui_node"
-.PHONY : CMakeFiles/gui_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/gui_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gui_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 0
-.PHONY : CMakeFiles/gui_node.dir/rule
-
-# Convenience name for target.
-gui_node: CMakeFiles/gui_node.dir/rule
-.PHONY : gui_node
-
-# clean rule for target.
-CMakeFiles/gui_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gui_node.dir/build.make CMakeFiles/gui_node.dir/clean
-.PHONY : CMakeFiles/gui_node.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/move_bot.dir
 
 # All Build rule for target.
 CMakeFiles/move_bot.dir/all: CMakeFiles/controller.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=6,7 "Built target move_bot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=4,5 "Built target move_bot"
 .PHONY : CMakeFiles/move_bot.dir/all
 
 # Build rule for subdir invocation for target.

@@ -14,13 +14,10 @@ find_package(ros_ign_interfaces REQUIRED)
 add_library(controller src/controller.cpp src/skidsteer.cpp)
 ament_target_dependencies(controller rclcpp geometry_msgs)
 
-add_executable(gui_node src/gui_node.cpp)
-ament_target_dependencies(gui_node rclcpp)  # plus any GUI libs like Qt
-
 add_executable(move_bot src/main.cpp)
 target_link_libraries(move_bot controller)
 
-install(TARGETS move_bot gui_node
+install(TARGETS move_bot
   DESTINATION lib/${PROJECT_NAME})
 
 # ---- Install package resources ----

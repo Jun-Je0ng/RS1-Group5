@@ -1,3 +1,6 @@
+source;share/41068_ignition_bringup/hook/cmake_prefix_path.ps1
+source;share/41068_ignition_bringup/hook/cmake_prefix_path.dsv
+source;share/41068_ignition_bringup/hook/cmake_prefix_path.sh
 source;share/41068_ignition_bringup/local_setup.bash
 source;share/41068_ignition_bringup/local_setup.dsv
 source;share/41068_ignition_bringup/local_setup.ps1

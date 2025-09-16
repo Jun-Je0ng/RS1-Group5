@@ -818,6 +818,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/41068_ignition_bringup_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/controller.dir/DependInfo.cmake"
-  "CMakeFiles/gui_node.dir/DependInfo.cmake"
   "CMakeFiles/move_bot.dir/DependInfo.cmake"
   )
