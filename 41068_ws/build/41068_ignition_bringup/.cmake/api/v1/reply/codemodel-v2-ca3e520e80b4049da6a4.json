@@ -19,7 +19,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -37,7 +38,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -59,8 +61,15 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "gui_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gui_node-262f42f98341e3a98fc4.json",
+					"name" : "gui_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "move_bot::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-move_bot-7fb87b339c9ab41bf9d4.json",
+					"jsonFile" : "target-move_bot-ee797edde072d88ba77d.json",
 					"name" : "move_bot",
 					"projectIndex" : 0
 				},

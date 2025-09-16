@@ -48,16 +48,20 @@ WARNING: Package name "41068_ignition_bringup" does not follow the naming conven
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup
-[ 20%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
-[ 60%] [32m[1mLinking CXX static library libcontroller.a[0m
-[ 60%] Built target controller
-[ 80%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/gui_node.dir/src/gui_node.cpp.o[0m
+[ 57%] [32m[1mLinking CXX static library libcontroller.a[0m
+[ 57%] Built target controller
+[ 71%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable gui_node[0m
+[ 85%] Built target gui_node
 [100%] [32m[1mLinking CXX executable move_bot[0m
 [100%] Built target move_bot
 -- Install configuration: ""
 -- Execute custom install script
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/move_bot
+-- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/gui_node
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml

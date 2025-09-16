@@ -1,4 +1,5 @@
 /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/move_bot
+/home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/gui_node
 /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz
 /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml
 /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml

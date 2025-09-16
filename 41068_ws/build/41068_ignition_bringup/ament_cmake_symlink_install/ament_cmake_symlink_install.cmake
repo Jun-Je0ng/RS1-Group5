@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "move_bot" "DESTINATION" "lib/41068_ignition_bringup")
+# install("TARGETS" "move_bot" "gui_node" "DESTINATION" "lib/41068_ignition_bringup")
 include("/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "config" "launch" "models" "urdf" "worlds" "urdf_drone" "DESTINATION" "share/41068_ignition_bringup")

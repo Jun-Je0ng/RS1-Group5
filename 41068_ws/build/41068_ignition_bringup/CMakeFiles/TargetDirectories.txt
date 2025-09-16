@@ -1,6 +1,7 @@
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/uninstall.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/41068_ignition_bringup_uninstall.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/controller.dir
+/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/gui_node.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/move_bot.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/test.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/edit_cache.dir
