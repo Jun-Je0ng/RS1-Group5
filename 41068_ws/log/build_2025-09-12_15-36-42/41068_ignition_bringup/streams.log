@@ -1,0 +1,82 @@
+[0.017s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup -DCMAKE_INSTALL_PREFIX=/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup
+[0.262s] -- The C compiler identification is GNU 11.4.0
+[0.382s] -- The CXX compiler identification is GNU 11.4.0
+[0.495s] -- Detecting C compiler ABI info
+[0.631s] -- Detecting C compiler ABI info - done
+[0.646s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.649s] -- Detecting C compile features
+[0.650s] -- Detecting C compile features - done
+[0.654s] -- Detecting CXX compiler ABI info
+[0.889s] -- Detecting CXX compiler ABI info - done
+[0.905s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.905s] -- Detecting CXX compile features
+[0.906s] -- Detecting CXX compile features - done
+[0.922s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.241s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.407s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.522s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.530s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.547s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.595s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.686s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.696s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.916s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.956s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.007s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.034s] -- Looking for pthread.h
+[2.181s] -- Looking for pthread.h - found
+[2.182s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.292s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.294s] -- Found Threads: TRUE  
+[2.417s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.456s] -- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)
+[2.644s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.742s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[2.824s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.856s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.856s] -- Configured cppcheck include dirs: 
+[2.856s] -- Configured cppcheck exclude dirs and/or files: 
+[2.943s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.943s] -- Configured cpplint exclude dirs and/or files: 
+[2.950s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.959s] -- Added test 'lint_cmake' to check CMake code style
+[2.963s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.012s] -- Added test 'uncrustify' to check C / C++ code style
+[3.012s] -- Configured uncrustify additional arguments: 
+[3.021s] -- Added test 'xmllint' to check XML markup files
+[3.023s] -- Configuring done
+[3.044s] -- Generating done
+[3.054s] -- Build files have been written to: /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
+[3.078s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup -DCMAKE_INSTALL_PREFIX=/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup
+[3.083s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j32 -l32
+[3.181s] [ 20%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
+[3.182s] [ 40%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[3.622s] [ 60%] [32m[1mLinking CXX static library libcontroller.a[0m
+[3.667s] [ 60%] Built target controller
+[3.708s] [ 80%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main.cpp.o[0m
+[10.597s] [100%] [32m[1mLinking CXX executable move_bot[0m
+[10.985s] [100%] Built target move_bot
+[11.006s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j32 -l32
+[11.020s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
+[11.028s] -- Install configuration: ""
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build
+[11.028s] -- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log
+[11.028s] -- Installing: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest
+[11.028s] [0mCMake Error: failed to create symbolic link '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest': File exists[0m
+[11.028s] [31mCMake Error at cmake_install.cmake:66 (file):
+[11.029s]   file INSTALL cannot duplicate symlink
+[11.029s]   "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/models/forest_terrain/log/latest"
+[11.029s]   at
+[11.029s]   "/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest":
+[11.029s]   File exists.
+[11.029s] 
+[11.029s] [0m
+[11.030s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup

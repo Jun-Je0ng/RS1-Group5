@@ -1,0 +1,19 @@
+[0.009s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j32 -l32
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target controller[0m
+[0.058s] [ 12%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o[0m
+[0.058s] [ 50%] Built target controller
+[0.059s] [ 62%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
+[0.066s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Klidar_sensing_node.hpp: No such file or directory
+[0.066s]     1 | #include [01;31m[K"lidar_sensing_node.hpp"[m[K
+[0.066s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.066s] compilation terminated.
+[0.066s] gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:76: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o] Error 1
+[0.066s] gmake[2]: *** Waiting for unfinished jobs....
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target move_bot[0m
+[0.080s] [ 75%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o[0m
+[2.361s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/lidar_sensing_node.dir/all] Error 2
+[2.361s] gmake[1]: *** Waiting for unfinished jobs....
+[3.435s] [ 87%] [32m[1mLinking CXX executable move_bot[0m
+[3.642s] [ 87%] Built target move_bot
+[3.643s] gmake: *** [Makefile:146: all] Error 2
+[3.645s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j32 -l32

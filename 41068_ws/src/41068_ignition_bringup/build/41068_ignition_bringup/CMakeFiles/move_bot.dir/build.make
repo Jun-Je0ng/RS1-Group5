@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
+CMAKE_SOURCE_DIR = /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
+CMAKE_BINARY_DIR = /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
 
 # Include any dependencies generated for this target.
 include CMakeFiles/move_bot.dir/depend.make
@@ -69,28 +69,28 @@ include CMakeFiles/move_bot.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/move_bot.dir/flags.make
 
-CMakeFiles/move_bot.dir/src/main.cpp.o: CMakeFiles/move_bot.dir/flags.make
-CMakeFiles/move_bot.dir/src/main.cpp.o: ../../src/main.cpp
-CMakeFiles/move_bot.dir/src/main.cpp.o: CMakeFiles/move_bot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/move_bot.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/move_bot.dir/src/main.cpp.o -MF CMakeFiles/move_bot.dir/src/main.cpp.o.d -o CMakeFiles/move_bot.dir/src/main.cpp.o -c /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o: CMakeFiles/move_bot.dir/flags.make
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o: ../../src/main_move_bot.cpp
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o: CMakeFiles/move_bot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o -MF CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o.d -o CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp
 
-CMakeFiles/move_bot.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/move_bot.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp > CMakeFiles/move_bot.dir/src/main.cpp.i
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp > CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i
 
-CMakeFiles/move_bot.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/move_bot.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp -o CMakeFiles/move_bot.dir/src/main.cpp.s
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp -o CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s
 
 # Object files for target move_bot
 move_bot_OBJECTS = \
-"CMakeFiles/move_bot.dir/src/main.cpp.o"
+"CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o"
 
 # External object files for target move_bot
 move_bot_EXTERNAL_OBJECTS =
 
-move_bot: CMakeFiles/move_bot.dir/src/main.cpp.o
+move_bot: CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o
 move_bot: CMakeFiles/move_bot.dir/build.make
 move_bot: libcontroller.a
 move_bot: /opt/ros/humble/lib/librclcpp.so
@@ -164,7 +164,7 @@ move_bot: /opt/ros/humble/lib/librosidl_runtime_c.so
 move_bot: /opt/ros/humble/lib/librcutils.so
 move_bot: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 move_bot: CMakeFiles/move_bot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable move_bot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable move_bot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/move_bot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -176,6 +176,6 @@ CMakeFiles/move_bot.dir/clean:
 .PHONY : CMakeFiles/move_bot.dir/clean
 
 CMakeFiles/move_bot.dir/depend:
-	cd /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/move_bot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/move_bot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/move_bot.dir/depend
 

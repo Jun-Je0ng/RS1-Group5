@@ -43,6 +43,93 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup" TYPE EXECUTABLE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/move_bot")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot"
+         OLD_RPATH "/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/move_bot")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE DIRECTORY FILES
+    "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/config"
+    "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/launch"
+    "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/models"
+    "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/urdf"
+    "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/worlds"
+    "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/urdf_drone"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup/environment" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup/environment" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_index/share/ament_index/resource_index/packages/41068_ignition_bringup")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup/cmake" TYPE FILE FILES
+    "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_core/41068_ignition_bringupConfig.cmake"
+    "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_core/41068_ignition_bringupConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE FILE FILES "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/package.xml")
   include("/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 

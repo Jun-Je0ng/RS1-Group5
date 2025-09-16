@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
+CMAKE_SOURCE_DIR = /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
+CMAKE_BINARY_DIR = /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -211,6 +211,19 @@ controller/fast:
 .PHONY : controller/fast
 
 #=============================================================================
+# Target rules for targets named lidar_sensing_node
+
+# Build rule for target.
+lidar_sensing_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lidar_sensing_node
+.PHONY : lidar_sensing_node
+
+# fast build rule for target.
+lidar_sensing_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/build
+.PHONY : lidar_sensing_node/fast
+
+#=============================================================================
 # Target rules for targets named move_bot
 
 # Build rule for target.
@@ -247,12 +260,36 @@ src/controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
+src/lidar_sensing_node.o: src/lidar_sensing_node.cpp.o
+.PHONY : src/lidar_sensing_node.o
+
+# target to build an object file
+src/lidar_sensing_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o
+.PHONY : src/lidar_sensing_node.cpp.o
+
+src/lidar_sensing_node.i: src/lidar_sensing_node.cpp.i
+.PHONY : src/lidar_sensing_node.i
+
+# target to preprocess a source file
+src/lidar_sensing_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.i
+.PHONY : src/lidar_sensing_node.cpp.i
+
+src/lidar_sensing_node.s: src/lidar_sensing_node.cpp.s
+.PHONY : src/lidar_sensing_node.s
+
+# target to generate assembly for a file
+src/lidar_sensing_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.s
+.PHONY : src/lidar_sensing_node.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -260,7 +297,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -268,8 +305,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/main_move_bot.o: src/main_move_bot.cpp.o
+.PHONY : src/main_move_bot.o
+
+# target to build an object file
+src/main_move_bot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o
+.PHONY : src/main_move_bot.cpp.o
+
+src/main_move_bot.i: src/main_move_bot.cpp.i
+.PHONY : src/main_move_bot.i
+
+# target to preprocess a source file
+src/main_move_bot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i
+.PHONY : src/main_move_bot.cpp.i
+
+src/main_move_bot.s: src/main_move_bot.cpp.s
+.PHONY : src/main_move_bot.s
+
+# target to generate assembly for a file
+src/main_move_bot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s
+.PHONY : src/main_move_bot.cpp.s
 
 src/skidsteer.o: src/skidsteer.cpp.o
 .PHONY : src/skidsteer.o
@@ -311,13 +372,20 @@ help:
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
 	@echo "... controller"
+	@echo "... lidar_sensing_node"
 	@echo "... move_bot"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/lidar_sensing_node.o"
+	@echo "... src/lidar_sensing_node.i"
+	@echo "... src/lidar_sensing_node.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/main_move_bot.o"
+	@echo "... src/main_move_bot.i"
+	@echo "... src/main_move_bot.s"
 	@echo "... src/skidsteer.o"
 	@echo "... src/skidsteer.i"
 	@echo "... src/skidsteer.s"

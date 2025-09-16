@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup
+=======
+CMAKE_SOURCE_DIR = /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
+>>>>>>> origin/jarrel-branch
 
 # Include any dependencies generated for this target.
 include CMakeFiles/controller.dir/depend.make
@@ -70,6 +77,7 @@ include CMakeFiles/controller.dir/progress.make
 include CMakeFiles/controller.dir/flags.make
 
 CMakeFiles/controller.dir/src/controller.cpp.o: CMakeFiles/controller.dir/flags.make
+<<<<<<< HEAD
 CMakeFiles/controller.dir/src/controller.cpp.o: /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.cpp
 CMakeFiles/controller.dir/src/controller.cpp.o: CMakeFiles/controller.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/controller.dir/src/controller.cpp.o"
@@ -96,6 +104,34 @@ CMakeFiles/controller.dir/src/skidsteer.cpp.i: cmake_force
 CMakeFiles/controller.dir/src/skidsteer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller.dir/src/skidsteer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.cpp -o CMakeFiles/controller.dir/src/skidsteer.cpp.s
+=======
+CMakeFiles/controller.dir/src/controller.cpp.o: /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.cpp
+CMakeFiles/controller.dir/src/controller.cpp.o: CMakeFiles/controller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/controller.dir/src/controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/controller.dir/src/controller.cpp.o -MF CMakeFiles/controller.dir/src/controller.cpp.o.d -o CMakeFiles/controller.dir/src/controller.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.cpp
+
+CMakeFiles/controller.dir/src/controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/controller.dir/src/controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.cpp > CMakeFiles/controller.dir/src/controller.cpp.i
+
+CMakeFiles/controller.dir/src/controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller.dir/src/controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.cpp -o CMakeFiles/controller.dir/src/controller.cpp.s
+
+CMakeFiles/controller.dir/src/skidsteer.cpp.o: CMakeFiles/controller.dir/flags.make
+CMakeFiles/controller.dir/src/skidsteer.cpp.o: /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.cpp
+CMakeFiles/controller.dir/src/skidsteer.cpp.o: CMakeFiles/controller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/controller.dir/src/skidsteer.cpp.o -MF CMakeFiles/controller.dir/src/skidsteer.cpp.o.d -o CMakeFiles/controller.dir/src/skidsteer.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.cpp
+
+CMakeFiles/controller.dir/src/skidsteer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/controller.dir/src/skidsteer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.cpp > CMakeFiles/controller.dir/src/skidsteer.cpp.i
+
+CMakeFiles/controller.dir/src/skidsteer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller.dir/src/skidsteer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.cpp -o CMakeFiles/controller.dir/src/skidsteer.cpp.s
+>>>>>>> origin/jarrel-branch
 
 # Object files for target controller
 controller_OBJECTS = \
@@ -109,7 +145,11 @@ libcontroller.a: CMakeFiles/controller.dir/src/controller.cpp.o
 libcontroller.a: CMakeFiles/controller.dir/src/skidsteer.cpp.o
 libcontroller.a: CMakeFiles/controller.dir/build.make
 libcontroller.a: CMakeFiles/controller.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcontroller.a"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcontroller.a"
+>>>>>>> origin/jarrel-branch
 	$(CMAKE_COMMAND) -P CMakeFiles/controller.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/controller.dir/link.txt --verbose=$(VERBOSE)
 
@@ -122,6 +162,10 @@ CMakeFiles/controller.dir/clean:
 .PHONY : CMakeFiles/controller.dir/clean
 
 CMakeFiles/controller.dir/depend:
+<<<<<<< HEAD
 	cd /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/controller.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/controller.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> origin/jarrel-branch
 .PHONY : CMakeFiles/controller.dir/depend
 
