@@ -81,11 +81,7 @@
 		{
 			"backtrace" : 10,
 			"component" : "Unspecified",
-<<<<<<<< HEAD:41068_ws/build/41068_ignition_bringup/.cmake/api/v1/reply/directory-.-587b5156acc0b81df834.json
 			"scriptFile" : "/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake",
-========
-			"scriptFile" : "build/41068_ignition_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake",
->>>>>>>> origin/jarrel-branch:41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/.cmake/api/v1/reply/directory-.-031d13ba8e47b9a9c30c.json
 			"type" : "script"
 		}
 	],

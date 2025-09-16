@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/uninstall.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/41068_ignition_bringup_uninstall.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/controller.dir
+/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/lidar_sensing_node.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/move_bot.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/test.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/edit_cache.dir
@@ -10,16 +10,3 @@
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/install.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/install/local.dir
 /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/install/strip.dir
-=======
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/uninstall.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/41068_ignition_bringup_uninstall.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/controller.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/move_bot.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/test.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/edit_cache.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/rebuild_cache.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/list_install_components.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/install.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/install/local.dir
-/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/install/strip.dir
->>>>>>> origin/jarrel-branch

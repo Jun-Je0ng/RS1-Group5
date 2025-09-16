@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/move_bot" "TARGETS" "move_bot" "DESTINATION" "lib/41068_ignition_bringup")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/move_bot" "/home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup/lidar_sensing_node" "TARGETS" "move_bot" "lidar_sensing_node" "DESTINATION" "lib/41068_ignition_bringup")
