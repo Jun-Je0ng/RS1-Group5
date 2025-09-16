@@ -33,7 +33,6 @@
 -- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)
 -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
 -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
-WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
 -- Added test 'copyright' to check source files copyright and LICENSE
 -- Added test 'cppcheck' to perform static code analysis on C / C++ code
 -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup/include>
@@ -49,10 +48,10 @@ WARNING: Package name "41068_ignition_bringup" does not follow the naming conven
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/student/RS1-Group5/41068_ws/build/41068_ignition_bringup
-[ 12%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
 [ 37%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
 [ 62%] [32m[1mLinking CXX static library libcontroller.a[0m
 [ 62%] Built target controller
 [ 75%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o[0m
@@ -72,15 +71,6 @@ WARNING: Package name "41068_ignition_bringup" does not follow the naming conven
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition_drone.launch.py
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py
-[33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
-  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
-  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
-  Use the cmake_policy command to set the policy and suppress this warning.
-Call Stack (most recent call first):
-  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
-  cmake_install.cmake:46 (include)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-[0m
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png
 -- Symlinking: /home/student/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png
