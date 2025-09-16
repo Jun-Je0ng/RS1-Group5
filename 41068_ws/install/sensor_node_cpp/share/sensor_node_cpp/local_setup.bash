@@ -1,0 +1,1 @@
+/home/student/RS1-Group5/41068_ws/build/sensor_node_cpp/ament_cmake_environment_hooks/local_setup.bash
