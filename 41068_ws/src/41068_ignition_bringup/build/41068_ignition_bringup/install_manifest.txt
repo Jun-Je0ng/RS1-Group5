@@ -1,4 +1,5 @@
-/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/41068_ignition_bringup/move_bot
+/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_follower
+/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_manager
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/config/robot_localization.yaml
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml

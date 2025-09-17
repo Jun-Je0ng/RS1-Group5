@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/controller.dir/all
-all: CMakeFiles/move_bot.dir/all
+all: CMakeFiles/waypoint_follower.dir/all
+all: CMakeFiles/waypoint_manager.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +74,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/41068_ignition_bringup_uninstall.dir/clean
-clean: CMakeFiles/controller.dir/clean
-clean: CMakeFiles/move_bot.dir/clean
+clean: CMakeFiles/waypoint_follower.dir/clean
+clean: CMakeFiles/waypoint_manager.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -131,56 +131,56 @@ CMakeFiles/41068_ignition_bringup_uninstall.dir/clean:
 .PHONY : CMakeFiles/41068_ignition_bringup_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/controller.dir
+# Target rules for target CMakeFiles/waypoint_follower.dir
 
 # All Build rule for target.
-CMakeFiles/controller.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=1,2,3 "Built target controller"
-.PHONY : CMakeFiles/controller.dir/all
+CMakeFiles/waypoint_follower.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=1,2 "Built target waypoint_follower"
+.PHONY : CMakeFiles/waypoint_follower.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/controller.dir/all
+CMakeFiles/waypoint_follower.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/waypoint_follower.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 0
-.PHONY : CMakeFiles/controller.dir/rule
+.PHONY : CMakeFiles/waypoint_follower.dir/rule
 
 # Convenience name for target.
-controller: CMakeFiles/controller.dir/rule
-.PHONY : controller
+waypoint_follower: CMakeFiles/waypoint_follower.dir/rule
+.PHONY : waypoint_follower
 
 # clean rule for target.
-CMakeFiles/controller.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/clean
-.PHONY : CMakeFiles/controller.dir/clean
+CMakeFiles/waypoint_follower.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/clean
+.PHONY : CMakeFiles/waypoint_follower.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/move_bot.dir
+# Target rules for target CMakeFiles/waypoint_manager.dir
 
 # All Build rule for target.
-CMakeFiles/move_bot.dir/all: CMakeFiles/controller.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=4,5 "Built target move_bot"
-.PHONY : CMakeFiles/move_bot.dir/all
+CMakeFiles/waypoint_manager.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles --progress-num=3,4 "Built target waypoint_manager"
+.PHONY : CMakeFiles/waypoint_manager.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/move_bot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/move_bot.dir/all
+CMakeFiles/waypoint_manager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/waypoint_manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles 0
-.PHONY : CMakeFiles/move_bot.dir/rule
+.PHONY : CMakeFiles/waypoint_manager.dir/rule
 
 # Convenience name for target.
-move_bot: CMakeFiles/move_bot.dir/rule
-.PHONY : move_bot
+waypoint_manager: CMakeFiles/waypoint_manager.dir/rule
+.PHONY : waypoint_manager
 
 # clean rule for target.
-CMakeFiles/move_bot.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/clean
-.PHONY : CMakeFiles/move_bot.dir/clean
+CMakeFiles/waypoint_manager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/clean
+.PHONY : CMakeFiles/waypoint_manager.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

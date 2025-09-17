@@ -198,61 +198,37 @@ uninstall/fast:
 .PHONY : 41068_ignition_bringup_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named controller
+# Target rules for targets named waypoint_follower
 
 # Build rule for target.
-controller: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controller
-.PHONY : controller
+waypoint_follower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_follower
+.PHONY : waypoint_follower
 
 # fast build rule for target.
-controller/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/build
-.PHONY : controller/fast
+waypoint_follower/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/build
+.PHONY : waypoint_follower/fast
 
 #=============================================================================
-# Target rules for targets named move_bot
+# Target rules for targets named waypoint_manager
 
 # Build rule for target.
-move_bot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_bot
-.PHONY : move_bot
+waypoint_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_manager
+.PHONY : waypoint_manager
 
 # fast build rule for target.
-move_bot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/build
-.PHONY : move_bot/fast
-
-src/controller.o: src/controller.cpp.o
-.PHONY : src/controller.o
-
-# target to build an object file
-src/controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.o
-.PHONY : src/controller.cpp.o
-
-src/controller.i: src/controller.cpp.i
-.PHONY : src/controller.i
-
-# target to preprocess a source file
-src/controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.i
-.PHONY : src/controller.cpp.i
-
-src/controller.s: src/controller.cpp.s
-.PHONY : src/controller.s
-
-# target to generate assembly for a file
-src/controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.s
-.PHONY : src/controller.cpp.s
+waypoint_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/build
+.PHONY : waypoint_manager/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -260,7 +236,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -268,32 +244,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/skidsteer.o: src/skidsteer.cpp.o
-.PHONY : src/skidsteer.o
+src/waypoint_manager.o: src/waypoint_manager.cpp.o
+.PHONY : src/waypoint_manager.o
 
 # target to build an object file
-src/skidsteer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.o
-.PHONY : src/skidsteer.cpp.o
+src/waypoint_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.o
+.PHONY : src/waypoint_manager.cpp.o
 
-src/skidsteer.i: src/skidsteer.cpp.i
-.PHONY : src/skidsteer.i
+src/waypoint_manager.i: src/waypoint_manager.cpp.i
+.PHONY : src/waypoint_manager.i
 
 # target to preprocess a source file
-src/skidsteer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.i
-.PHONY : src/skidsteer.cpp.i
+src/waypoint_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.i
+.PHONY : src/waypoint_manager.cpp.i
 
-src/skidsteer.s: src/skidsteer.cpp.s
-.PHONY : src/skidsteer.s
+src/waypoint_manager.s: src/waypoint_manager.cpp.s
+.PHONY : src/waypoint_manager.s
 
 # target to generate assembly for a file
-src/skidsteer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.s
-.PHONY : src/skidsteer.cpp.s
+src/waypoint_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.s
+.PHONY : src/waypoint_manager.cpp.s
 
 # Help Target
 help:
@@ -310,17 +286,14 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
-	@echo "... controller"
-	@echo "... move_bot"
-	@echo "... src/controller.o"
-	@echo "... src/controller.i"
-	@echo "... src/controller.s"
+	@echo "... waypoint_follower"
+	@echo "... waypoint_manager"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/skidsteer.o"
-	@echo "... src/skidsteer.i"
-	@echo "... src/skidsteer.s"
+	@echo "... src/waypoint_manager.o"
+	@echo "... src/waypoint_manager.i"
+	@echo "... src/waypoint_manager.s"
 .PHONY : help
 
 

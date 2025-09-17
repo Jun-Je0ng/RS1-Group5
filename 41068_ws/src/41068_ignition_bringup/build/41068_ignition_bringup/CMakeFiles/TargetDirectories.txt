@@ -1,7 +1,7 @@
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/uninstall.dir
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/41068_ignition_bringup_uninstall.dir
-/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/controller.dir
-/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/move_bot.dir
+/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/waypoint_follower.dir
+/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/waypoint_manager.dir
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/test.dir
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/edit_cache.dir
 /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/rebuild_cache.dir
