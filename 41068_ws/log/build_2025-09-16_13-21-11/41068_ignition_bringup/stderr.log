@@ -1,8 +1,0 @@
-WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-[01m[K/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
-    1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/move_bot.dir/build.make:76: CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/move_bot.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
