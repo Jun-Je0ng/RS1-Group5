@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-451ecee6277fa6849c87.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "41068_ignition_bringup",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "41068_ignition_bringup_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-41068_ignition_bringup_uninstall-b7eb43581540739aec94.json",
+					"name" : "41068_ignition_bringup_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_mux::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_mux-4bc112c331e262be13b2.json",
+					"name" : "cmd_mux",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manual_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manual_driver-6bc14e8cebdb2f06748e.json",
+					"name" : "manual_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a20f5bc41c4916d4033b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waypoint_follower::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waypoint_follower-c9da3e7af85902f0daff.json",
+					"name" : "waypoint_follower",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waypoint_manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waypoint_manager-4e3026072144cb132b31.json",
+					"name" : "waypoint_manager",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup",
+		"source" : "/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -223,6 +223,56 @@ waypoint_manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/build
 .PHONY : waypoint_manager/fast
 
+#=============================================================================
+# Target rules for targets named cmd_mux
+
+# Build rule for target.
+cmd_mux: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmd_mux
+.PHONY : cmd_mux
+
+# fast build rule for target.
+cmd_mux/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_mux.dir/build.make CMakeFiles/cmd_mux.dir/build
+.PHONY : cmd_mux/fast
+
+#=============================================================================
+# Target rules for targets named manual_driver
+
+# Build rule for target.
+manual_driver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manual_driver
+.PHONY : manual_driver
+
+# fast build rule for target.
+manual_driver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_driver.dir/build.make CMakeFiles/manual_driver.dir/build
+.PHONY : manual_driver/fast
+
+src/cmd_mux.o: src/cmd_mux.cpp.o
+.PHONY : src/cmd_mux.o
+
+# target to build an object file
+src/cmd_mux.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_mux.dir/build.make CMakeFiles/cmd_mux.dir/src/cmd_mux.cpp.o
+.PHONY : src/cmd_mux.cpp.o
+
+src/cmd_mux.i: src/cmd_mux.cpp.i
+.PHONY : src/cmd_mux.i
+
+# target to preprocess a source file
+src/cmd_mux.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_mux.dir/build.make CMakeFiles/cmd_mux.dir/src/cmd_mux.cpp.i
+.PHONY : src/cmd_mux.cpp.i
+
+src/cmd_mux.s: src/cmd_mux.cpp.s
+.PHONY : src/cmd_mux.s
+
+# target to generate assembly for a file
+src/cmd_mux.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_mux.dir/build.make CMakeFiles/cmd_mux.dir/src/cmd_mux.cpp.s
+.PHONY : src/cmd_mux.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -246,6 +296,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/manual_driver.o: src/manual_driver.cpp.o
+.PHONY : src/manual_driver.o
+
+# target to build an object file
+src/manual_driver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_driver.dir/build.make CMakeFiles/manual_driver.dir/src/manual_driver.cpp.o
+.PHONY : src/manual_driver.cpp.o
+
+src/manual_driver.i: src/manual_driver.cpp.i
+.PHONY : src/manual_driver.i
+
+# target to preprocess a source file
+src/manual_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_driver.dir/build.make CMakeFiles/manual_driver.dir/src/manual_driver.cpp.i
+.PHONY : src/manual_driver.cpp.i
+
+src/manual_driver.s: src/manual_driver.cpp.s
+.PHONY : src/manual_driver.s
+
+# target to generate assembly for a file
+src/manual_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_driver.dir/build.make CMakeFiles/manual_driver.dir/src/manual_driver.cpp.s
+.PHONY : src/manual_driver.cpp.s
 
 src/waypoint_manager.o: src/waypoint_manager.cpp.o
 .PHONY : src/waypoint_manager.o
@@ -286,11 +360,19 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... cmd_mux"
+	@echo "... manual_driver"
 	@echo "... waypoint_follower"
 	@echo "... waypoint_manager"
+	@echo "... src/cmd_mux.o"
+	@echo "... src/cmd_mux.i"
+	@echo "... src/cmd_mux.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/manual_driver.o"
+	@echo "... src/manual_driver.i"
+	@echo "... src/manual_driver.s"
 	@echo "... src/waypoint_manager.o"
 	@echo "... src/waypoint_manager.i"
 	@echo "... src/waypoint_manager.s"

@@ -1,0 +1,2 @@
+Invoking command in '/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup': /usr/bin/cmake --build /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j8 -l8
+Invoked command in '/home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup' returned '2': /usr/bin/cmake --build /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j8 -l8

@@ -706,4 +706,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/41068_ignition_bringup_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/waypoint_follower.dir/DependInfo.cmake"
   "CMakeFiles/waypoint_manager.dir/DependInfo.cmake"
+  "CMakeFiles/cmd_mux.dir/DependInfo.cmake"
+  "CMakeFiles/manual_driver.dir/DependInfo.cmake"
   )

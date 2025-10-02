@@ -37,9 +37,9 @@ public:
     align_angle_ = declare_parameter("align_angle", 0.6); // slow forward if |err_yaw| > this
 
     // Topic names (configurable)
-    odom_topic_ = declare_parameter<std::string>("odom_topic", "/odom");
+    odom_topic_ = declare_parameter<std::string>("odom_topic", "/odometry/filtered");   // <- was "/odom"
     goal_topic_ = declare_parameter<std::string>("goal_topic", "next_waypoint");
-    cmd_topic_  = declare_parameter<std::string>("cmd_topic", "/cmd_vel");
+    cmd_topic_  = declare_parameter<std::string>("cmd_topic", "/autonomy/cmd_vel");     // <- use mux output
 
     // Pubs/Subs
     cmd_pub_ = create_publisher<geometry_msgs::msg::Twist>(cmd_topic_, 10);
