@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f6e8da7e3a8ab5c70d6e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "41068_ignition_bringup",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "41068_ignition_bringup_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-41068_ignition_bringup_uninstall-df3364bc368cafd93983.json",
+					"name" : "41068_ignition_bringup_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller-3210d0d4759f68106407.json",
+					"name" : "controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_sensing_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_sensing_node-2cfc847a8cb641abf476.json",
+					"name" : "lidar_sensing_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_bot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_bot-736fa8211f21cf18b8b8.json",
+					"name" : "move_bot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7ed161eeadd99e38c4ec.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup",
+		"source" : "/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

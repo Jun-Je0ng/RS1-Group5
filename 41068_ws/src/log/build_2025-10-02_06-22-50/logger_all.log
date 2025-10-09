@@ -1,0 +1,245 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79dbc385e980>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79dbc385df60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79dbc385df60>>, mixin_verb=('build',))
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.308s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/RS1-Group5/41068_ws/src'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(41068_ignition_bringup) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package '41068_ignition_bringup' with type 'ros.ament_cmake' and name '41068_ignition_bringup'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(rs1_gui) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'rs1_gui' with type 'ros.ament_python' and name 'rs1_gui'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_node_cpp) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'sensor_node_cpp' with type 'ros.ament_cmake' and name 'sensor_node_cpp'
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.364s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/student/ros2_ws/install
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 424 installed packages in /opt/ros/humble
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_args' from command line to 'None'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_target' from command line to 'None'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.426s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.426s] DEBUG:colcon.colcon_core.verb:Building package '41068_ignition_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup', 'merge_install': False, 'path': '/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.426s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'cmake_args' from command line to 'None'
+[0.426s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'cmake_target' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'cmake_clean_cache' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'cmake_clean_first' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'cmake_force_configure' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'ament_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'catkin_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rs1_gui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.427s] DEBUG:colcon.colcon_core.verb:Building package 'rs1_gui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/RS1-Group5/41068_ws/src/build/rs1_gui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui', 'merge_install': False, 'path': '/home/student/RS1-Group5/41068_ws/src/rs1_gui', 'symlink_install': False, 'test_result_base': None}
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'cmake_target' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'sensor_node_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.427s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_node_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp', 'merge_install': False, 'path': '/home/student/RS1-Group5/41068_ws/src/sensor_node_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.428s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.429s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup' with build type 'ament_cmake'
+[0.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup'
+[0.431s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.431s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.435s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/RS1-Group5/41068_ws/src/rs1_gui' with build type 'ament_python'
+[0.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('rs1_gui', 'ament_prefix_path')
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/hook/ament_prefix_path.ps1'
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/hook/ament_prefix_path.dsv'
+[0.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/hook/ament_prefix_path.sh'
+[0.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.441s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/RS1-Group5/41068_ws/src/sensor_node_cpp' with build type 'ament_cmake'
+[0.441s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/RS1-Group5/41068_ws/src/sensor_node_cpp'
+[0.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup -DCMAKE_INSTALL_PREFIX=/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup
+[0.792s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/RS1-Group5/41068_ws/src/rs1_gui'
+[0.793s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.793s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/RS1-Group5/41068_ws/src/sensor_node_cpp -DCMAKE_INSTALL_PREFIX=/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp
+[1.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/rs1_gui': PYTHONPATH=/home/student/RS1-Group5/41068_ws/src/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/RS1-Group5/41068_ws/src/build/rs1_gui/build
+[1.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/rs1_gui' returned '0': PYTHONPATH=/home/student/RS1-Group5/41068_ws/src/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/RS1-Group5/41068_ws/src/build/rs1_gui/build
+[1.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/rs1_gui': PYTHONPATH=/home/student/RS1-Group5/41068_ws/src/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/rs1_gui build --build-base /home/student/RS1-Group5/41068_ws/src/build/rs1_gui/build install --record /home/student/RS1-Group5/41068_ws/src/build/rs1_gui/install.log --single-version-externally-managed install_data --force
+[2.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/rs1_gui' returned '0': PYTHONPATH=/home/student/RS1-Group5/41068_ws/src/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/rs1_gui build --build-base /home/student/RS1-Group5/41068_ws/src/build/rs1_gui/build install --record /home/student/RS1-Group5/41068_ws/src/build/rs1_gui/install.log --single-version-externally-managed install_data --force
+[2.219s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui' for CMake module files
+[2.220s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui' for CMake config files
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/bin'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/pkgconfig/rs1_gui.pc'
+[2.222s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/python3.10/site-packages'
+[2.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('rs1_gui', 'pythonpath')
+[2.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/hook/pythonpath.ps1'
+[2.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/hook/pythonpath.dsv'
+[2.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/hook/pythonpath.sh'
+[2.224s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/bin'
+[2.224s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rs1_gui)
+[2.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/package.ps1'
+[2.225s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/package.dsv'
+[2.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/package.sh'
+[2.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/package.bash'
+[2.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/rs1_gui/package.zsh'
+[2.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/RS1-Group5/41068_ws/src/install/rs1_gui/share/colcon-core/packages/rs1_gui)
+[6.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/RS1-Group5/41068_ws/src/sensor_node_cpp -DCMAKE_INSTALL_PREFIX=/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp
+[6.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp -- -j8 -l8
+[6.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp -- -j8 -l8
+[6.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp
+[6.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_node_cpp)
+[6.620s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp' for CMake module files
+[6.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/RS1-Group5/41068_ws/src/build/sensor_node_cpp
+[6.622s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp' for CMake config files
+[6.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_node_cpp', 'cmake_prefix_path')
+[6.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/hook/cmake_prefix_path.ps1'
+[6.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/hook/cmake_prefix_path.dsv'
+[6.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/hook/cmake_prefix_path.sh'
+[6.626s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/bin'
+[6.626s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/lib/pkgconfig/sensor_node_cpp.pc'
+[6.626s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/lib/python3.10/site-packages'
+[6.627s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/bin'
+[6.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.ps1'
+[6.628s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.dsv'
+[6.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.sh'
+[6.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.bash'
+[6.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.zsh'
+[6.630s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/colcon-core/packages/sensor_node_cpp)
+[6.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_node_cpp)
+[6.632s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp' for CMake module files
+[6.633s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp' for CMake config files
+[6.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_node_cpp', 'cmake_prefix_path')
+[6.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/hook/cmake_prefix_path.ps1'
+[6.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/hook/cmake_prefix_path.dsv'
+[6.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/hook/cmake_prefix_path.sh'
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/bin'
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/lib/pkgconfig/sensor_node_cpp.pc'
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/lib/python3.10/site-packages'
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/bin'
+[6.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.ps1'
+[6.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.dsv'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.sh'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.bash'
+[6.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/sensor_node_cpp/package.zsh'
+[6.641s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/RS1-Group5/41068_ws/src/install/sensor_node_cpp/share/colcon-core/packages/sensor_node_cpp)
+[6.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/RS1-Group5/41068_ws/src/41068_ignition_bringup -DCMAKE_INSTALL_PREFIX=/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup
+[6.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup -- -j8 -l8
+[19.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup -- -j8 -l8
+[19.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup
+[20.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(41068_ignition_bringup)
+[20.539s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup' for CMake module files
+[20.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup
+[20.540s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup' for CMake config files
+[20.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('41068_ignition_bringup', 'cmake_prefix_path')
+[20.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.ps1'
+[20.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.dsv'
+[20.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.sh'
+[20.542s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/lib'
+[20.542s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/bin'
+[20.542s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/lib/pkgconfig/41068_ignition_bringup.pc'
+[20.542s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/lib/python3.10/site-packages'
+[20.543s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/bin'
+[20.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.ps1'
+[20.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv'
+[20.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.sh'
+[20.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.bash'
+[20.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.zsh'
+[20.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/colcon-core/packages/41068_ignition_bringup)
+[20.546s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(41068_ignition_bringup)
+[20.546s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup' for CMake module files
+[20.547s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup' for CMake config files
+[20.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('41068_ignition_bringup', 'cmake_prefix_path')
+[20.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.ps1'
+[20.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.dsv'
+[20.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.sh'
+[20.549s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/lib'
+[20.549s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/bin'
+[20.549s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/lib/pkgconfig/41068_ignition_bringup.pc'
+[20.549s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/lib/python3.10/site-packages'
+[20.550s] Level 1:colcon.colcon_core.environment:checking '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/bin'
+[20.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.ps1'
+[20.551s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv'
+[20.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.sh'
+[20.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.bash'
+[20.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/41068_ignition_bringup/package.zsh'
+[20.552s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/RS1-Group5/41068_ws/src/install/41068_ignition_bringup/share/colcon-core/packages/41068_ignition_bringup)
+[20.553s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.553s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.554s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.554s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.563s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.563s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.563s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.594s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.595s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/RS1-Group5/41068_ws/src/install/local_setup.ps1'
+[20.596s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/RS1-Group5/41068_ws/src/install/_local_setup_util_ps1.py'
+[20.598s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/RS1-Group5/41068_ws/src/install/setup.ps1'
+[20.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/RS1-Group5/41068_ws/src/install/local_setup.sh'
+[20.601s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/RS1-Group5/41068_ws/src/install/_local_setup_util_sh.py'
+[20.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/RS1-Group5/41068_ws/src/install/setup.sh'
+[20.603s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/RS1-Group5/41068_ws/src/install/local_setup.bash'
+[20.604s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/RS1-Group5/41068_ws/src/install/setup.bash'
+[20.605s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/RS1-Group5/41068_ws/src/install/local_setup.zsh'
+[20.606s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/RS1-Group5/41068_ws/src/install/setup.zsh'
