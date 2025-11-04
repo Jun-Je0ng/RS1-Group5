@@ -1,0 +1,36 @@
+[0.830s] Invoking command in '/home/student/RS1-Group5/41068_ws/src/joy_teleop': PYTHONPATH=/home/student/RS1-Group5/41068_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_teleop build --build-base /home/student/RS1-Group5/41068_ws/build/joy_teleop/build install --record /home/student/RS1-Group5/41068_ws/build/joy_teleop/install.log --single-version-externally-managed install_data
+[1.120s] running egg_info
+[1.121s] creating ../../build/joy_teleop/joy_teleop.egg-info
+[1.121s] writing ../../build/joy_teleop/joy_teleop.egg-info/PKG-INFO
+[1.121s] writing dependency_links to ../../build/joy_teleop/joy_teleop.egg-info/dependency_links.txt
+[1.121s] writing entry points to ../../build/joy_teleop/joy_teleop.egg-info/entry_points.txt
+[1.121s] writing requirements to ../../build/joy_teleop/joy_teleop.egg-info/requires.txt
+[1.122s] writing top-level names to ../../build/joy_teleop/joy_teleop.egg-info/top_level.txt
+[1.122s] writing manifest file '../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[1.123s] reading manifest file '../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[1.124s] writing manifest file '../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[1.125s] running build
+[1.125s] running build_py
+[1.125s] creating /home/student/RS1-Group5/41068_ws/build/joy_teleop/build
+[1.125s] creating /home/student/RS1-Group5/41068_ws/build/joy_teleop/build/lib
+[1.125s] creating /home/student/RS1-Group5/41068_ws/build/joy_teleop/build/lib/joy_teleop
+[1.125s] copying joy_teleop/joy_to_twist.py -> /home/student/RS1-Group5/41068_ws/build/joy_teleop/build/lib/joy_teleop
+[1.125s] copying joy_teleop/__init__.py -> /home/student/RS1-Group5/41068_ws/build/joy_teleop/build/lib/joy_teleop
+[1.125s] running install
+[1.126s] running install_lib
+[1.127s] creating /home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages/joy_teleop
+[1.127s] copying /home/student/RS1-Group5/41068_ws/build/joy_teleop/build/lib/joy_teleop/joy_to_twist.py -> /home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages/joy_teleop
+[1.127s] copying /home/student/RS1-Group5/41068_ws/build/joy_teleop/build/lib/joy_teleop/__init__.py -> /home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages/joy_teleop
+[1.127s] byte-compiling /home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages/joy_teleop/joy_to_twist.py to joy_to_twist.cpython-310.pyc
+[1.128s] byte-compiling /home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages/joy_teleop/__init__.py to __init__.cpython-310.pyc
+[1.128s] running install_data
+[1.129s] creating /home/student/RS1-Group5/41068_ws/install/joy_teleop/share/ament_index
+[1.129s] creating /home/student/RS1-Group5/41068_ws/install/joy_teleop/share/ament_index/resource_index
+[1.129s] creating /home/student/RS1-Group5/41068_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[1.129s] copying resource/joy_teleop -> /home/student/RS1-Group5/41068_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[1.129s] copying package.xml -> /home/student/RS1-Group5/41068_ws/install/joy_teleop/share/joy_teleop
+[1.129s] running install_egg_info
+[1.131s] Copying ../../build/joy_teleop/joy_teleop.egg-info to /home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages/joy_teleop-0.0.0-py3.10.egg-info
+[1.132s] running install_scripts
+[1.160s] writing list of installed files to '/home/student/RS1-Group5/41068_ws/build/joy_teleop/install.log'
+[1.192s] Invoked command in '/home/student/RS1-Group5/41068_ws/src/joy_teleop' returned '0': PYTHONPATH=/home/student/RS1-Group5/41068_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/RS1-Group5/41068_ws/install/joy_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_teleop build --build-base /home/student/RS1-Group5/41068_ws/build/joy_teleop/build install --record /home/student/RS1-Group5/41068_ws/build/joy_teleop/install.log --single-version-externally-managed install_data

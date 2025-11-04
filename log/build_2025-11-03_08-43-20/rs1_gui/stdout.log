@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating rs1_gui.egg-info
+writing rs1_gui.egg-info/PKG-INFO
+writing dependency_links to rs1_gui.egg-info/dependency_links.txt
+writing entry points to rs1_gui.egg-info/entry_points.txt
+writing requirements to rs1_gui.egg-info/requires.txt
+writing top-level names to rs1_gui.egg-info/top_level.txt
+writing manifest file 'rs1_gui.egg-info/SOURCES.txt'
+reading manifest file 'rs1_gui.egg-info/SOURCES.txt'
+writing manifest file 'rs1_gui.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/RS1-Group5/install/rs1_gui/lib/python3.10/site-packages/rs1-gui.egg-link (link to .)
+Installing gui_node script to /home/student/RS1-Group5/install/rs1_gui/lib/rs1_gui
+
+Installed /home/student/RS1-Group5/build/rs1_gui
+running symlink_data
+creating /home/student/RS1-Group5/install/rs1_gui/share/ament_index
+creating /home/student/RS1-Group5/install/rs1_gui/share/ament_index/resource_index
+creating /home/student/RS1-Group5/install/rs1_gui/share/ament_index/resource_index/packages
+symbolically linking /home/student/RS1-Group5/build/rs1_gui/resource/rs1_gui -> /home/student/RS1-Group5/install/rs1_gui/share/ament_index/resource_index/packages
+symbolically linking /home/student/RS1-Group5/build/rs1_gui/package.xml -> /home/student/RS1-Group5/install/rs1_gui/share/rs1_gui
+creating /home/student/RS1-Group5/install/rs1_gui/share/rs1_gui/launch
+symbolically linking /home/student/RS1-Group5/build/rs1_gui/launch/gui_launch.py -> /home/student/RS1-Group5/install/rs1_gui/share/rs1_gui/launch

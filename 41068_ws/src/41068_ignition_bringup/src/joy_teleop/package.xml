@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>joy_teleop</name>
+  <version>0.0.1</version>
+  <description>ROS2 package for Xbox controller teleoperation for Husky robot</description>
+
+  <maintainer email="youremail@example.com">Your Name</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>joy</depend>
+
+  <exec_depend>ros-foxy-joy</exec_depend>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>ament_python</build_depend>
+  <exec_depend>ament_python</exec_depend>
+</package>

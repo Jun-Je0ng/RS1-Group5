@@ -3,15 +3,19 @@ import sys, math
 from dataclasses import dataclass
 from typing import List
 
-from PySide6 import QtCore, QtWidgets
+import numpy as np
+from cv_bridge import CvBridge
+from sensor_msgs.msg import Image, CompressedImage
+
+from PySide6 import QtCore, QtWidgets, QtGui
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-
+import cv2
 from geometry_msgs.msg import Twist, PoseStamped, Point, Quaternion
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
-
+import time
 from nav2_msgs.action import NavigateToPose, NavigateThroughPoses
 
 
@@ -121,15 +125,135 @@ class RosBackend(Node):
         # Hook for live updates if you want (distance remaining, etc.)
         # feedback_msg.feedback is NavigateToPose_Feedback / NavigateThroughPoses_Feedback
         pass
+        # --- camera subscription management ---
+    def start_camera_sub(self, topic: str):
+        # kill any existing sub
+        try:
+            if hasattr(self, "_cam_sub") and self._cam_sub is not None:
+                self.destroy_subscription(self._cam_sub)
+        except Exception:
+            pass
+
+        self._bridge = getattr(self, "_bridge", CvBridge())
+        self._latest_bgr = None
+        self._cam_topic = topic
+
+        # Prefer raw Image; if user points at a compressed topic, we'll handle it too
+        if topic.endswith("/compressed"):
+            self._cam_sub = self.create_subscription(
+                CompressedImage, topic, self._cam_compressed_cb, 10
+            )
+        else:
+            self._cam_sub = self.create_subscription(
+                Image, topic, self._cam_raw_cb, 10
+            )
+
+    def _cam_raw_cb(self, msg: Image):
+        # Convert to BGR8 if needed
+        try:
+            img = self._bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
+            self._latest_bgr = img
+        except Exception:
+            self._latest_bgr = None
+
+    def _cam_compressed_cb(self, msg: CompressedImage):
+        try:
+            # Decode JPEG/PNG buffer to BGR
+            data = np.frombuffer(msg.data, dtype=np.uint8)
+            img = cv2.imdecode(data, cv2.IMREAD_COLOR)
+            self._latest_bgr = img
+        except Exception:
+            self._latest_bgr = None
+
+    def get_latest_bgr(self):
+        return getattr(self, "_latest_bgr", None)
 
 
-# ---------- GUI ----------
+class CameraViewer(QtWidgets.QWidget):
+    """Simple Qt widget that shows a ROS image topic in real-time."""
+    def __init__(self, node: RosBackend, default_topic="/camera/image_raw"):
+        super().__init__()
+        self.node = node
+
+        self.setLayout(QtWidgets.QVBoxLayout())
+        ctrl = QtWidgets.QHBoxLayout()
+        self.topic_edit = QtWidgets.QLineEdit(default_topic)
+        self.btn_set = QtWidgets.QPushButton("Subscribe")
+        self.fps_label = QtWidgets.QLabel("— fps")
+        ctrl.addWidget(QtWidgets.QLabel("Topic:"))
+        ctrl.addWidget(self.topic_edit, 1)
+        ctrl.addWidget(self.btn_set)
+        ctrl.addStretch(1)
+        ctrl.addWidget(self.fps_label)
+        self.layout().addLayout(ctrl)
+
+        self.view = QtWidgets.QLabel("No image")
+        self.view.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.view.setMinimumHeight(240)
+        self.view.setStyleSheet("background:#111; color:#aaa;")
+        self.layout().addWidget(self.view, 1)
+
+        self.btn_set.clicked.connect(self._apply_topic)
+
+        # start
+        self._apply_topic()
+
+        # UI refresh timer
+        self._t = QtCore.QTimer(self)
+        self._t.timeout.connect(self._draw_latest)
+        self._t.start(33)  # ~30 Hz
+
+        self._last_ts = None
+        self._fps_acc = 0
+        self._fps_n = 0
+
+    def _apply_topic(self):
+        topic = self.topic_edit.text().strip()
+        if topic:
+            self.node.start_camera_sub(topic)
+
+    def _draw_latest(self):
+        img = self.node.get_latest_bgr()
+        if img is None:
+            return
+        # BGR -> RGB for Qt
+        rgb = img[:, :, ::-1].copy()
+        h, w, ch = rgb.shape
+        qimg = QtGui.QImage(rgb.data, w, h, ch * w, QtGui.QImage.Format.Format_RGB888)
+        self.view.setPixmap(QtGui.QPixmap.fromImage(qimg).scaled(
+            self.view.size(),
+            QtCore.Qt.AspectRatioMode.KeepAspectRatio,
+            QtCore.Qt.TransformationMode.SmoothTransformation
+        ))
+
+        # crude fps
+        now = QtCore.QTime.currentTime()
+        if self._last_ts is None:
+            self._last_ts = now
+            return
+        dt_ms = self._last_ts.msecsTo(now)
+        self._last_ts = now
+        if dt_ms > 0:
+            fps = 1000.0 / dt_ms
+            self._fps_acc += fps
+            self._fps_n += 1
+            if self._fps_n >= 10:
+                self.fps_label.setText(f"{self._fps_acc / self._fps_n:.1f} fps")
+                self._fps_acc = 0
+                self._fps_n = 0
+
+
+
 class Gui(QtWidgets.QWidget):
     def __init__(self, node: RosBackend):
         super().__init__()
         self.node = node
         self.setWindowTitle('RS1 Waypoint GUI (Nav2)')
-        self.resize(600, 480)
+        self.resize(1000, 600)
+
+        # ----- LEFT: controls panel -----
+        left = QtWidgets.QWidget()
+        grid = QtWidgets.QGridLayout(left)
 
         # Teleop
         self.lin_slider = self._slider(-200, 200, 0)
@@ -157,8 +281,6 @@ class Gui(QtWidgets.QWidget):
         self.scan_label = QtWidgets.QLabel('Lidar min: ∞ m')
         self.status     = QtWidgets.QLabel('Status: idle')
 
-        # Layout
-        grid = QtWidgets.QGridLayout()
         r = 0
         grid.addWidget(QtWidgets.QLabel('Teleop (optional)'), r, 0, 1, 6); r += 1
         grid.addWidget(self.lin_label, r, 0, 1, 2); grid.addWidget(self.lin_slider, r, 2, 1, 4); r += 1
@@ -179,7 +301,32 @@ class Gui(QtWidgets.QWidget):
         grid.addWidget(self.scan_label, r, 0, 1, 6); r += 1
         grid.addWidget(self.status, r, 0, 1, 6); r += 1
 
-        self.setLayout(grid)
+        # ----- RIGHT: tabs (Camera; optionally RViz if you added RvizEmbedder) -----
+        tabs = QtWidgets.QTabWidget()
+
+        # Camera tab
+        cam_group = QtWidgets.QWidget()
+        cam_layout = QtWidgets.QVBoxLayout(cam_group)
+        self.cam = CameraViewer(self.node, default_topic="/camera/image_raw")
+        cam_layout.addWidget(self.cam, 1)
+        tabs.addTab(cam_group, "Camera")
+
+        # If you previously added RvizEmbedder class, you can include:
+        # rviz_group = QtWidgets.QWidget()
+        # rviz_layout = QtWidgets.QVBoxLayout(rviz_group)
+        # self.rviz = RvizEmbedder(rviz_group)
+        # rviz_layout.addWidget(self.rviz, 1)
+        # tabs.addTab(rviz_group, "RViz")
+
+        # ----- Splitter -----
+        splitter = QtWidgets.QSplitter(QtCore.Qt.Orientation.Horizontal)
+        splitter.addWidget(left)
+        splitter.addWidget(tabs)
+        splitter.setStretchFactor(0, 0)
+        splitter.setStretchFactor(1, 1)
+
+        outer = QtWidgets.QVBoxLayout(self)
+        outer.addWidget(splitter, 1)
 
         # Signals
         self.lin_slider.valueChanged.connect(self._lin_changed)
@@ -210,6 +357,7 @@ class Gui(QtWidgets.QWidget):
         w.setSingleStep(step)
         return w
 
+    
     # ---- teleop handlers ----
     def _lin_changed(self, v): self.lin_label.setText(f'Linear: {v/100.0:.2f} m/s')
     def _ang_changed(self, v): self.ang_label.setText(f'Angular: {v/100.0:.2f} rad/s')
