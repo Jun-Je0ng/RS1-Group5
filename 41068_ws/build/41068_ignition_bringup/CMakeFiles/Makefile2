@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bri
 
 # The main recursive "all" target.
 all: CMakeFiles/controller.dir/all
+all: CMakeFiles/teleop_obstacle_avoid.dir/all
+all: CMakeFiles/lidar_sensing_node.dir/all
 all: CMakeFiles/move_bot.dir/all
 .PHONY : all
 
@@ -75,6 +77,8 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/41068_ignition_bringup_uninstall.dir/clean
 clean: CMakeFiles/controller.dir/clean
+clean: CMakeFiles/teleop_obstacle_avoid.dir/clean
+clean: CMakeFiles/lidar_sensing_node.dir/clean
 clean: CMakeFiles/move_bot.dir/clean
 .PHONY : clean
 
@@ -157,13 +161,65 @@ CMakeFiles/controller.dir/clean:
 .PHONY : CMakeFiles/controller.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/teleop_obstacle_avoid.dir
+
+# All Build rule for target.
+CMakeFiles/teleop_obstacle_avoid.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=9,10 "Built target teleop_obstacle_avoid"
+.PHONY : CMakeFiles/teleop_obstacle_avoid.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/teleop_obstacle_avoid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/teleop_obstacle_avoid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/teleop_obstacle_avoid.dir/rule
+
+# Convenience name for target.
+teleop_obstacle_avoid: CMakeFiles/teleop_obstacle_avoid.dir/rule
+.PHONY : teleop_obstacle_avoid
+
+# clean rule for target.
+CMakeFiles/teleop_obstacle_avoid.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/clean
+.PHONY : CMakeFiles/teleop_obstacle_avoid.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lidar_sensing_node.dir
+
+# All Build rule for target.
+CMakeFiles/lidar_sensing_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=4,5,6 "Built target lidar_sensing_node"
+.PHONY : CMakeFiles/lidar_sensing_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lidar_sensing_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lidar_sensing_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/lidar_sensing_node.dir/rule
+
+# Convenience name for target.
+lidar_sensing_node: CMakeFiles/lidar_sensing_node.dir/rule
+.PHONY : lidar_sensing_node
+
+# clean rule for target.
+CMakeFiles/lidar_sensing_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/clean
+.PHONY : CMakeFiles/lidar_sensing_node.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/move_bot.dir
 
 # All Build rule for target.
 CMakeFiles/move_bot.dir/all: CMakeFiles/controller.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=4,5 "Built target move_bot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=7,8 "Built target move_bot"
 .PHONY : CMakeFiles/move_bot.dir/all
 
 # Build rule for subdir invocation for target.

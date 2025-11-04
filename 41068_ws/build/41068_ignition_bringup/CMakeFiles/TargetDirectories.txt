@@ -1,6 +1,8 @@
 /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/uninstall.dir
 /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/41068_ignition_bringup_uninstall.dir
 /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/controller.dir
+/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/teleop_obstacle_avoid.dir
+/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/lidar_sensing_node.dir
 /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/move_bot.dir
 /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/test.dir
 /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/edit_cache.dir
