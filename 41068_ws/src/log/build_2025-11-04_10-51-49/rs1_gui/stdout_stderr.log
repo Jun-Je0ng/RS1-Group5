@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing rs1_gui.egg-info/PKG-INFO
+writing dependency_links to rs1_gui.egg-info/dependency_links.txt
+writing entry points to rs1_gui.egg-info/entry_points.txt
+writing requirements to rs1_gui.egg-info/requires.txt
+writing top-level names to rs1_gui.egg-info/top_level.txt
+reading manifest file 'rs1_gui.egg-info/SOURCES.txt'
+writing manifest file 'rs1_gui.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/python3.10/site-packages/rs1-gui.egg-link (link to .)
+Installing gui_node script to /home/student/RS1-Group5/41068_ws/src/install/rs1_gui/lib/rs1_gui
+
+Installed /home/student/RS1-Group5/41068_ws/src/build/rs1_gui
+running symlink_data
