@@ -1,0 +1,9 @@
+# ROS2 / Python ignore patterns
+build/
+install/
+log/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
