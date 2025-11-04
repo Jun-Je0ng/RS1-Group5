@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000881] (41068_ignition_bringup) JobQueued: {'identifier': '41068_ignition_bringup', 'dependencies': OrderedDict()}
+[0.000983] (41068_ignition_bringup) JobStarted: {'identifier': '41068_ignition_bringup'}
+[0.013225] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'cmake'}
+[0.014371] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup', '-DCMAKE_INSTALL_PREFIX=/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jarrel/ros2_ws/install/turtlesim/lib:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('OLDPWD', '/home/jarrel/git/RS1-Group5/41068_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '38244'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install:/home/jarrel/git/RoboticsStudio1/41068_ws/install:/home/jarrel/install:/home/jarrel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2009,unix/legion:/tmp/.ICE-unix/2009'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/05063cdc_ffc6_477e_8ea4_5fbdc3d8ddf7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4NK3C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.456'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/home/jarrel/git/RoboticsStudio1/41068_ws/install/41068_ignition_bringup:/home/jarrel/ros2_ws/install/week10_laser:/home/jarrel/ros2_ws/install/turtlesim:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jarrel/ros2_ws/install/drive_drone:/home/jarrel/ros2_ws/install/a3_support:/home/jarrel/ros2_ws/install/a3_skeleton:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jarrel/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/home/jarrel/git/RoboticsStudio1/41068_ws/install/41068_ignition_bringup:/home/jarrel/ros2_ws/install/week10_laser:/home/jarrel/ros2_ws/install/turtlesim:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jarrel/ros2_ws/install/drive_drone:/home/jarrel/ros2_ws/install/a3_support:/home/jarrel/ros2_ws/install/a3_skeleton:/opt/ros/humble')]), 'shell': False}
+[0.099778] (-) TimerEvent: {}
+[0.200399] (-) TimerEvent: {}
+[0.263342] (41068_ignition_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300508] (-) TimerEvent: {}
+[0.382561] (41068_ignition_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.400709] (-) TimerEvent: {}
+[0.496207] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500837] (-) TimerEvent: {}
+[0.601416] (-) TimerEvent: {}
+[0.632338] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.647251] (41068_ignition_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.649984] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.651472] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.654867] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701540] (-) TimerEvent: {}
+[0.802089] (-) TimerEvent: {}
+[0.889780] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.902457] (-) TimerEvent: {}
+[0.906354] (41068_ignition_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.906679] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.907491] (41068_ignition_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.923316] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.002580] (-) TimerEvent: {}
+[1.103096] (-) TimerEvent: {}
+[1.203594] (-) TimerEvent: {}
+[1.241917] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.303728] (-) TimerEvent: {}
+[1.404409] (-) TimerEvent: {}
+[1.407797] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.504580] (-) TimerEvent: {}
+[1.522658] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.530669] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.548018] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.567415] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.596141] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.605075] (-) TimerEvent: {}
+[1.686594] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.697000] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.705298] (-) TimerEvent: {}
+[1.806086] (-) TimerEvent: {}
+[1.906581] (-) TimerEvent: {}
+[1.916397] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.956866] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.006813] (-) TimerEvent: {}
+[2.007771] (41068_ignition_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.035391] (41068_ignition_bringup) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.107000] (-) TimerEvent: {}
+[2.182226] (41068_ignition_bringup) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.183222] (41068_ignition_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.207078] (-) TimerEvent: {}
+[2.293638] (41068_ignition_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.295577] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.307184] (-) TimerEvent: {}
+[2.407584] (-) TimerEvent: {}
+[2.418324] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.457286] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)\n'}
+[2.507722] (-) TimerEvent: {}
+[2.608080] (-) TimerEvent: {}
+[2.645232] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.708195] (-) TimerEvent: {}
+[2.742662] (41068_ignition_bringup) StderrLine: {'line': b'WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[2.808509] (-) TimerEvent: {}
+[2.824552] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.856953] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.857319] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.857452] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.908648] (-) TimerEvent: {}
+[2.943685] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.943988] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.950883] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.960159] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.964195] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.008753] (-) TimerEvent: {}
+[3.013452] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.013599] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.021937] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.024528] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.044640] (41068_ignition_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[3.055115] (41068_ignition_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup\n'}
+[3.079244] (41068_ignition_bringup) CommandEnded: {'returncode': 0}
+[3.080881] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'build'}
+[3.083336] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', '--', '-j32', '-l32'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jarrel/ros2_ws/install/turtlesim/lib:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('OLDPWD', '/home/jarrel/git/RS1-Group5/41068_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '38244'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install:/home/jarrel/git/RoboticsStudio1/41068_ws/install:/home/jarrel/install:/home/jarrel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2009,unix/legion:/tmp/.ICE-unix/2009'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/05063cdc_ffc6_477e_8ea4_5fbdc3d8ddf7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4NK3C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.456'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/home/jarrel/git/RoboticsStudio1/41068_ws/install/41068_ignition_bringup:/home/jarrel/ros2_ws/install/week10_laser:/home/jarrel/ros2_ws/install/turtlesim:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jarrel/ros2_ws/install/drive_drone:/home/jarrel/ros2_ws/install/a3_support:/home/jarrel/ros2_ws/install/a3_skeleton:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jarrel/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/home/jarrel/git/RoboticsStudio1/41068_ws/install/41068_ignition_bringup:/home/jarrel/ros2_ws/install/week10_laser:/home/jarrel/ros2_ws/install/turtlesim:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jarrel/ros2_ws/install/drive_drone:/home/jarrel/ros2_ws/install/a3_support:/home/jarrel/ros2_ws/install/a3_skeleton:/opt/ros/humble')]), 'shell': False}
+[3.109011] (-) TimerEvent: {}
+[3.181771] (41068_ignition_bringup) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o\x1b[0m\n'}
+[3.183028] (41068_ignition_bringup) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o\x1b[0m\n'}
+[3.209104] (-) TimerEvent: {}
+[3.309626] (-) TimerEvent: {}
+[3.409988] (-) TimerEvent: {}
+[3.510436] (-) TimerEvent: {}
+[3.610868] (-) TimerEvent: {}
+[3.623119] (41068_ignition_bringup) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libcontroller.a\x1b[0m\n'}
+[3.668517] (41068_ignition_bringup) StdoutLine: {'line': b'[ 60%] Built target controller\n'}
+[3.709294] (41068_ignition_bringup) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/move_bot.dir/src/main.cpp.o\x1b[0m\n'}
+[3.710952] (-) TimerEvent: {}
+[3.811517] (-) TimerEvent: {}
+[3.912416] (-) TimerEvent: {}
+[4.013001] (-) TimerEvent: {}
+[4.113495] (-) TimerEvent: {}
+[4.214071] (-) TimerEvent: {}
+[4.315147] (-) TimerEvent: {}
+[4.415915] (-) TimerEvent: {}
+[4.516948] (-) TimerEvent: {}
+[4.617675] (-) TimerEvent: {}
+[4.718225] (-) TimerEvent: {}
+[4.818693] (-) TimerEvent: {}
+[4.919342] (-) TimerEvent: {}
+[5.019866] (-) TimerEvent: {}
+[5.120691] (-) TimerEvent: {}
+[5.221298] (-) TimerEvent: {}
+[5.322025] (-) TimerEvent: {}
+[5.422481] (-) TimerEvent: {}
+[5.523058] (-) TimerEvent: {}
+[5.623569] (-) TimerEvent: {}
+[5.724248] (-) TimerEvent: {}
+[5.824772] (-) TimerEvent: {}
+[5.925514] (-) TimerEvent: {}
+[6.026255] (-) TimerEvent: {}
+[6.126643] (-) TimerEvent: {}
+[6.227251] (-) TimerEvent: {}
+[6.327661] (-) TimerEvent: {}
+[6.428103] (-) TimerEvent: {}
+[6.528676] (-) TimerEvent: {}
+[6.629348] (-) TimerEvent: {}
+[6.729900] (-) TimerEvent: {}
+[6.830446] (-) TimerEvent: {}
+[6.930961] (-) TimerEvent: {}
+[7.031416] (-) TimerEvent: {}
+[7.131876] (-) TimerEvent: {}
+[7.232443] (-) TimerEvent: {}
+[7.333031] (-) TimerEvent: {}
+[7.433468] (-) TimerEvent: {}
+[7.534259] (-) TimerEvent: {}
+[7.634754] (-) TimerEvent: {}
+[7.735201] (-) TimerEvent: {}
+[7.835630] (-) TimerEvent: {}
+[7.936245] (-) TimerEvent: {}
+[8.036657] (-) TimerEvent: {}
+[8.136994] (-) TimerEvent: {}
+[8.237500] (-) TimerEvent: {}
+[8.338125] (-) TimerEvent: {}
+[8.438461] (-) TimerEvent: {}
+[8.539145] (-) TimerEvent: {}
+[8.639657] (-) TimerEvent: {}
+[8.740203] (-) TimerEvent: {}
+[8.840724] (-) TimerEvent: {}
+[8.941299] (-) TimerEvent: {}
+[9.041780] (-) TimerEvent: {}
+[9.142355] (-) TimerEvent: {}
+[9.242910] (-) TimerEvent: {}
+[9.343354] (-) TimerEvent: {}
+[9.443948] (-) TimerEvent: {}
+[9.544783] (-) TimerEvent: {}
+[9.645452] (-) TimerEvent: {}
+[9.745941] (-) TimerEvent: {}
+[9.846550] (-) TimerEvent: {}
+[9.946962] (-) TimerEvent: {}
+[10.047310] (-) TimerEvent: {}
+[10.147719] (-) TimerEvent: {}
+[10.248237] (-) TimerEvent: {}
+[10.348822] (-) TimerEvent: {}
+[10.449305] (-) TimerEvent: {}
+[10.549921] (-) TimerEvent: {}
+[10.598226] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable move_bot\x1b[0m\n'}
+[10.650118] (-) TimerEvent: {}
+[10.750608] (-) TimerEvent: {}
+[10.851111] (-) TimerEvent: {}
+[10.951655] (-) TimerEvent: {}
+[10.986315] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] Built target move_bot\n'}
+[11.006511] (41068_ignition_bringup) CommandEnded: {'returncode': 0}
+[11.007742] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'install'}
+[11.020732] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jarrel/ros2_ws/install/turtlesim/lib:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('OLDPWD', '/home/jarrel/git/RS1-Group5/41068_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '38244'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install:/home/jarrel/git/RoboticsStudio1/41068_ws/install:/home/jarrel/install:/home/jarrel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2009,unix/legion:/tmp/.ICE-unix/2009'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/05063cdc_ffc6_477e_8ea4_5fbdc3d8ddf7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4NK3C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.456'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/home/jarrel/git/RoboticsStudio1/41068_ws/install/41068_ignition_bringup:/home/jarrel/ros2_ws/install/week10_laser:/home/jarrel/ros2_ws/install/turtlesim:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jarrel/ros2_ws/install/drive_drone:/home/jarrel/ros2_ws/install/a3_support:/home/jarrel/ros2_ws/install/a3_skeleton:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jarrel/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/home/jarrel/git/RoboticsStudio1/41068_ws/install/41068_ignition_bringup:/home/jarrel/ros2_ws/install/week10_laser:/home/jarrel/ros2_ws/install/turtlesim:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jarrel/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jarrel/ros2_ws/install/drive_drone:/home/jarrel/ros2_ws/install/a3_support:/home/jarrel/ros2_ws/install/a3_skeleton:/opt/ros/humble')]), 'shell': False}
+[11.028800] (41068_ignition_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.029052] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config\n'}
+[11.029144] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch\n'}
+[11.029206] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models\n'}
+[11.029271] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain\n'}
+[11.029332] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials\n'}
+[11.029409] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures\n'}
+[11.029469] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm\n'}
+[11.029527] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build\n'}
+[11.029580] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log\n'}
+[11.029628] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest\n'}
+[11.029677] (41068_ignition_bringup) StderrLine: {'line': b"\x1b[0mCMake Error: failed to create symbolic link '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest': File exists\x1b[0m\n"}
+[11.029738] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at cmake_install.cmake:66 (file):\n'}
+[11.029793] (41068_ignition_bringup) StderrLine: {'line': b'  file INSTALL cannot duplicate symlink\n'}
+[11.029853] (41068_ignition_bringup) StderrLine: {'line': b'  "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/models/forest_terrain/log/latest"\n'}
+[11.029925] (41068_ignition_bringup) StderrLine: {'line': b'  at\n'}
+[11.029997] (41068_ignition_bringup) StderrLine: {'line': b'  "/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest":\n'}
+[11.030064] (41068_ignition_bringup) StderrLine: {'line': b'  File exists.\n'}
+[11.030137] (41068_ignition_bringup) StderrLine: {'line': b'\n'}
+[11.030212] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[11.031472] (41068_ignition_bringup) CommandEnded: {'returncode': 1}
+[11.052600] (-) TimerEvent: {}
+[11.055862] (41068_ignition_bringup) JobEnded: {'identifier': '41068_ignition_bringup', 'rc': 1}
+[11.066879] (-) EventReactorShutdown: {}

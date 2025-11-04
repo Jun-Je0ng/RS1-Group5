@@ -17,32 +17,17 @@ find_package(std_msgs REQUIRED)
 add_library(controller src/controller.cpp src/skidsteer.cpp)
 ament_target_dependencies(controller rclcpp geometry_msgs)
 
-
-# Find OpenCV using pkg-config as a fallback
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(OpenCV REQUIRED opencv4)
-
 # Executable for Lidar Sensing Node
 add_executable(lidar_sensing_node
   src/lidar_sensing_node.cpp
-  src/main.cpp
+  src/main.cpp  # Use the main.cpp specific to lidar_sensing_node
 )
-ament_target_dependencies(lidar_sensing_node
-  rclcpp
-  sensor_msgs
-  std_msgs
-)
+ament_target_dependencies(lidar_sensing_node rclcpp sensor_msgs std_msgs)
 target_include_directories(lidar_sensing_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
-  /usr/include/opencv4  # Explicit include path
-  ${OpenCV_INCLUDE_DIRS}
 )
-target_link_libraries(lidar_sensing_node
-  ${OpenCV_LIBRARIES}  # Use pkg-config result
-  -lopencv_core
-  -lopencv_imgproc
-)
+
 # Executable for MoveBot
 add_executable(move_bot src/main_move_bot.cpp)  # Note: This might need adjustment if main.cpp is reused
 target_link_libraries(move_bot controller)
