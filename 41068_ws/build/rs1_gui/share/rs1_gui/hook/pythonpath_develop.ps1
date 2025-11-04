@@ -1,3 +1,0 @@
-# generated from colcon_powershell/shell/template/hook_prepend_value.ps1.em
-
-colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX\/home/student/RS1-Group5/41068_ws/build/rs1_gui"

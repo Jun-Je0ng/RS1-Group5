@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000588] (-) JobUnselected: {'identifier': '41068_ignition_bringup'}
-[0.000709] (-) JobUnselected: {'identifier': 'rs1_gui'}
-[0.000752] (-) JobUnselected: {'identifier': 'sensor_node_cpp'}
-[0.001009] (-) EventReactorShutdown: {}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>41068_ignition_bringup</name>
+  <version>0.0.1</version>
+  <description>Trail follower & teleop obstacle avoidance</description>
+
+  <maintainer email="you@uts.edu.au">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>OpenCV</depend>
+</package>
