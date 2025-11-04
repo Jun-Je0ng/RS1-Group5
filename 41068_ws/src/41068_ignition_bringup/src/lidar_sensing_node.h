@@ -1,9 +1,10 @@
-#ifndef LIDAR_SENSING_NODE_HPP
-#define LIDAR_SENSING_NODE_HPP
+#ifndef LIDAR_SENSING_NODE_H
+#define LIDAR_SENSING_NODE_H
 
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "std_msgs/msg/bool.hpp"
+#include <opencv2/opencv.hpp>
 
 class LidarSensingNode : public rclcpp::Node {
 public:
@@ -18,6 +19,7 @@ private:
 
     double distance_threshold_;
     int angle_range_deg_;
+    cv::Mat lidar_image_;
 };
 
-#endif // LIDAR_SENSING_NODE_HPP   
+#endif // LIDAR_SENSING_NODE_H

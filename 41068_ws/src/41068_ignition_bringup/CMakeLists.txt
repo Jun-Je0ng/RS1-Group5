@@ -31,6 +31,30 @@ target_include_directories(controller PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 
+# ---------- autonomous_trail_follower ----------
+add_executable(autonomous_trail_follower
+  src/autonomous_trail_follower.cpp
+)
+ament_target_dependencies(autonomous_trail_follower
+  rclcpp
+  geometry_msgs
+  std_msgs
+  sensor_msgs
+)
+target_include_directories(autonomous_trail_follower PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${OpenCV_INCLUDE_DIRS}
+)
+target_link_libraries(autonomous_trail_follower
+  ${OpenCV_LIBRARIES}
+  -lopencv_core
+  -lopencv_imgproc
+)
+install(TARGETS autonomous_trail_follower
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 # ---------- teleop_obstacle_avoid ----------
 add_executable(teleop_obstacle_avoid
   src/teleop_with_obstacle_avoidance.cpp
@@ -80,7 +104,8 @@ target_link_libraries(move_bot controller)
 install(TARGETS
   lidar_sensing_node
   move_bot
-  teleop_obstacle_avoid   # ← ADDED HERE
+  teleop_obstacle_avoid
+  autonomous_trail_follower   # ← ADDED HERE
   controller
   DESTINATION lib/${PROJECT_NAME}
 )

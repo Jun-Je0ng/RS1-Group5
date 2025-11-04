@@ -1,0 +1,68 @@
+[0.008s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup
+[0.066s] -- The C compiler identification is GNU 11.4.0
+[0.164s] -- The CXX compiler identification is GNU 11.4.0
+[0.178s] -- Detecting C compiler ABI info
+[0.237s] -- Detecting C compiler ABI info - done
+[0.243s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.243s] -- Detecting C compile features
+[0.244s] -- Detecting C compile features - done
+[0.246s] -- Detecting CXX compiler ABI info
+[0.309s] -- Detecting CXX compiler ABI info - done
+[0.316s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.316s] -- Detecting CXX compile features
+[0.316s] -- Detecting CXX compile features - done
+[0.319s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.444s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.491s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.517s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.554s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.558s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.568s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.579s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.597s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.633s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.635s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.707s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.729s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.767s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.775s] -- Looking for pthread.h
+[0.835s] -- Looking for pthread.h - found
+[0.835s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.895s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.896s] -- Found Threads: TRUE  
+[0.937s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.947s] -- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)
+[0.980s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.995s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.996s] -- Checking for module 'opencv4'
+[1.009s] --   Found opencv4, version 4.5.4
+[1.071s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.117s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.144s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.164s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.164s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/include>
+[1.164s] -- Configured cppcheck exclude dirs and/or files: 
+[1.185s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.185s] -- Configured cpplint exclude dirs and/or files: 
+[1.188s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.193s] -- Added test 'lint_cmake' to check CMake code style
+[1.195s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.235s] -- Added test 'uncrustify' to check C / C++ code style
+[1.235s] -- Configured uncrustify additional arguments: 
+[1.240s] -- Added test 'xmllint' to check XML markup files
+[1.241s] -- Configuring done
+[1.243s] [31mCMake Error at CMakeLists.txt:35 (add_executable):
+[1.243s]   Cannot find source file:
+[1.244s] 
+[1.244s]     src/autonomous_trail_follower.cpp
+[1.244s] 
+[1.244s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.244s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.244s] 
+[1.244s] [0m
+[1.244s] [31mCMake Error at CMakeLists.txt:35 (add_executable):
+[1.244s]   No SOURCES given to target: autonomous_trail_follower
+[1.244s] 
+[1.244s] [0m
+[1.244s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.252s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup

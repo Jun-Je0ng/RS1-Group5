@@ -41,51 +41,76 @@ private:
     cmd_vel_pub_->publish(msg);
   }
 
+  /* -------------------------------------------------------------
+     Non‑blocking single‑character keyboard input
+     ------------------------------------------------------------- */
   char getch() {
     char buf = 0;
-    struct termios old = {0};
+    struct termios old{};
     tcgetattr(0, &old);
-    old.c_lflag &= ~ICANON;
-    old.c_lflag &= ~ECHO;
-    old.c_cc[VMIN] = 1;
-    old.c_cc[VTIME] = 0;
-    tcsetattr(0, TCSANOW, &old);
+    struct termios raw = old;
+    raw.c_lflag &= ~static_cast<tcflag_t>(ICANON | ECHO);
+    raw.c_cc[VMIN] = 1;
+    raw.c_cc[VTIME] = 0;
+    tcsetattr(0, TCSANOW, &raw);
     read(0, &buf, 1);
-    old.c_lflag |= ICANON;
-    old.c_lflag |= ECHO;
     tcsetattr(0, TCSANOW, &old);
     return buf;
   }
 
   void timer_callback() {
-    if (obstacle_detected_) return;
+    if (obstacle_detected_) return;   // safety stop already sent
 
     char key = getch();
     auto msg = geometry_msgs::msg::Twist();
 
+    // Handle normal letters
     switch (key) {
-      case 'w': case 'W': case 65:  // Up arrow
+      case 'w': case 'W':
         msg.linear.x = linear_vel_;
         break;
-      case 's': case 'S': case 66:  // Down arrow
+      case 's': case 'S':
         msg.linear.x = -linear_vel_ * 0.5;
         break;
-      case 'a': case 'A': case 68:  // Left arrow
+      case 'a': case 'A':
         msg.angular.z = angular_vel_;
         break;
-      case 'd': case 'D': case 67:  // Right arrow
+      case 'd': case 'D':
         msg.angular.z = -angular_vel_;
         break;
-      case ' ':  // Space = emergency stop
+      case ' ':
         msg.linear.x = 0.0;
         msg.angular.z = 0.0;
         break;
       default:
-        return;
+        // Not a letter → check for arrow keys
+        if (key == 27 && read(0, &key, 1) == 1 && key == '[') {  // ESC [ sequence
+          if (read(0, &key, 1) == 1) {
+            switch (key) {
+              case 'A':  // Up
+                msg.linear.x = linear_vel_;
+                break;
+              case 'B':  // Down
+                msg.linear.x = -linear_vel_ * 0.5;
+                break;
+              case 'D':  // Left
+                msg.angular.z = angular_vel_;
+                break;
+              case 'C':  // Right
+                msg.angular.z = -angular_vel_;
+                break;
+            }
+          }
+        }
+        break;
     }
-    cmd_vel_pub_->publish(msg);
+
+    if (msg.linear.x != 0.0 || msg.angular.z != 0.0) {
+      cmd_vel_pub_->publish(msg);
+    }
   }
 
+  // Members
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr obstacle_sub_;
   rclcpp::TimerBase::SharedPtr timer_;
@@ -95,7 +120,7 @@ private:
 };
 
 /* -------------------------------------------------------------
-   MAIN – THIS WAS MISSING
+   MAIN
    ------------------------------------------------------------- */
 int main(int argc, char **argv) {
   rclcpp::init(argc, argv);

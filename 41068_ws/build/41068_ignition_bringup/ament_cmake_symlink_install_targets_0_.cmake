@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/teleop_obstacle_avoid" "TARGETS" "teleop_obstacle_avoid" "DESTINATION" "lib/41068_ignition_bringup")

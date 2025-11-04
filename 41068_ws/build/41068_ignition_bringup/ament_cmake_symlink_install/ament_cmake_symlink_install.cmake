@@ -310,11 +310,14 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "teleop_obstacle_avoid" "DESTINATION" "lib/41068_ignition_bringup")
+# install("TARGETS" "autonomous_trail_follower" "DESTINATION" "lib/41068_ignition_bringup")
 include("/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "lidar_sensing_node" "move_bot" "teleop_obstacle_avoid" "controller" "DESTINATION" "lib/41068_ignition_bringup")
+# install("TARGETS" "teleop_obstacle_avoid" "DESTINATION" "lib/41068_ignition_bringup")
 include("/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "lidar_sensing_node" "move_bot" "teleop_obstacle_avoid" "autonomous_trail_follower" "controller" "DESTINATION" "lib/41068_ignition_bringup")
+include("/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "config" "launch" "models" "urdf" "worlds" "urdf_drone" "DESTINATION" "share/41068_ignition_bringup")
 ament_cmake_symlink_install_directory("/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup" DIRECTORY "config" "launch" "models" "urdf" "worlds" "urdf_drone" "DESTINATION" "share/41068_ignition_bringup")
