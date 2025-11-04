@@ -18,6 +18,9 @@ from sensor_msgs.msg import LaserScan
 import time
 from nav2_msgs.action import NavigateToPose, NavigateThroughPoses
 
+from sensor_msgs.msg import PointCloud2
+from sensor_msgs_py import point_cloud2 as pc2  # ROS2 helper to decode PointCloud2
+
 
 # ---------- helpers ----------
 def yaw_to_quat(yaw: float) -> Quaternion:
@@ -167,11 +170,91 @@ class RosBackend(Node):
 
     def get_latest_bgr(self):
         return getattr(self, "_latest_bgr", None)
+    
+    # --- LiDAR subscription management ---
+    def start_lidar_sub(self, topic: str):
+        # kill any existing sub for lidar
+        try:
+            if hasattr(self, "_lidar_sub") and self._lidar_sub is not None:
+                self.destroy_subscription(self._lidar_sub)
+        except Exception:
+            pass
+        self._lidar_topic = topic
+        self._latest_scan_pts_xy = None  # Nx2 float array in meters (x,y)
+        self._lidar_sub = self.create_subscription(
+            LaserScan, topic, self._lidar_cb, 10
+        )
+
+    def _lidar_cb(self, msg: LaserScan):
+        # cache min range for your label (you already show this)
+        vals = [r for r in msg.ranges if r == r and np.isfinite(r)]
+        self.min_range = min(vals) if vals else float('inf')
+
+        # convert to XY points in laser frame
+        angle = msg.angle_min
+        inc = msg.angle_increment
+        ranges = np.asarray(msg.ranges, dtype=np.float32)
+
+        # mask invalid
+        valid = np.isfinite(ranges) & (ranges >= msg.range_min) & (ranges <= msg.range_max)
+        if not np.any(valid):
+            self._latest_scan_pts_xy = None
+            return
+
+        r = ranges[valid]
+        a = angle + inc * np.nonzero(valid)[0]
+        # polar -> cart
+        x = r * np.cos(a)
+        y = r * np.sin(a)
+        self._latest_scan_pts_xy = np.stack([x, y], axis=1)
+
+    def get_latest_scan_xy(self):
+        return getattr(self, "_latest_scan_pts_xy", None)
+    
+    def start_cloud_sub(self, topic: str):
+        try:
+            if hasattr(self, "_cloud_sub") and self._cloud_sub is not None:
+                self.destroy_subscription(self._cloud_sub)
+        except Exception:
+            pass
+
+        self._cloud_topic = topic
+        self._latest_cloud_xyz = None      # Nx3 (float32)
+        self._latest_cloud_intensity = None  # optional, Nx1
+        self._cloud_sub = self.create_subscription(
+            PointCloud2, topic, self._cloud_cb, 5
+        )
+
+    def _cloud_cb(self, msg: PointCloud2):
+        # Decode x,y,z (+ intensity if present) using ROS helper
+        has_intensity = any(f.name == "intensity" for f in msg.fields)
+        try:
+            if has_intensity:
+                pts = pc2.read_points(msg, field_names=("x", "y", "z", "intensity"), skip_nans=True)
+                xyz = []
+                inten = []
+                for x, y, z, i in pts:
+                    xyz.append((x, y, z))
+                    inten.append(i)
+                self._latest_cloud_xyz = np.asarray(xyz, dtype=np.float32) if xyz else None
+                self._latest_cloud_intensity = np.asarray(inten, dtype=np.float32) if inten else None
+            else:
+                pts = pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)
+                xyz = list(pts)
+                self._latest_cloud_xyz = np.asarray(xyz, dtype=np.float32) if xyz else None
+                self._latest_cloud_intensity = None
+        except Exception:
+            self._latest_cloud_xyz = None
+            self._latest_cloud_intensity = None
+
+    def get_latest_cloud(self):
+        # returns (xyz Nx3, intensity Nx1 or None)
+        return getattr(self, "_latest_cloud_xyz", None), getattr(self, "_latest_cloud_intensity", None)
 
 
 class CameraViewer(QtWidgets.QWidget):
     """Simple Qt widget that shows a ROS image topic in real-time."""
-    def __init__(self, node: RosBackend, default_topic="/camera/image_raw"):
+    def __init__(self, node: RosBackend, default_topic="/camera/image"):
         super().__init__()
         self.node = node
 
@@ -243,17 +326,302 @@ class CameraViewer(QtWidgets.QWidget):
                 self._fps_n = 0
 
 
+class LidarViewer(QtWidgets.QWidget):
+    """
+    Simple 2D LiDAR viewer using QPainter.
+    Origin at center; +x to the right, +y up. Points plotted in meters with a zoom.
+    """
+    def __init__(self, node: RosBackend, default_topic="/scan"):
+        super().__init__()
+        self.node = node
+        self._zoom = 60.0  # pixels per meter (bigger => zoom in)
+        self._max_points = 5000
+
+        # UI
+        v = QtWidgets.QVBoxLayout(self)
+        ctrl = QtWidgets.QHBoxLayout()
+        self.topic_edit = QtWidgets.QLineEdit(default_topic)
+        self.btn_set = QtWidgets.QPushButton("Subscribe")
+        self.zoom_slider = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal)
+        self.zoom_slider.setRange(10, 200)   # px/m
+        self.zoom_slider.setValue(int(self._zoom))
+        self.zoom_label = QtWidgets.QLabel(f"Zoom: {self._zoom:.0f} px/m")
+        ctrl.addWidget(QtWidgets.QLabel("LiDAR Topic:"))
+        ctrl.addWidget(self.topic_edit, 1)
+        ctrl.addWidget(self.btn_set)
+        ctrl.addStretch(1)
+        ctrl.addWidget(self.zoom_label)
+        ctrl.addWidget(self.zoom_slider)
+        v.addLayout(ctrl)
+
+        self.view = _LidarCanvas(self)
+        self.view.setMinimumHeight(250)
+        v.addWidget(self.view, 1)
+
+        self.btn_set.clicked.connect(self._apply_topic)
+        self.zoom_slider.valueChanged.connect(self._set_zoom)
+
+        # Start sub
+        self._apply_topic()
+
+        # Repaint timer
+        self._t = QtCore.QTimer(self)
+        self._t.timeout.connect(self._tick)
+        self._t.start(33)  # ~30 fps
+
+    def _apply_topic(self):
+        topic = self.topic_edit.text().strip()
+        if topic:
+            self.node.start_lidar_sub(topic)
+
+    def _set_zoom(self, v):
+        self._zoom = float(v)
+        self.zoom_label.setText(f"Zoom: {self._zoom:.0f} px/m")
+
+    def _tick(self):
+        # pull latest data; pass to canvas
+        pts = self.node.get_latest_scan_xy()
+        if pts is not None and len(pts) > self._max_points:
+            pts = pts[:: int(np.ceil(len(pts) / self._max_points))]
+        self.view.set_points(pts, self._zoom)
+        self.view.update()
+
+
+class _LidarCanvas(QtWidgets.QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self._pts = None
+        self._zoom = 60.0
+        self.setAutoFillBackground(True)
+        pal = self.palette()
+        pal.setColor(self.backgroundRole(), QtGui.QColor(17, 17, 17))
+        self.setPalette(pal)
+
+    def set_points(self, pts_xy: np.ndarray | None, zoom: float):
+        self._pts = pts_xy
+        self._zoom = zoom
+
+    def paintEvent(self, ev: QtGui.QPaintEvent):
+        painter = QtGui.QPainter(self)
+        painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing, True)
+
+        w = self.width()
+        h = self.height()
+        cx, cy = w / 2.0, h / 2.0
+
+        # draw grid
+        pen_grid = QtGui.QPen(QtGui.QColor(60, 60, 60))
+        pen_grid.setStyle(QtCore.Qt.PenStyle.DotLine)
+        painter.setPen(pen_grid)
+        # 1 m rings
+        max_r_pix = int(min(w, h) / 2) - 5
+        meters = int(max_r_pix / self._zoom)
+        for m in range(1, meters + 1):
+            r = m * self._zoom
+            painter.drawEllipse(QtCore.QPointF(cx, cy), r, r)
+
+        # axes
+        pen_axes = QtGui.QPen(QtGui.QColor(120, 120, 120))
+        painter.setPen(pen_axes)
+        painter.drawLine(0, cy, w, cy)
+        painter.drawLine(cx, 0, cx, h)
+
+        # robot center
+        painter.setBrush(QtGui.QColor(180, 180, 180))
+        painter.setPen(QtCore.Qt.PenStyle.NoPen)
+        painter.drawEllipse(QtCore.QPointF(cx, cy), 4, 4)
+
+        # points
+        if self._pts is not None and len(self._pts) > 0:
+            pen_pts = QtGui.QPen(QtGui.QColor(0, 220, 255))
+            pen_pts.setWidth(2)
+            painter.setPen(pen_pts)
+            # transform: meters -> pixels, y up -> screen y down
+            for x, y in self._pts:
+                sx = cx + x * self._zoom
+                sy = cy - y * self._zoom
+                painter.drawPoint(int(sx), int(sy))
+
+        painter.end()
+
+class PointCloudViewer(QtWidgets.QWidget):
+    """
+    Lightweight 2D viewer for PointCloud2.
+    Shows a projection (XY, XZ, or YZ), with zoom and topic controls.
+    Colors by intensity if available; otherwise a solid color.
+    """
+    def __init__(self, node: RosBackend, default_topic="/camera/depth/points", default_proj="XY"):
+        super().__init__()
+        self.node = node
+        self._zoom = 60.0               # pixels per meter
+        self._max_points = 20000        # cap for speed
+        self._proj = default_proj       # "XY" | "XZ" | "YZ"
+
+        v = QtWidgets.QVBoxLayout(self)
+
+        # Controls
+        ctrl = QtWidgets.QHBoxLayout()
+        self.topic_edit = QtWidgets.QLineEdit(default_topic)
+        self.btn_set = QtWidgets.QPushButton("Subscribe")
+        self.zoom_slider = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal)
+        self.zoom_slider.setRange(10, 300); self.zoom_slider.setValue(int(self._zoom))
+        self.zoom_label = QtWidgets.QLabel(f"Zoom: {self._zoom:.0f} px/m")
+        self.proj_combo = QtWidgets.QComboBox()
+        self.proj_combo.addItems(["XY", "XZ", "YZ"])
+        self.proj_combo.setCurrentText(self._proj)
+        ctrl.addWidget(QtWidgets.QLabel("Cloud Topic:"))
+        ctrl.addWidget(self.topic_edit, 1)
+        ctrl.addWidget(self.btn_set)
+        ctrl.addStretch(1)
+        ctrl.addWidget(QtWidgets.QLabel("Proj:"))
+        ctrl.addWidget(self.proj_combo)
+        ctrl.addWidget(self.zoom_label)
+        ctrl.addWidget(self.zoom_slider)
+        v.addLayout(ctrl)
+
+        # Canvas
+        self.view = _CloudCanvas(self)
+        self.view.setMinimumHeight(250)
+        v.addWidget(self.view, 1)
+
+        # Hooks
+        self.btn_set.clicked.connect(self._apply_topic)
+        self.zoom_slider.valueChanged.connect(self._set_zoom)
+        self.proj_combo.currentTextChanged.connect(self._set_proj)
+
+        # Start
+        self._apply_topic()
+
+        # Timer
+        self._t = QtCore.QTimer(self)
+        self._t.timeout.connect(self._tick)
+        self._t.start(33)
+
+    def _apply_topic(self):
+        topic = self.topic_edit.text().strip()
+        if topic:
+            self.node.start_cloud_sub(topic)
+
+    def _set_zoom(self, v):
+        self._zoom = float(v)
+        self.zoom_label.setText(f"Zoom: {self._zoom:.0f} px/m")
+
+    def _set_proj(self, p):
+        self._proj = p
+
+    def _tick(self):
+        xyz, intensity = self.node.get_latest_cloud()
+        if xyz is None or len(xyz) == 0:
+            self.view.set_points(None, None, self._proj, self._zoom)
+            self.view.update()
+            return
+
+        # Downsample if needed (uniform stride)
+        n = len(xyz)
+        if n > self._max_points:
+            step = int(np.ceil(n / self._max_points))
+            xyz = xyz[::step]
+            if intensity is not None:
+                intensity = intensity[::step]
+
+        self.view.set_points(xyz, intensity, self._proj, self._zoom)
+        self.view.update()
+
+
+class _CloudCanvas(QtWidgets.QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self._xyz = None
+        self._intensity = None
+        self._proj = "XY"
+        self._zoom = 60.0
+        self.setAutoFillBackground(True)
+        pal = self.palette()
+        pal.setColor(self.backgroundRole(), QtGui.QColor(17, 17, 17))
+        self.setPalette(pal)
+
+    def set_points(self, xyz: np.ndarray | None, intensity: np.ndarray | None, proj: str, zoom: float):
+        self._xyz = xyz
+        self._intensity = intensity
+        self._proj = proj
+        self._zoom = zoom
+
+    def paintEvent(self, ev: QtGui.QPaintEvent):
+        painter = QtGui.QPainter(self)
+        painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing, True)
+        w, h = self.width(), self.height()
+        cx, cy = w / 2.0, h / 2.0
+
+        # grid rings
+        pen_grid = QtGui.QPen(QtGui.QColor(60, 60, 60)); pen_grid.setStyle(QtCore.Qt.PenStyle.DotLine)
+        painter.setPen(pen_grid)
+        max_r_pix = int(min(w, h) / 2) - 5
+        meters = int(max_r_pix / self._zoom)
+        for m in range(1, meters + 1):
+            r = m * self._zoom
+            painter.drawEllipse(QtCore.QPointF(cx, cy), r, r)
+
+        # axes
+        pen_axes = QtGui.QPen(QtGui.QColor(120, 120, 120)); painter.setPen(pen_axes)
+        painter.drawLine(0, cy, w, cy)
+        painter.drawLine(cx, 0, cx, h)
+
+        # origin
+        painter.setBrush(QtGui.QColor(180, 180, 180))
+        painter.setPen(QtCore.Qt.PenStyle.NoPen)
+        painter.drawEllipse(QtCore.QPointF(cx, cy), 4, 4)
+
+        if self._xyz is not None and len(self._xyz) > 0:
+            # choose projection indices
+            if self._proj == "XY":
+                a, b = 0, 1   # x, y
+            elif self._proj == "XZ":
+                a, b = 0, 2   # x, z
+            else:  # "YZ"
+                a, b = 1, 2   # y, z
+
+            # intensity color mapping (simple grayscale)
+            if self._intensity is not None and len(self._intensity) == len(self._xyz):
+                i = self._intensity
+                # normalize to 0..255
+                if np.ptp(i) > 1e-6:
+                    i_norm = ((i - i.min()) / (i.max() - i.min()) * 255.0).astype(np.uint8)
+                else:
+                    i_norm = np.full_like(i, 200, dtype=np.uint8)
+                # draw
+                for (x, y, z), ii in zip(self._xyz, i_norm):
+                    sx = cx + self._xyz.dtype.type(self._xyz[:, a][0]).item().__class__(x if a==0 else (y if a==1 else z)) * self._zoom  # ensure float
+                    sy = cy - (self._xyz[:, b][0] if False else ( [x,y,z][b] )) * self._zoom  # placeholder, we’ll compute below (cleaner way below)
+                # Cleaner loop:
+                painter.setPen(QtGui.QPen(QtGui.QColor(0, 220, 255)))
+                for p, ii in zip(self._xyz, i_norm):
+                    sx = cx + float(p[a]) * self._zoom
+                    sy = cy - float(p[b]) * self._zoom
+                    painter.setPen(QtGui.QPen(QtGui.QColor(ii, ii, ii)))
+                    painter.drawPoint(int(sx), int(sy))
+            else:
+                # solid cyan
+                pen_pts = QtGui.QPen(QtGui.QColor(0, 220, 255)); pen_pts.setWidth(2)
+                painter.setPen(pen_pts)
+                for p in self._xyz:
+                    sx = cx + float(p[a]) * self._zoom
+                    sy = cy - float(p[b]) * self._zoom
+                    painter.drawPoint(int(sx), int(sy))
+
+        painter.end()
+
 
 class Gui(QtWidgets.QWidget):
     def __init__(self, node: RosBackend):
         super().__init__()
         self.node = node
         self.setWindowTitle('RS1 Waypoint GUI (Nav2)')
-        self.resize(1000, 600)
+        self.resize(1200, 700)
 
         # ----- LEFT: controls panel -----
         left = QtWidgets.QWidget()
         grid = QtWidgets.QGridLayout(left)
+        r = 0
 
         # Teleop
         self.lin_slider = self._slider(-200, 200, 0)
@@ -262,71 +630,76 @@ class Gui(QtWidgets.QWidget):
         self.ang_label = QtWidgets.QLabel('Angular: 0.00 rad/s')
         self.btn_zero  = QtWidgets.QPushButton('Zero Velocity')
 
-        # Single waypoint
-        self.x_in = self._dspin(-1e6, 1e6, 8.0, 0.01)
-        self.y_in = self._dspin(-1e6, 1e6, 62.0, 0.01)
-        self.yaw_in = self._dspin(-360, 360, 0.0, 0.1)
-        self.btn_send_wp = QtWidgets.QPushButton('Go To Pose')
-
-        # Multi-waypoint
-        self.path_edit = QtWidgets.QPlainTextEdit()
-        self.path_edit.setPlaceholderText(
-            "One waypoint per line: x,y,yaw_deg\n"
-            "Example:\n10.0, 62.0, 0\n15.5, 60.0, 90"
-        )
-        self.btn_send_path = QtWidgets.QPushButton('Go Through Poses')
-
-        # Readouts
-        self.pose_label = QtWidgets.QLabel('Pose: x=0.00, y=0.00, yaw=0.00°')
-        self.scan_label = QtWidgets.QLabel('Lidar min: ∞ m')
-        self.status     = QtWidgets.QLabel('Status: idle')
-
-        r = 0
         grid.addWidget(QtWidgets.QLabel('Teleop (optional)'), r, 0, 1, 6); r += 1
         grid.addWidget(self.lin_label, r, 0, 1, 2); grid.addWidget(self.lin_slider, r, 2, 1, 4); r += 1
         grid.addWidget(self.ang_label, r, 0, 1, 2); grid.addWidget(self.ang_slider, r, 2, 1, 4); r += 1
         grid.addWidget(self.btn_zero, r, 0, 1, 6); r += 1
 
+        # Single waypoint
+        self.x_in = self._dspin(-1e6, 1e6, 8.0, 0.01)
+        self.y_in = self._dspin(-1e6, 1e6, 62.0, 0.01)
+        self.yaw_in = self._dspin(-360, 360, 0.0, 0.1)
+        self.btn_send_wp = QtWidgets.QPushButton('Go To Pose')
         grid.addWidget(QtWidgets.QLabel('Single Goal (map frame)'), r, 0, 1, 6); r += 1
         grid.addWidget(QtWidgets.QLabel('x'), r, 0); grid.addWidget(self.x_in, r, 1)
         grid.addWidget(QtWidgets.QLabel('y'), r, 2); grid.addWidget(self.y_in, r, 3)
         grid.addWidget(QtWidgets.QLabel('yaw°'), r, 4); grid.addWidget(self.yaw_in, r, 5); r += 1
         grid.addWidget(self.btn_send_wp, r, 0, 1, 6); r += 1
 
-        grid.addWidget(QtWidgets.QLabel('Waypoints (x,y,yaw° per line)'), r, 0, 1, 6); r += 1
+        # Multi-waypoint
+        self.path_edit = QtWidgets.QPlainTextEdit()
+        self.path_edit.setPlaceholderText("x,y,yaw_deg per line")
+        self.btn_send_path = QtWidgets.QPushButton('Go Through Poses')
+        grid.addWidget(QtWidgets.QLabel('Waypoints'), r, 0, 1, 6); r += 1
         grid.addWidget(self.path_edit, r, 0, 1, 6); r += 1
         grid.addWidget(self.btn_send_path, r, 0, 1, 6); r += 1
 
+        # Readouts
+        self.pose_label = QtWidgets.QLabel('Pose: x=0.00, y=0.00, yaw=0.00°')
+        self.scan_label = QtWidgets.QLabel('Lidar min: ∞ m')
+        self.status     = QtWidgets.QLabel('Status: idle')
         grid.addWidget(self.pose_label, r, 0, 1, 6); r += 1
         grid.addWidget(self.scan_label, r, 0, 1, 6); r += 1
         grid.addWidget(self.status, r, 0, 1, 6); r += 1
 
-        # ----- RIGHT: tabs (Camera; optionally RViz if you added RvizEmbedder) -----
-        tabs = QtWidgets.QTabWidget()
+        # ----- RIGHT: Camera (top) + LiDAR (bottom) with a vertical splitter -----
+        right = QtWidgets.QSplitter(QtCore.Qt.Orientation.Vertical)
 
-        # Camera tab
-        cam_group = QtWidgets.QWidget()
-        cam_layout = QtWidgets.QVBoxLayout(cam_group)
-        self.cam = CameraViewer(self.node, default_topic="/camera/image_raw")
-        cam_layout.addWidget(self.cam, 1)
-        tabs.addTab(cam_group, "Camera")
+        # Camera
+        cam_group = QtWidgets.QGroupBox("Camera")
+        cam_v = QtWidgets.QVBoxLayout(cam_group)
+        self.cam = CameraViewer(self.node, default_topic="/camera/image")  # <- your new topic
+        cam_v.addWidget(self.cam, 1)
 
-        # If you previously added RvizEmbedder class, you can include:
-        # rviz_group = QtWidgets.QWidget()
-        # rviz_layout = QtWidgets.QVBoxLayout(rviz_group)
-        # self.rviz = RvizEmbedder(rviz_group)
-        # rviz_layout.addWidget(self.rviz, 1)
-        # tabs.addTab(rviz_group, "RViz")
+        # LiDAR
+        lidar_group = QtWidgets.QGroupBox("LiDAR")
+        lidar_v = QtWidgets.QVBoxLayout(lidar_group)
+        self.lidar = LidarViewer(self.node, default_topic=self.node.topics.scan_topic)  # usually '/scan'
+        lidar_v.addWidget(self.lidar, 1)
 
-        # ----- Splitter -----
-        splitter = QtWidgets.QSplitter(QtCore.Qt.Orientation.Horizontal)
-        splitter.addWidget(left)
-        splitter.addWidget(tabs)
-        splitter.setStretchFactor(0, 0)
-        splitter.setStretchFactor(1, 1)
+        # Point Cloud
+        cloud_group = QtWidgets.QGroupBox("Point Cloud")
+        cloud_v = QtWidgets.QVBoxLayout(cloud_group)
+        self.cloud = PointCloudViewer(self.node, default_topic="/camera/depth/points", default_proj="XY")
+        cloud_v.addWidget(self.cloud, 1)
+
+        right.addWidget(cam_group)
+        right.addWidget(lidar_group)
+        right.addWidget(cloud_group)
+        right.setSizes([350, 250, 250])  # initial heights (px); adjust as you like
+        right.setStretchFactor(0, 1)
+        right.setStretchFactor(1, 1)
+        right.setStretchFactor(2, 1)
+
+        # ----- Main horizontal splitter -----
+        main_split = QtWidgets.QSplitter(QtCore.Qt.Orientation.Horizontal)
+        main_split.addWidget(left)     # controls
+        main_split.addWidget(right)    # camera+lidar
+        main_split.setStretchFactor(0, 0)
+        main_split.setStretchFactor(1, 1)
 
         outer = QtWidgets.QVBoxLayout(self)
-        outer.addWidget(splitter, 1)
+        outer.addWidget(main_split, 1)
 
         # Signals
         self.lin_slider.valueChanged.connect(self._lin_changed)
@@ -343,6 +716,8 @@ class Gui(QtWidgets.QWidget):
         self.ui_timer = QtCore.QTimer(self)
         self.ui_timer.timeout.connect(self._refresh_ui)
         self.ui_timer.start(100)  # 10 Hz
+
+
 
     # ---- widgets helpers ----
     def _slider(self, mn, mx, val):
