@@ -4,6 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "std_msgs/msg/bool.hpp"
+#include <opencv2/opencv.hpp>
 
 class LidarSensingNode : public rclcpp::Node {
 public:
@@ -18,6 +19,7 @@ private:
 
     double distance_threshold_;
     int angle_range_deg_;
+    cv::Mat lidar_image_; // To store processed LiDAR data as an image
 };
 
-#endif // LIDAR_SENSING_NODE_HPP   
+#endif // LIDAR_SENSING_NODE_HPPy

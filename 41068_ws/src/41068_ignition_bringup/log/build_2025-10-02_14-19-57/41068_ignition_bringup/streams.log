@@ -1,0 +1,89 @@
+[0.009s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j32 -l32
+[0.024s] /usr/bin/cmake -S/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup -B/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup --check-build-system CMakeFiles/Makefile.cmake 0
+[0.032s] Re-run cmake file: Makefile older than: ../../CMakeLists.txt
+[0.035s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.126s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.133s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.159s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.161s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.165s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.171s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.179s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.200s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.200s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.274s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.307s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.316s] -- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)
+[0.343s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.356s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.391s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.402s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.425s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.425s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/include>
+[0.425s] -- Configured cppcheck exclude dirs and/or files: 
+[0.448s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.448s] -- Configured cpplint exclude dirs and/or files: 
+[0.450s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.456s] -- Added test 'lint_cmake' to check CMake code style
+[0.458s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.478s] -- Added test 'uncrustify' to check C / C++ code style
+[0.478s] -- Configured uncrustify additional arguments: 
+[0.480s] -- Added test 'xmllint' to check XML markup files
+[0.481s] -- Configuring done
+[0.491s] -- Generating done
+[0.494s] -- Build files have been written to: /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
+[0.499s] /usr/bin/cmake -E cmake_progress_start /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup//CMakeFiles/progress.marks
+[0.506s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[0.507s] gmake[1]: Entering directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.507s] /usr/bin/gmake  -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/depend
+[0.507s] /usr/bin/gmake  -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/depend
+[0.508s] gmake[2]: Entering directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.508s] cd /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/controller.dir/DependInfo.cmake --color=
+[0.509s] gmake[2]: Entering directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.509s] cd /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/lidar_sensing_node.dir/DependInfo.cmake --color=
+[0.514s] Dependencies file "CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o.d" is newer than depends file "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/lidar_sensing_node.dir/compiler_depend.internal".
+[0.515s] Dependencies file "CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o.d" is newer than depends file "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/lidar_sensing_node.dir/compiler_depend.internal".
+[0.515s] [35m[1mConsolidate compiler generated dependencies of target lidar_sensing_node[0m
+[0.515s] Dependencies file "CMakeFiles/controller.dir/src/controller.cpp.o.d" is newer than depends file "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/controller.dir/compiler_depend.internal".
+[0.516s] Dependencies file "CMakeFiles/controller.dir/src/skidsteer.cpp.o.d" is newer than depends file "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeFiles/controller.dir/compiler_depend.internal".
+[0.516s] [35m[1mConsolidate compiler generated dependencies of target controller[0m
+[0.518s] gmake[2]: Leaving directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.518s] /usr/bin/gmake  -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/build
+[0.519s] gmake[2]: Leaving directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.519s] /usr/bin/gmake  -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/build
+[0.520s] gmake[2]: Entering directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.525s] gmake[2]: Entering directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.526s] [ 12%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
+[0.527s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_msgs -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/controller.dir/src/skidsteer.cpp.o -MF CMakeFiles/controller.dir/src/skidsteer.cpp.o.d -o CMakeFiles/controller.dir/src/skidsteer.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.cpp
+[0.528s] [ 25%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[0.528s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_msgs -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/controller.dir/src/controller.cpp.o -MF CMakeFiles/controller.dir/src/controller.cpp.o.d -o CMakeFiles/controller.dir/src/controller.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.cpp
+[0.530s] [ 37%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
+[0.531s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/geometry_msgs -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o -MF CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o.d -o CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp
+[0.532s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o[0m
+[0.533s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/geometry_msgs -Wall -Wextra -Wpedantic -MD -MT CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o -MF CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o.d -o CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp
+[0.658s] In file included from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1[m[K:
+[0.658s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:7:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+[0.658s]     7 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+[0.658s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.658s] compilation terminated.
+[0.662s] In file included from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp:1[m[K:
+[0.662s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:7:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+[0.662s]     7 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+[0.662s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.662s] compilation terminated.
+[0.700s] gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:93: CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o] Error 1
+[0.700s] gmake[2]: *** Waiting for unfinished jobs....
+[0.700s] gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:79: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o] Error 1
+[0.700s] gmake[2]: Leaving directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.700s] gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/lidar_sensing_node.dir/all] Error 2
+[0.700s] gmake[1]: *** Waiting for unfinished jobs....
+[0.705s] [ 62%] [32m[1mLinking CXX static library libcontroller.a[0m
+[0.706s] /usr/bin/cmake -P CMakeFiles/controller.dir/cmake_clean_target.cmake
+[0.714s] /usr/bin/cmake -E cmake_link_script CMakeFiles/controller.dir/link.txt --verbose=1
+[0.718s] /usr/bin/ar qc libcontroller.a CMakeFiles/controller.dir/src/controller.cpp.o CMakeFiles/controller.dir/src/skidsteer.cpp.o
+[0.721s] /usr/bin/ranlib libcontroller.a
+[0.725s] gmake[2]: Leaving directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.730s] [ 62%] Built target controller
+[0.731s] gmake[1]: Leaving directory '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup'
+[0.732s] gmake: *** [Makefile:149: all] Error 2
+[0.735s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j32 -l32

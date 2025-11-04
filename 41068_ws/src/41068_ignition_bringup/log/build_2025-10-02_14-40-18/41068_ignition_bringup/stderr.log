@@ -1,0 +1,26 @@
+/usr/bin/ld: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o: in function `LidarSensingNode::LidarSensingNode()':
+lidar_sensing_node.cpp:(.text+0x1ea): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0xaa8): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o: in function `LidarSensingNode::~LidarSensingNode()':
+lidar_sensing_node.cpp:(.text+0xcc3): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o: in function `LidarSensingNode::lidar_callback(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > >)':
+lidar_sensing_node.cpp:(.text+0xf5f): undefined reference to `cv::Mat::Mat(int, int, int, cv::Scalar_<double> const&)'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0xf7f): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0xf8e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x10fc): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x1172): undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x11c7): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x124e): undefined reference to `cv::dilate(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x128e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x12c5): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x134c): undefined reference to `cv::erode(cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, cv::Point_<int>, int, int, cv::Scalar_<double> const&)'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x138c): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x17ca): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x17f8): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x1870): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: lidar_sensing_node.cpp:(.text+0x18b8): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o:lidar_sensing_node.cpp:(.text+0x1930): more undefined references to `cv::Mat::~Mat()' follow
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:194: lidar_sensing_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/lidar_sensing_node.dir/all] Error 2
+gmake: *** [Makefile:149: all] Error 2

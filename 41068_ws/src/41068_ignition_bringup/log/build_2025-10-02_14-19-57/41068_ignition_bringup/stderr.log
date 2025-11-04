@@ -1,0 +1,17 @@
+WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+In file included from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1[m[K:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:7:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    7 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp:1[m[K:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:7:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    7 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:93: CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:79: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/lidar_sensing_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:149: all] Error 2

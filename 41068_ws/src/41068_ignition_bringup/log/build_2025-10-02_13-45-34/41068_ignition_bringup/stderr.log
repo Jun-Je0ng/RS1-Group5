@@ -1,0 +1,59 @@
+WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:[m[K In member function ‘[01m[Kvoid LidarSensingNode::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:52:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmin(double&, __gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type&)[m[K’
+   52 |             min_distance = [01;31m[Kstd::min(min_distance, msg->ranges[i])[m[K;
+      |                            [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:4[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:230:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)[m[K’
+  230 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:230:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:52:36:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’})
+   52 |             min_distance = [01;36m[Kstd::min(min_distance, msg->ranges[i])[m[K;
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:4[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:278:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)[m[K’
+  278 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:278:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:52:36:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’})
+   52 |             min_distance = [01;36m[Kstd::min(min_distance, msg->ranges[i])[m[K;
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:4[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_algo.h:3449:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)[m[K’
+ 3449 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_algo.h:3449:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:52:36:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+   52 |             min_distance = [01;36m[Kstd::min(min_distance, msg->ranges[i])[m[K;
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.h:4[m[K,
+                 from [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_algo.h:3455:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)[m[K’
+ 3455 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_algo.h:3455:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/lidar_sensing_node.cpp:52:36:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+   52 |             min_distance = [01;36m[Kstd::min(min_distance, msg->ranges[i])[m[K;
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:76: CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/lidar_sensing_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

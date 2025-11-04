@@ -695,4 +695,10 @@ CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/controller.h
  /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/skidsteer.h
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
