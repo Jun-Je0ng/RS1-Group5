@@ -1,0 +1,12 @@
+twist_mux:
+  ros__parameters:
+    topics:
+      - name: manual
+        topic: /manual/cmd_vel
+        timeout: 0.5
+        priority: 100
+      - name: auto
+        topic: /auto/cmd_vel
+        timeout: 0.5
+        priority: 50
+    output_topic: /cmd_vel_3d
