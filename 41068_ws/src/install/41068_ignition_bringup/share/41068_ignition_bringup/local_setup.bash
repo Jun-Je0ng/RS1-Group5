@@ -1,1 +1,0 @@
-/home/rian/git/RS1-Group5/41068_ws/src/build/41068_ignition_bringup/ament_cmake_environment_hooks/local_setup.bash

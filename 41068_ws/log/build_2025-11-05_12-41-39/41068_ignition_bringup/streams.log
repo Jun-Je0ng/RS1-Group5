@@ -1,0 +1,68 @@
+[0.010s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j32 -l32
+[0.028s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.116s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.122s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.143s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.144s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.148s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.154s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.162s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.188s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.190s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.260s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.287s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.322s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.328s] -- Looking for pthread.h
+[0.410s] -- Looking for pthread.h - found
+[0.411s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.491s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.492s] -- Found Threads: TRUE  
+[0.528s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.535s] -- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)
+[0.563s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.578s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.590s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.590s] -- Checking for module 'opencv4'
+[0.605s] --   Found opencv4, version 4.5.4
+[0.673s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.711s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.721s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.723s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.723s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/include>
+[0.723s] -- Configured cppcheck exclude dirs and/or files: 
+[0.725s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.726s] -- Configured cpplint exclude dirs and/or files: 
+[0.726s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.727s] -- Added test 'lint_cmake' to check CMake code style
+[0.727s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.729s] -- Added test 'uncrustify' to check C / C++ code style
+[0.729s] -- Configured uncrustify additional arguments: 
+[0.729s] -- Added test 'xmllint' to check XML markup files
+[0.730s] -- Configuring done
+[0.748s] -- Generating done
+[0.755s] -- Build files have been written to: /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
+[0.787s] [  8%] [32mBuilding CXX object CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.o[0m
+[0.789s] [ 16%] [32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o[0m
+[0.789s] [ 25%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[0.791s] [ 41%] [32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o[0m
+[0.791s] [ 41%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o[0m
+[0.791s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
+[0.810s] [ 58%] [32m[1mLinking CXX executable teleop_obstacle_avoid[0m
+[0.810s] [ 66%] [32m[1mLinking CXX executable autonomous_trail_follower[0m
+[0.855s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.855s] (.text+0x1b): undefined reference to `main'
+[0.856s] collect2: error: ld returned 1 exit status
+[0.857s] gmake[2]: *** [CMakeFiles/teleop_obstacle_avoid.dir/build.make:167: teleop_obstacle_avoid] Error 1
+[0.858s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/teleop_obstacle_avoid.dir/all] Error 2
+[0.858s] gmake[1]: *** Waiting for unfinished jobs....
+[0.975s] [ 75%] [32m[1mLinking CXX static library libcontroller.a[0m
+[1.005s] [ 75%] Built target controller
+[1.047s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[1.047s] (.text+0x1b): undefined reference to `main'
+[1.049s] collect2: error: ld returned 1 exit status
+[1.050s] gmake[2]: *** [CMakeFiles/autonomous_trail_follower.dir/build.make:230: autonomous_trail_follower] Error 1
+[1.051s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/autonomous_trail_follower.dir/all] Error 2
+[6.255s] [ 83%] [32m[1mLinking CXX executable lidar_sensing_node[0m
+[6.584s] [ 83%] Built target lidar_sensing_node
+[6.585s] gmake: *** [Makefile:146: all] Error 2
+[6.587s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j32 -l32

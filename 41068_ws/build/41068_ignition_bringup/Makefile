@@ -211,6 +211,58 @@ controller/fast:
 .PHONY : controller/fast
 
 #=============================================================================
+# Target rules for targets named teleop_obstacle_avoid
+
+# Build rule for target.
+teleop_obstacle_avoid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_obstacle_avoid
+.PHONY : teleop_obstacle_avoid
+
+# fast build rule for target.
+teleop_obstacle_avoid/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/build
+.PHONY : teleop_obstacle_avoid/fast
+
+#=============================================================================
+# Target rules for targets named autonomous_trail_follower
+
+# Build rule for target.
+autonomous_trail_follower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 autonomous_trail_follower
+.PHONY : autonomous_trail_follower
+
+# fast build rule for target.
+autonomous_trail_follower/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/build
+.PHONY : autonomous_trail_follower/fast
+
+#=============================================================================
+# Target rules for targets named manual_trail_inspector
+
+# Build rule for target.
+manual_trail_inspector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manual_trail_inspector
+.PHONY : manual_trail_inspector
+
+# fast build rule for target.
+manual_trail_inspector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/build
+.PHONY : manual_trail_inspector/fast
+
+#=============================================================================
+# Target rules for targets named lidar_sensing_node
+
+# Build rule for target.
+lidar_sensing_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lidar_sensing_node
+.PHONY : lidar_sensing_node
+
+# fast build rule for target.
+lidar_sensing_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/build
+.PHONY : lidar_sensing_node/fast
+
+#=============================================================================
 # Target rules for targets named move_bot
 
 # Build rule for target.
@@ -222,6 +274,30 @@ move_bot: cmake_check_build_system
 move_bot/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/build
 .PHONY : move_bot/fast
+
+src/autonomous_trail_follower.o: src/autonomous_trail_follower.cpp.o
+.PHONY : src/autonomous_trail_follower.o
+
+# target to build an object file
+src/autonomous_trail_follower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o
+.PHONY : src/autonomous_trail_follower.cpp.o
+
+src/autonomous_trail_follower.i: src/autonomous_trail_follower.cpp.i
+.PHONY : src/autonomous_trail_follower.i
+
+# target to preprocess a source file
+src/autonomous_trail_follower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.i
+.PHONY : src/autonomous_trail_follower.cpp.i
+
+src/autonomous_trail_follower.s: src/autonomous_trail_follower.cpp.s
+.PHONY : src/autonomous_trail_follower.s
+
+# target to generate assembly for a file
+src/autonomous_trail_follower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.s
+.PHONY : src/autonomous_trail_follower.cpp.s
 
 src/controller.o: src/controller.cpp.o
 .PHONY : src/controller.o
@@ -247,12 +323,36 @@ src/controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
+src/lidar_sensing_node.o: src/lidar_sensing_node.cpp.o
+.PHONY : src/lidar_sensing_node.o
+
+# target to build an object file
+src/lidar_sensing_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o
+.PHONY : src/lidar_sensing_node.cpp.o
+
+src/lidar_sensing_node.i: src/lidar_sensing_node.cpp.i
+.PHONY : src/lidar_sensing_node.i
+
+# target to preprocess a source file
+src/lidar_sensing_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.i
+.PHONY : src/lidar_sensing_node.cpp.i
+
+src/lidar_sensing_node.s: src/lidar_sensing_node.cpp.s
+.PHONY : src/lidar_sensing_node.s
+
+# target to generate assembly for a file
+src/lidar_sensing_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.s
+.PHONY : src/lidar_sensing_node.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -260,7 +360,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -268,8 +368,56 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/main_move_bot.o: src/main_move_bot.cpp.o
+.PHONY : src/main_move_bot.o
+
+# target to build an object file
+src/main_move_bot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o
+.PHONY : src/main_move_bot.cpp.o
+
+src/main_move_bot.i: src/main_move_bot.cpp.i
+.PHONY : src/main_move_bot.i
+
+# target to preprocess a source file
+src/main_move_bot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i
+.PHONY : src/main_move_bot.cpp.i
+
+src/main_move_bot.s: src/main_move_bot.cpp.s
+.PHONY : src/main_move_bot.s
+
+# target to generate assembly for a file
+src/main_move_bot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_bot.dir/build.make CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s
+.PHONY : src/main_move_bot.cpp.s
+
+src/manual_trail_inspector.o: src/manual_trail_inspector.cpp.o
+.PHONY : src/manual_trail_inspector.o
+
+# target to build an object file
+src/manual_trail_inspector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.o
+.PHONY : src/manual_trail_inspector.cpp.o
+
+src/manual_trail_inspector.i: src/manual_trail_inspector.cpp.i
+.PHONY : src/manual_trail_inspector.i
+
+# target to preprocess a source file
+src/manual_trail_inspector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.i
+.PHONY : src/manual_trail_inspector.cpp.i
+
+src/manual_trail_inspector.s: src/manual_trail_inspector.cpp.s
+.PHONY : src/manual_trail_inspector.s
+
+# target to generate assembly for a file
+src/manual_trail_inspector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.s
+.PHONY : src/manual_trail_inspector.cpp.s
 
 src/skidsteer.o: src/skidsteer.cpp.o
 .PHONY : src/skidsteer.o
@@ -295,6 +443,30 @@ src/skidsteer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller.dir/build.make CMakeFiles/controller.dir/src/skidsteer.cpp.s
 .PHONY : src/skidsteer.cpp.s
 
+src/teleop_with_obstacle_avoidance.o: src/teleop_with_obstacle_avoidance.cpp.o
+.PHONY : src/teleop_with_obstacle_avoidance.o
+
+# target to build an object file
+src/teleop_with_obstacle_avoidance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.o
+.PHONY : src/teleop_with_obstacle_avoidance.cpp.o
+
+src/teleop_with_obstacle_avoidance.i: src/teleop_with_obstacle_avoidance.cpp.i
+.PHONY : src/teleop_with_obstacle_avoidance.i
+
+# target to preprocess a source file
+src/teleop_with_obstacle_avoidance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.i
+.PHONY : src/teleop_with_obstacle_avoidance.cpp.i
+
+src/teleop_with_obstacle_avoidance.s: src/teleop_with_obstacle_avoidance.cpp.s
+.PHONY : src/teleop_with_obstacle_avoidance.s
+
+# target to generate assembly for a file
+src/teleop_with_obstacle_avoidance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.s
+.PHONY : src/teleop_with_obstacle_avoidance.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -310,17 +482,36 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... autonomous_trail_follower"
 	@echo "... controller"
+	@echo "... lidar_sensing_node"
+	@echo "... manual_trail_inspector"
 	@echo "... move_bot"
+	@echo "... teleop_obstacle_avoid"
+	@echo "... src/autonomous_trail_follower.o"
+	@echo "... src/autonomous_trail_follower.i"
+	@echo "... src/autonomous_trail_follower.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/lidar_sensing_node.o"
+	@echo "... src/lidar_sensing_node.i"
+	@echo "... src/lidar_sensing_node.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/main_move_bot.o"
+	@echo "... src/main_move_bot.i"
+	@echo "... src/main_move_bot.s"
+	@echo "... src/manual_trail_inspector.o"
+	@echo "... src/manual_trail_inspector.i"
+	@echo "... src/manual_trail_inspector.s"
 	@echo "... src/skidsteer.o"
 	@echo "... src/skidsteer.i"
 	@echo "... src/skidsteer.s"
+	@echo "... src/teleop_with_obstacle_avoidance.o"
+	@echo "... src/teleop_with_obstacle_avoidance.i"
+	@echo "... src/teleop_with_obstacle_avoidance.s"
 .PHONY : help
 
 

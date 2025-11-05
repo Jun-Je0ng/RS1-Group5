@@ -69,28 +69,28 @@ include CMakeFiles/move_bot.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/move_bot.dir/flags.make
 
-CMakeFiles/move_bot.dir/src/main.cpp.o: CMakeFiles/move_bot.dir/flags.make
-CMakeFiles/move_bot.dir/src/main.cpp.o: /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp
-CMakeFiles/move_bot.dir/src/main.cpp.o: CMakeFiles/move_bot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/move_bot.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/move_bot.dir/src/main.cpp.o -MF CMakeFiles/move_bot.dir/src/main.cpp.o.d -o CMakeFiles/move_bot.dir/src/main.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o: CMakeFiles/move_bot.dir/flags.make
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o: /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o: CMakeFiles/move_bot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o -MF CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o.d -o CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o -c /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp
 
-CMakeFiles/move_bot.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/move_bot.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp > CMakeFiles/move_bot.dir/src/main.cpp.i
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp > CMakeFiles/move_bot.dir/src/main_move_bot.cpp.i
 
-CMakeFiles/move_bot.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/move_bot.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main.cpp -o CMakeFiles/move_bot.dir/src/main.cpp.s
+CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/main_move_bot.cpp -o CMakeFiles/move_bot.dir/src/main_move_bot.cpp.s
 
 # Object files for target move_bot
 move_bot_OBJECTS = \
-"CMakeFiles/move_bot.dir/src/main.cpp.o"
+"CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o"
 
 # External object files for target move_bot
 move_bot_EXTERNAL_OBJECTS =
 
-move_bot: CMakeFiles/move_bot.dir/src/main.cpp.o
+move_bot: CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o
 move_bot: CMakeFiles/move_bot.dir/build.make
 move_bot: libcontroller.a
 move_bot: /opt/ros/humble/lib/librclcpp.so
@@ -153,10 +153,10 @@ move_bot: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 move_bot: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 move_bot: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 move_bot: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-move_bot: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 move_bot: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-move_bot: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 move_bot: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+move_bot: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+move_bot: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 move_bot: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 move_bot: /opt/ros/humble/lib/librosidl_typesupport_c.so
 move_bot: /opt/ros/humble/lib/librcpputils.so

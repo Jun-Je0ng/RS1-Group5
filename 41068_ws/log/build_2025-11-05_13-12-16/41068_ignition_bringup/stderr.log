@@ -1,0 +1,11 @@
+WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In constructor ‘[01m[KAutonomousTrailFollower::AutonomousTrailFollower()[m[K’:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:133:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KAutonomousTrailFollower::angular_gain_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  133 |  double [01;35m[Kangular_gain_[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:131:7:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AutonomousTrailFollower::obstacle_detected_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  131 |  bool [01;35m[Kobstacle_detected_[m[K, trail_detected_;
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:14:2:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   14 |  [01;35m[KAutonomousTrailFollower[m[K()
+      |  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K

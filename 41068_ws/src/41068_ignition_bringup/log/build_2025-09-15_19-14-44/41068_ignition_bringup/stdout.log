@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target controller[0m
-[ 12%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o[0m
-[ 50%] Built target controller
-[ 62%] [32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o[0m
-[35m[1mConsolidate compiler generated dependencies of target move_bot[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/move_bot.dir/src/main_move_bot.cpp.o[0m
-[ 87%] [32m[1mLinking CXX executable move_bot[0m
-[ 87%] Built target move_bot

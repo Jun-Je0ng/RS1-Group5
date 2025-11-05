@@ -1,2 +1,0 @@
-[0mCMake Error: Parse error in cache file /home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/CMakeCache.txt on line 757. Offending entry: j/gi[0m
-WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.

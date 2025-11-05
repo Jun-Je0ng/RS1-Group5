@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000532] (41068_ignition_bringup) JobQueued: {'identifier': '41068_ignition_bringup', 'dependencies': OrderedDict()}
+[0.000655] (41068_ignition_bringup) JobStarted: {'identifier': '41068_ignition_bringup'}
+[0.007123] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'cmake'}
+[0.007765] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'build'}
+[0.008582] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', '--', '-j32', '-l32'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '9016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2056,unix/legion:/tmp/.ICE-unix/2056'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d961f23b_8ddc_406d_86ca_4d2b2bddfc74'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K7OIF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.149'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble')]), 'shell': False}
+[0.028084] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099833] (-) TimerEvent: {}
+[0.116851] (41068_ignition_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.122369] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.143519] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.145012] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.148819] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.154871] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.162687] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.188717] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.190540] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199892] (-) TimerEvent: {}
+[0.260078] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.287324] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.300048] (-) TimerEvent: {}
+[0.322572] (41068_ignition_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.328204] (41068_ignition_bringup) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.400160] (-) TimerEvent: {}
+[0.411072] (41068_ignition_bringup) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.411215] (41068_ignition_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.492053] (41068_ignition_bringup) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.492985] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.500255] (-) TimerEvent: {}
+[0.528207] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.536064] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ros_ign_interfaces: 0.244.20 (/opt/ros/humble/share/ros_ign_interfaces/cmake)\n'}
+[0.563236] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.579148] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.590275] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.591144] (41068_ignition_bringup) StdoutLine: {'line': b"-- Checking for module 'opencv4'\n"}
+[0.600297] (-) TimerEvent: {}
+[0.605212] (41068_ignition_bringup) StdoutLine: {'line': b'--   Found opencv4, version 4.5.4\n'}
+[0.673248] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.700444] (-) TimerEvent: {}
+[0.711703] (41068_ignition_bringup) StderrLine: {'line': b'WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[0.721725] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.723903] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.724037] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/include>\n'}
+[0.724077] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.726140] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.726231] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.726542] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.727263] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.727609] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.729604] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.729687] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.730066] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.730702] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.748720] (41068_ignition_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[0.755181] (41068_ignition_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup\n'}
+[0.787451] (41068_ignition_bringup) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.o\x1b[0m\n'}
+[0.789827] (41068_ignition_bringup) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o\x1b[0m\n'}
+[0.789998] (41068_ignition_bringup) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o\x1b[0m\n'}
+[0.791659] (41068_ignition_bringup) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o\x1b[0m\n'}
+[0.791811] (41068_ignition_bringup) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o\x1b[0m\n'}
+[0.791928] (41068_ignition_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.800556] (-) TimerEvent: {}
+[0.810784] (41068_ignition_bringup) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable teleop_obstacle_avoid\x1b[0m\n'}
+[0.810948] (41068_ignition_bringup) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable autonomous_trail_follower\x1b[0m\n'}
+[0.855057] (41068_ignition_bringup) StderrLine: {'line': b"/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n"}
+[0.855306] (41068_ignition_bringup) StderrLine: {'line': b"(.text+0x1b): undefined reference to `main'\n"}
+[0.856673] (41068_ignition_bringup) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[0.858042] (41068_ignition_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/teleop_obstacle_avoid.dir/build.make:167: teleop_obstacle_avoid] Error 1\n'}
+[0.858256] (41068_ignition_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/teleop_obstacle_avoid.dir/all] Error 2\n'}
+[0.858338] (41068_ignition_bringup) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.900667] (-) TimerEvent: {}
+[0.975614] (41068_ignition_bringup) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX static library libcontroller.a\x1b[0m\n'}
+[1.000763] (-) TimerEvent: {}
+[1.005752] (41068_ignition_bringup) StdoutLine: {'line': b'[ 75%] Built target controller\n'}
+[1.047688] (41068_ignition_bringup) StderrLine: {'line': b"/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n"}
+[1.047805] (41068_ignition_bringup) StderrLine: {'line': b"(.text+0x1b): undefined reference to `main'\n"}
+[1.049455] (41068_ignition_bringup) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[1.051131] (41068_ignition_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/autonomous_trail_follower.dir/build.make:230: autonomous_trail_follower] Error 1\n'}
+[1.051355] (41068_ignition_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/autonomous_trail_follower.dir/all] Error 2\n'}
+[1.100834] (-) TimerEvent: {}
+[1.201096] (-) TimerEvent: {}
+[1.301356] (-) TimerEvent: {}
+[1.401638] (-) TimerEvent: {}
+[1.501956] (-) TimerEvent: {}
+[1.602269] (-) TimerEvent: {}
+[1.702581] (-) TimerEvent: {}
+[1.802883] (-) TimerEvent: {}
+[1.903288] (-) TimerEvent: {}
+[2.003574] (-) TimerEvent: {}
+[2.103900] (-) TimerEvent: {}
+[2.204364] (-) TimerEvent: {}
+[2.304697] (-) TimerEvent: {}
+[2.405011] (-) TimerEvent: {}
+[2.505355] (-) TimerEvent: {}
+[2.605661] (-) TimerEvent: {}
+[2.706024] (-) TimerEvent: {}
+[2.806468] (-) TimerEvent: {}
+[2.906862] (-) TimerEvent: {}
+[3.007140] (-) TimerEvent: {}
+[3.107418] (-) TimerEvent: {}
+[3.207715] (-) TimerEvent: {}
+[3.308015] (-) TimerEvent: {}
+[3.408383] (-) TimerEvent: {}
+[3.508644] (-) TimerEvent: {}
+[3.608908] (-) TimerEvent: {}
+[3.709164] (-) TimerEvent: {}
+[3.809396] (-) TimerEvent: {}
+[3.909646] (-) TimerEvent: {}
+[4.009878] (-) TimerEvent: {}
+[4.110168] (-) TimerEvent: {}
+[4.210412] (-) TimerEvent: {}
+[4.310657] (-) TimerEvent: {}
+[4.410938] (-) TimerEvent: {}
+[4.511283] (-) TimerEvent: {}
+[4.611547] (-) TimerEvent: {}
+[4.711827] (-) TimerEvent: {}
+[4.812036] (-) TimerEvent: {}
+[4.912386] (-) TimerEvent: {}
+[5.012645] (-) TimerEvent: {}
+[5.112858] (-) TimerEvent: {}
+[5.213131] (-) TimerEvent: {}
+[5.313380] (-) TimerEvent: {}
+[5.413666] (-) TimerEvent: {}
+[5.513913] (-) TimerEvent: {}
+[5.614278] (-) TimerEvent: {}
+[5.714597] (-) TimerEvent: {}
+[5.814917] (-) TimerEvent: {}
+[5.915249] (-) TimerEvent: {}
+[6.015499] (-) TimerEvent: {}
+[6.115800] (-) TimerEvent: {}
+[6.216146] (-) TimerEvent: {}
+[6.255145] (41068_ignition_bringup) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable lidar_sensing_node\x1b[0m\n'}
+[6.316261] (-) TimerEvent: {}
+[6.416533] (-) TimerEvent: {}
+[6.516778] (-) TimerEvent: {}
+[6.584301] (41068_ignition_bringup) StdoutLine: {'line': b'[ 83%] Built target lidar_sensing_node\n'}
+[6.585411] (41068_ignition_bringup) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.587200] (41068_ignition_bringup) CommandEnded: {'returncode': 2}
+[6.598307] (41068_ignition_bringup) JobEnded: {'identifier': '41068_ignition_bringup', 'rc': 2}
+[6.609023] (-) EventReactorShutdown: {}

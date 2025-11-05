@@ -1,1 +1,0 @@
-/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/ament_cmake_environment_hooks/local_setup.bash

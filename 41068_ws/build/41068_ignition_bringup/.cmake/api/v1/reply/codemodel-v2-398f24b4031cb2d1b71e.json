@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-179689f2c0b12fce8e06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "41068_ignition_bringup",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "41068_ignition_bringup_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-41068_ignition_bringup_uninstall-5b94a12ed44913897b54.json",
+					"name" : "41068_ignition_bringup_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autonomous_trail_follower::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autonomous_trail_follower-9d1a9c7f87ed54866a04.json",
+					"name" : "autonomous_trail_follower",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller-3618b09817abedbfd986.json",
+					"name" : "controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_sensing_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_sensing_node-367fe07734c998cccef2.json",
+					"name" : "lidar_sensing_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manual_trail_inspector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manual_trail_inspector-c89e9d142b1421f139da.json",
+					"name" : "manual_trail_inspector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_bot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_bot-d4c09010492c40e5fa19.json",
+					"name" : "move_bot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_obstacle_avoid::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_obstacle_avoid-bfabec44dad6b6b283cf.json",
+					"name" : "teleop_obstacle_avoid",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ec38bbb322c8a636455f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup",
+		"source" : "/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
