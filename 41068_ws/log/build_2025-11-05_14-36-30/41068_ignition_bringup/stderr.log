@@ -1,0 +1,13 @@
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:[m[K In constructor ‘[01m[KWaypointManager::WaypointManager()[m[K’:
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:51:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KWP::yaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   51 |     [01;35m[K}[m[K;
+      |     [01;35m[K^[m[K
+[33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

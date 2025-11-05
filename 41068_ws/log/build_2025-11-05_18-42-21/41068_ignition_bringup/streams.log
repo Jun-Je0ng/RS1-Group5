@@ -1,0 +1,138 @@
+[0.010s] Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup -- -j22 -l22
+[0.035s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.157s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.163s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.187s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.189s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.194s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.201s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.212s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.247s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.248s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.265s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.315s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.328s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.350s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.391s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.449s] WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.466s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.483s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.483s] -- Configured cppcheck include dirs: 
+[0.483s] -- Configured cppcheck exclude dirs and/or files: 
+[0.501s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.502s] -- Configured cpplint exclude dirs and/or files: 
+[0.504s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.509s] -- Added test 'lint_cmake' to check CMake code style
+[0.511s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.530s] -- Added test 'uncrustify' to check C / C++ code style
+[0.530s] -- Configured uncrustify additional arguments: 
+[0.534s] -- Added test 'xmllint' to check XML markup files
+[0.535s] -- Configuring done
+[0.551s] -- Generating done
+[0.557s] -- Build files have been written to: /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup
+[0.587s] [35m[1mConsolidate compiler generated dependencies of target waypoint_manager[0m
+[0.587s] [35m[1mConsolidate compiler generated dependencies of target waypoint_follower[0m
+[0.598s] [ 16%] [32mBuilding CXX object CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o[0m
+[0.606s] [ 50%] Built target waypoint_follower
+[0.608s] [ 83%] Built target waypoint_manager
+[19.489s] [100%] [32m[1mLinking CXX executable map_waypoint_manager[0m
+[20.331s] [100%] Built target map_waypoint_manager
+[20.348s] Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup -- -j22 -l22
+[20.362s] Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup
+[20.373s] -- Install configuration: ""
+[20.374s] -- Execute custom install script
+[20.374s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_follower
+[20.375s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_manager
+[20.375s] -- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/map_waypoint_manager
+[20.389s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz
+[20.389s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml
+[20.389s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml
+[20.389s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/robot_localization.yaml
+[20.389s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/slam_params.yaml
+[20.390s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py
+[20.390s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py
+[20.390s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[20.390s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[20.390s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[20.391s]   Use the cmake_policy command to set the policy and suppress this warning.
+[20.391s] Call Stack (most recent call first):
+[20.391s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+[20.391s]   cmake_install.cmake:46 (include)
+[20.391s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[20.391s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png
+[20.391s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png
+[20.391s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png
+[20.391s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png
+[20.391s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.config
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.sdf
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/.built_by
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/COLCON_IGNORE
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/.colcon_install_layout
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/COLCON_IGNORE
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_ps1.py
+[20.392s] [0m
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_sh.py
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.bash
+[20.392s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.ps1
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.sh
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.zsh
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.bash
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.ps1
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.sh
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.zsh
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/COLCON_IGNORE
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/events.log
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/logger_all.log
+[20.393s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/events.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/logger_all.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/events.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/logger_all.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest/events.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest/logger_all.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build/events.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build/logger_all.log
+[20.394s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.dae
+[20.395s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm/forest_overhead.png
+[20.395s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbx
+[20.395s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/forest_overhead.png
+[20.396s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.config
+[20.396s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.sdf
+[20.396s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.config
+[20.396s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.sdf
+[20.396s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png
+[20.397s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png
+[20.397s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png
+[20.397s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.config
+[20.397s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.sdf
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.config
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.sdf
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/common_properties.urdf.xacro
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.gazebo.xacro
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.urdf.xacro
+[20.398s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/base_link.dae
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/bumper.dae
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_chassis.dae
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_plate.dae
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/wheel.dae
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/wheel.urdf.xacro
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/large_demo.sdf
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/click_to_yaml.py
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup
+[20.399s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.sh
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.dsv
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.sh
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.dsv
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.bash
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.sh
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.zsh
+[20.400s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.dsv
+[20.400s] -- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv
+[20.410s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/packages/41068_ignition_bringup
+[20.410s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig.cmake
+[20.410s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig-version.cmake
+[20.410s] -- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.xml
+[20.413s] Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup

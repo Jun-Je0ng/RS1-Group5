@@ -16,6 +16,10 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 # ros_ign_interfaces was in your old file; keep only if you still use it elsewhere
 # find_package(ros_ign_interfaces REQUIRED)
 
@@ -37,10 +41,22 @@ ament_target_dependencies(waypoint_manager
   std_msgs
 )
 
+add_executable(map_waypoint_manager src/map_waypoint_manager.cpp)
+ament_target_dependencies(map_waypoint_manager
+  rclcpp
+  geometry_msgs
+  std_msgs
+  visualization_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
+)
+
 # -------------------- Install -------------------------
 install(TARGETS
   waypoint_follower
   waypoint_manager
+  map_waypoint_manager
   DESTINATION lib/${PROJECT_NAME}
 )
 

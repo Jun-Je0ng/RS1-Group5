@@ -223,6 +223,19 @@ waypoint_manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/build
 .PHONY : waypoint_manager/fast
 
+#=============================================================================
+# Target rules for targets named map_waypoint_manager
+
+# Build rule for target.
+map_waypoint_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_waypoint_manager
+.PHONY : map_waypoint_manager
+
+# fast build rule for target.
+map_waypoint_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/build
+.PHONY : map_waypoint_manager/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -246,6 +259,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/map_waypoint_manager.o: src/map_waypoint_manager.cpp.o
+.PHONY : src/map_waypoint_manager.o
+
+# target to build an object file
+src/map_waypoint_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o
+.PHONY : src/map_waypoint_manager.cpp.o
+
+src/map_waypoint_manager.i: src/map_waypoint_manager.cpp.i
+.PHONY : src/map_waypoint_manager.i
+
+# target to preprocess a source file
+src/map_waypoint_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.i
+.PHONY : src/map_waypoint_manager.cpp.i
+
+src/map_waypoint_manager.s: src/map_waypoint_manager.cpp.s
+.PHONY : src/map_waypoint_manager.s
+
+# target to generate assembly for a file
+src/map_waypoint_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.s
+.PHONY : src/map_waypoint_manager.cpp.s
 
 src/waypoint_manager.o: src/waypoint_manager.cpp.o
 .PHONY : src/waypoint_manager.o
@@ -286,11 +323,15 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... map_waypoint_manager"
 	@echo "... waypoint_follower"
 	@echo "... waypoint_manager"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/map_waypoint_manager.o"
+	@echo "... src/map_waypoint_manager.i"
+	@echo "... src/map_waypoint_manager.s"
 	@echo "... src/waypoint_manager.o"
 	@echo "... src/waypoint_manager.i"
 	@echo "... src/waypoint_manager.s"

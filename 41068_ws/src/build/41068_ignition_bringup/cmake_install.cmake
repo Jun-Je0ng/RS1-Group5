@@ -83,14 +83,37 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup" TYPE EXECUTABLE FILES "/home/jun/git/Robotics-Studio-1/41068_ws/src/build/41068_ignition_bringup/map_waypoint_manager")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager"
+         OLD_RPATH "/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup/map_waypoint_manager")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/41068_ignition_bringup" TYPE DIRECTORY FILES
     "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/config"
     "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/launch"
     "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models"
     "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/urdf"
     "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/worlds"
-    "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/urdf_drone"
     )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/41068_ignition_bringup" TYPE PROGRAM FILES "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/scripts/click_to_yaml.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

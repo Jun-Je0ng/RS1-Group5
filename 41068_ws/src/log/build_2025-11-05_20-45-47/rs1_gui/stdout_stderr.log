@@ -1,0 +1,17 @@
+running egg_info
+creating ../build/rs1_gui/rs1_gui.egg-info
+writing ../build/rs1_gui/rs1_gui.egg-info/PKG-INFO
+writing dependency_links to ../build/rs1_gui/rs1_gui.egg-info/dependency_links.txt
+writing entry points to ../build/rs1_gui/rs1_gui.egg-info/entry_points.txt
+writing requirements to ../build/rs1_gui/rs1_gui.egg-info/requires.txt
+writing top-level names to ../build/rs1_gui/rs1_gui.egg-info/top_level.txt
+writing manifest file '../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+reading manifest file '../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+writing manifest file '../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/jun/git/Robotics-Studio-1/41068_ws/src/install/rs1_gui/share/ament_index
+creating /home/jun/git/Robotics-Studio-1/41068_ws/src/install/rs1_gui/share/ament_index/resource_index
+creating /home/jun/git/Robotics-Studio-1/41068_ws/src/install/rs1_gui/share/ament_index/resource_index/packages
+error: can't copy 'resource/rs1_gui': doesn't exist or not a regular file

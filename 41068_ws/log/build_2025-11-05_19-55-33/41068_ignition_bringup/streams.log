@@ -1,0 +1,25 @@
+[0.018s] Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup -- -j22 -l22
+[0.094s] [35m[1mConsolidate compiler generated dependencies of target map_waypoint_manager[0m
+[0.105s] [ 33%] Built target waypoint_manager
+[0.112s] [ 66%] Built target waypoint_follower
+[0.122s] [ 83%] [32mBuilding CXX object CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o[0m
+[4.621s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.621s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.621s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.621s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.621s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.623s]                  from [01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/map_waypoint_manager.cpp:10[m[K:
+[4.623s] [01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/map_waypoint_manager.cpp:[m[K In member function ‘[01m[Kvoid MapWaypointManager::publishCurrent()[m[K’:
+[4.623s] [01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/map_waypoint_manager.cpp:270:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kwp[m[K’ was not declared in this scope
+[4.623s]   270 |       idx_, [01;31m[Kwp[m[K.x, wp.y, wp.yaw);
+[4.623s]       |             [01;31m[K^~[m[K
+[10.677s] gmake[2]: *** [CMakeFiles/map_waypoint_manager.dir/build.make:76: CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o] Error 1
+[10.677s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/map_waypoint_manager.dir/all] Error 2
+[10.678s] gmake: *** [Makefile:146: all] Error 2
+[10.682s] Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup -- -j22 -l22

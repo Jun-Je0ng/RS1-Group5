@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition
 # The main recursive "all" target.
 all: CMakeFiles/waypoint_follower.dir/all
 all: CMakeFiles/waypoint_manager.dir/all
+all: CMakeFiles/map_waypoint_manager.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/41068_ignition_bringup_uninstall.dir/clean
 clean: CMakeFiles/waypoint_follower.dir/clean
 clean: CMakeFiles/waypoint_manager.dir/clean
+clean: CMakeFiles/map_waypoint_manager.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -137,7 +139,7 @@ CMakeFiles/41068_ignition_bringup_uninstall.dir/clean:
 CMakeFiles/waypoint_follower.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=1,2 "Built target waypoint_follower"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=3,4 "Built target waypoint_follower"
 .PHONY : CMakeFiles/waypoint_follower.dir/all
 
 # Build rule for subdir invocation for target.
@@ -163,7 +165,7 @@ CMakeFiles/waypoint_follower.dir/clean:
 CMakeFiles/waypoint_manager.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=3,4 "Built target waypoint_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=5,6 "Built target waypoint_manager"
 .PHONY : CMakeFiles/waypoint_manager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +183,32 @@ waypoint_manager: CMakeFiles/waypoint_manager.dir/rule
 CMakeFiles/waypoint_manager.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/clean
 .PHONY : CMakeFiles/waypoint_manager.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/map_waypoint_manager.dir
+
+# All Build rule for target.
+CMakeFiles/map_waypoint_manager.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles --progress-num=1,2 "Built target map_waypoint_manager"
+.PHONY : CMakeFiles/map_waypoint_manager.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/map_waypoint_manager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/map_waypoint_manager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/map_waypoint_manager.dir/rule
+
+# Convenience name for target.
+map_waypoint_manager: CMakeFiles/map_waypoint_manager.dir/rule
+.PHONY : map_waypoint_manager
+
+# clean rule for target.
+CMakeFiles/map_waypoint_manager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/clean
+.PHONY : CMakeFiles/map_waypoint_manager.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

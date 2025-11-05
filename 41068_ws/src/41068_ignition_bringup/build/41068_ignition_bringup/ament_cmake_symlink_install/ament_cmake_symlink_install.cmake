@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "waypoint_follower" "waypoint_manager" "DESTINATION" "lib/41068_ignition_bringup")
+# install("TARGETS" "waypoint_follower" "waypoint_manager" "map_waypoint_manager" "DESTINATION" "lib/41068_ignition_bringup")
 include("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "config" "launch" "models" "urdf" "worlds" "DESTINATION" "share/41068_ignition_bringup")

@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target map_waypoint_manager[0m
+[ 33%] Built target waypoint_manager
+[ 66%] Built target waypoint_follower
+[ 83%] [32mBuilding CXX object CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o[0m

@@ -1,0 +1,14 @@
+[1.568s] Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/rs1_gui': PYTHONPATH=/home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rs1_gui build --build-base /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/build install --record /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/install.log --single-version-externally-managed install_data
+[2.246s] running egg_info
+[2.248s] writing ../../build/rs1_gui/rs1_gui.egg-info/PKG-INFO
+[2.249s] writing dependency_links to ../../build/rs1_gui/rs1_gui.egg-info/dependency_links.txt
+[2.249s] writing entry points to ../../build/rs1_gui/rs1_gui.egg-info/entry_points.txt
+[2.250s] writing requirements to ../../build/rs1_gui/rs1_gui.egg-info/requires.txt
+[2.250s] writing top-level names to ../../build/rs1_gui/rs1_gui.egg-info/top_level.txt
+[2.253s] reading manifest file '../../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+[2.257s] writing manifest file '../../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+[2.257s] running build
+[2.257s] running install
+[2.258s] running install_data
+[2.259s] error: can't copy 'resource/rs1_gui': doesn't exist or not a regular file
+[2.339s] Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/rs1_gui' returned '1': PYTHONPATH=/home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rs1_gui build --build-base /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/build install --record /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/install.log --single-version-externally-managed install_data

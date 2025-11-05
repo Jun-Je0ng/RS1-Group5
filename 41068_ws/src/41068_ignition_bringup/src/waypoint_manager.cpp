@@ -45,7 +45,7 @@ public:
 
     // -------- Waypoints: (x, y, yaw_radians) --------
     waypoints_ = {
-      {24.401780025491, 107.215912404214, -1.508998389}
+      {15, 50}
       // you can add more here like:
       // , {x2, y2, yaw2}
     };
