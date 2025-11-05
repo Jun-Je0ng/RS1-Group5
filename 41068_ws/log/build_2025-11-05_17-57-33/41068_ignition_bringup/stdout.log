@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target autonomous_trail_follower[0m
+[ 21%] Built target controller
+[ 35%] Built target teleop_obstacle_avoid
+[ 50%] Built target manual_trail_inspector
+[ 71%] Built target lidar_sensing_node
+[ 78%] [32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o[0m
+[ 92%] Built target move_bot

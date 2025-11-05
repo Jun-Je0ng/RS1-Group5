@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j32 -l32
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target autonomous_trail_follower[0m
+[0.066s] [ 21%] Built target controller
+[0.069s] [ 35%] Built target teleop_obstacle_avoid
+[0.070s] [ 50%] Built target manual_trail_inspector
+[0.073s] [ 71%] Built target lidar_sensing_node
+[0.076s] [ 78%] [32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o[0m
+[0.091s] [ 92%] Built target move_bot
+[2.708s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In constructor ‘[01m[KAutonomousTrailFollower::AutonomousTrailFollower()[m[K’:
+[2.708s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:33:4:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KAutonomousTrailFollower[m[K’ does not have any field named ‘[01m[Kmax_trail_color_margin_[m[K’
+[2.708s]    33 |    [01;31m[Kmax_trail_color_margin_[m[K(declare_parameter("max_trail_color_margin", 10.0)),
+[2.708s]       |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.751s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In member function ‘[01m[Kvoid AutonomousTrailFollower::timer_callback()[m[K’:
+[2.751s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:147:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kover_limit[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.751s]   147 |       const bool [01;35m[Kover_limit[m[K = !color_within_bounds_;
+[2.751s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[2.762s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In member function ‘[01m[Kvoid AutonomousTrailFollower::update_trail_color_sample(const cv::Mat&, const cv::Mat&)[m[K’:
+[2.762s] [01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:238:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_trail_color_margin_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_trail_color_bgr_[m[K’?
+[2.762s]   238 |    const cv::Scalar warn_bgr(max_trail_color_bgr_[0] - [01;31m[Kmax_trail_color_margin_[m[K,
+[2.762s]       |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.762s]       |                                                        [32m[Kmax_trail_color_bgr_[m[K
+[5.904s] gmake[2]: *** [CMakeFiles/autonomous_trail_follower.dir/build.make:76: CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o] Error 1
+[5.904s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/autonomous_trail_follower.dir/all] Error 2
+[5.905s] gmake: *** [Makefile:146: all] Error 2
+[5.907s] Invoked command in '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup -- -j32 -l32

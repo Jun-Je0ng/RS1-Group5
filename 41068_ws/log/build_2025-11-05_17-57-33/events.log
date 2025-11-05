@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (41068_ignition_bringup) JobQueued: {'identifier': '41068_ignition_bringup', 'dependencies': OrderedDict()}
+[0.000256] (41068_ignition_bringup) JobStarted: {'identifier': '41068_ignition_bringup'}
+[0.007511] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'cmake'}
+[0.008034] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'build'}
+[0.008708] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', '--', '-j32', '-l32'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '9016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2056,unix/legion:/tmp/.ICE-unix/2056'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f19a0fde_a859_40c9_a6f2_1e0eaa4f00a7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K7OIF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.149'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble')]), 'shell': False}
+[0.058029] (41068_ignition_bringup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target autonomous_trail_follower\x1b[0m\n'}
+[0.066107] (41068_ignition_bringup) StdoutLine: {'line': b'[ 21%] Built target controller\n'}
+[0.068966] (41068_ignition_bringup) StdoutLine: {'line': b'[ 35%] Built target teleop_obstacle_avoid\n'}
+[0.069671] (41068_ignition_bringup) StdoutLine: {'line': b'[ 50%] Built target manual_trail_inspector\n'}
+[0.073479] (41068_ignition_bringup) StdoutLine: {'line': b'[ 71%] Built target lidar_sensing_node\n'}
+[0.076179] (41068_ignition_bringup) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o\x1b[0m\n'}
+[0.091448] (41068_ignition_bringup) StdoutLine: {'line': b'[ 92%] Built target move_bot\n'}
+[0.099217] (-) TimerEvent: {}
+[0.199613] (-) TimerEvent: {}
+[0.299975] (-) TimerEvent: {}
+[0.400429] (-) TimerEvent: {}
+[0.500717] (-) TimerEvent: {}
+[0.602189] (-) TimerEvent: {}
+[0.702580] (-) TimerEvent: {}
+[0.802997] (-) TimerEvent: {}
+[0.903394] (-) TimerEvent: {}
+[1.003800] (-) TimerEvent: {}
+[1.104164] (-) TimerEvent: {}
+[1.204498] (-) TimerEvent: {}
+[1.304843] (-) TimerEvent: {}
+[1.405176] (-) TimerEvent: {}
+[1.505603] (-) TimerEvent: {}
+[1.606030] (-) TimerEvent: {}
+[1.706412] (-) TimerEvent: {}
+[1.806783] (-) TimerEvent: {}
+[1.907134] (-) TimerEvent: {}
+[2.007502] (-) TimerEvent: {}
+[2.107911] (-) TimerEvent: {}
+[2.208304] (-) TimerEvent: {}
+[2.308662] (-) TimerEvent: {}
+[2.409000] (-) TimerEvent: {}
+[2.509368] (-) TimerEvent: {}
+[2.609738] (-) TimerEvent: {}
+[2.707641] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KAutonomousTrailFollower::AutonomousTrailFollower()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.707922] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:33:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KAutonomousTrailFollower\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kmax_trail_color_margin_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.708020] (41068_ignition_bringup) StderrLine: {'line': b'   33 |    \x1b[01;31m\x1b[Kmax_trail_color_margin_\x1b[m\x1b[K(declare_parameter("max_trail_color_margin", 10.0)),\n'}
+[2.708109] (41068_ignition_bringup) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.709870] (-) TimerEvent: {}
+[2.750836] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AutonomousTrailFollower::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.751011] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:147:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kover_limit\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.751066] (41068_ignition_bringup) StderrLine: {'line': b'  147 |       const bool \x1b[01;35m\x1b[Kover_limit\x1b[m\x1b[K = !color_within_bounds_;\n'}
+[2.751099] (41068_ignition_bringup) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762226] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AutonomousTrailFollower::update_trail_color_sample(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.762410] (41068_ignition_bringup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:238:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_trail_color_margin_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmax_trail_color_bgr_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.762469] (41068_ignition_bringup) StderrLine: {'line': b'  238 |    const cv::Scalar warn_bgr(max_trail_color_bgr_[0] - \x1b[01;31m\x1b[Kmax_trail_color_margin_\x1b[m\x1b[K,\n'}
+[2.762516] (41068_ignition_bringup) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762561] (41068_ignition_bringup) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[Kmax_trail_color_bgr_\x1b[m\x1b[K\n'}
+[2.809987] (-) TimerEvent: {}
+[2.910243] (-) TimerEvent: {}
+[3.010533] (-) TimerEvent: {}
+[3.110928] (-) TimerEvent: {}
+[3.211212] (-) TimerEvent: {}
+[3.313168] (-) TimerEvent: {}
+[3.413482] (-) TimerEvent: {}
+[3.513747] (-) TimerEvent: {}
+[3.614076] (-) TimerEvent: {}
+[3.714404] (-) TimerEvent: {}
+[3.814679] (-) TimerEvent: {}
+[3.914966] (-) TimerEvent: {}
+[4.015336] (-) TimerEvent: {}
+[4.115685] (-) TimerEvent: {}
+[4.216030] (-) TimerEvent: {}
+[4.316394] (-) TimerEvent: {}
+[4.416724] (-) TimerEvent: {}
+[4.517083] (-) TimerEvent: {}
+[4.617481] (-) TimerEvent: {}
+[4.717859] (-) TimerEvent: {}
+[4.818264] (-) TimerEvent: {}
+[4.918571] (-) TimerEvent: {}
+[5.018874] (-) TimerEvent: {}
+[5.119289] (-) TimerEvent: {}
+[5.219633] (-) TimerEvent: {}
+[5.320054] (-) TimerEvent: {}
+[5.420407] (-) TimerEvent: {}
+[5.520780] (-) TimerEvent: {}
+[5.621161] (-) TimerEvent: {}
+[5.721513] (-) TimerEvent: {}
+[5.821848] (-) TimerEvent: {}
+[5.904511] (41068_ignition_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/autonomous_trail_follower.dir/build.make:76: CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o] Error 1\n'}
+[5.904725] (41068_ignition_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/autonomous_trail_follower.dir/all] Error 2\n'}
+[5.904971] (41068_ignition_bringup) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.907248] (41068_ignition_bringup) CommandEnded: {'returncode': 2}
+[5.915382] (41068_ignition_bringup) JobEnded: {'identifier': '41068_ignition_bringup', 'rc': 2}
+[5.922041] (-) TimerEvent: {}
+[5.925751] (-) EventReactorShutdown: {}

@@ -1,0 +1,223 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (41068_ignition_bringup) JobQueued: {'identifier': '41068_ignition_bringup', 'dependencies': OrderedDict()}
+[0.001511] (41068_ignition_bringup) JobStarted: {'identifier': '41068_ignition_bringup'}
+[0.009268] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'cmake'}
+[0.010090] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'build'}
+[0.010906] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', '--', '-j32', '-l32'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '9016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2056,unix/legion:/tmp/.ICE-unix/2056'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f19a0fde_a859_40c9_a6f2_1e0eaa4f00a7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K7OIF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.149'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble')]), 'shell': False}
+[0.063541] (41068_ignition_bringup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target autonomous_trail_follower\x1b[0m\n'}
+[0.072504] (41068_ignition_bringup) StdoutLine: {'line': b'[ 21%] Built target controller\n'}
+[0.075798] (41068_ignition_bringup) StdoutLine: {'line': b'[ 35%] Built target manual_trail_inspector\n'}
+[0.076721] (41068_ignition_bringup) StdoutLine: {'line': b'[ 50%] Built target teleop_obstacle_avoid\n'}
+[0.078208] (41068_ignition_bringup) StdoutLine: {'line': b'[ 71%] Built target lidar_sensing_node\n'}
+[0.083512] (41068_ignition_bringup) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o\x1b[0m\n'}
+[0.099959] (-) TimerEvent: {}
+[0.102428] (41068_ignition_bringup) StdoutLine: {'line': b'[ 92%] Built target move_bot\n'}
+[0.200076] (-) TimerEvent: {}
+[0.300421] (-) TimerEvent: {}
+[0.400752] (-) TimerEvent: {}
+[0.501110] (-) TimerEvent: {}
+[0.601435] (-) TimerEvent: {}
+[0.701732] (-) TimerEvent: {}
+[0.802213] (-) TimerEvent: {}
+[0.902566] (-) TimerEvent: {}
+[1.002889] (-) TimerEvent: {}
+[1.103229] (-) TimerEvent: {}
+[1.203735] (-) TimerEvent: {}
+[1.304080] (-) TimerEvent: {}
+[1.404390] (-) TimerEvent: {}
+[1.504809] (-) TimerEvent: {}
+[1.605205] (-) TimerEvent: {}
+[1.705575] (-) TimerEvent: {}
+[1.805945] (-) TimerEvent: {}
+[1.906304] (-) TimerEvent: {}
+[2.006678] (-) TimerEvent: {}
+[2.107038] (-) TimerEvent: {}
+[2.207402] (-) TimerEvent: {}
+[2.307784] (-) TimerEvent: {}
+[2.408147] (-) TimerEvent: {}
+[2.508541] (-) TimerEvent: {}
+[2.608887] (-) TimerEvent: {}
+[2.709275] (-) TimerEvent: {}
+[2.809581] (-) TimerEvent: {}
+[2.910001] (-) TimerEvent: {}
+[3.010435] (-) TimerEvent: {}
+[3.110864] (-) TimerEvent: {}
+[3.211261] (-) TimerEvent: {}
+[3.311658] (-) TimerEvent: {}
+[3.412028] (-) TimerEvent: {}
+[3.512462] (-) TimerEvent: {}
+[3.612818] (-) TimerEvent: {}
+[3.713171] (-) TimerEvent: {}
+[3.813577] (-) TimerEvent: {}
+[3.913875] (-) TimerEvent: {}
+[4.014196] (-) TimerEvent: {}
+[4.114550] (-) TimerEvent: {}
+[4.214848] (-) TimerEvent: {}
+[4.315157] (-) TimerEvent: {}
+[4.415479] (-) TimerEvent: {}
+[4.515752] (-) TimerEvent: {}
+[4.616051] (-) TimerEvent: {}
+[4.716332] (-) TimerEvent: {}
+[4.816633] (-) TimerEvent: {}
+[4.916939] (-) TimerEvent: {}
+[5.017202] (-) TimerEvent: {}
+[5.117461] (-) TimerEvent: {}
+[5.217709] (-) TimerEvent: {}
+[5.317965] (-) TimerEvent: {}
+[5.418233] (-) TimerEvent: {}
+[5.518560] (-) TimerEvent: {}
+[5.618868] (-) TimerEvent: {}
+[5.719246] (-) TimerEvent: {}
+[5.819659] (-) TimerEvent: {}
+[5.920046] (-) TimerEvent: {}
+[6.020568] (-) TimerEvent: {}
+[6.120995] (-) TimerEvent: {}
+[6.221326] (-) TimerEvent: {}
+[6.321663] (-) TimerEvent: {}
+[6.422049] (-) TimerEvent: {}
+[6.522416] (-) TimerEvent: {}
+[6.622746] (-) TimerEvent: {}
+[6.723106] (-) TimerEvent: {}
+[6.823474] (-) TimerEvent: {}
+[6.923867] (-) TimerEvent: {}
+[7.024247] (-) TimerEvent: {}
+[7.124631] (-) TimerEvent: {}
+[7.224965] (-) TimerEvent: {}
+[7.325326] (-) TimerEvent: {}
+[7.425710] (-) TimerEvent: {}
+[7.526099] (-) TimerEvent: {}
+[7.626509] (-) TimerEvent: {}
+[7.726869] (-) TimerEvent: {}
+[7.827326] (-) TimerEvent: {}
+[7.927738] (-) TimerEvent: {}
+[8.028118] (-) TimerEvent: {}
+[8.128487] (-) TimerEvent: {}
+[8.228889] (-) TimerEvent: {}
+[8.329274] (-) TimerEvent: {}
+[8.429773] (-) TimerEvent: {}
+[8.530135] (-) TimerEvent: {}
+[8.630546] (-) TimerEvent: {}
+[8.731014] (-) TimerEvent: {}
+[8.831459] (-) TimerEvent: {}
+[8.931784] (-) TimerEvent: {}
+[9.032120] (-) TimerEvent: {}
+[9.132501] (-) TimerEvent: {}
+[9.233052] (-) TimerEvent: {}
+[9.333487] (-) TimerEvent: {}
+[9.433817] (-) TimerEvent: {}
+[9.534151] (-) TimerEvent: {}
+[9.634444] (-) TimerEvent: {}
+[9.734752] (-) TimerEvent: {}
+[9.835082] (-) TimerEvent: {}
+[9.935366] (-) TimerEvent: {}
+[10.035654] (-) TimerEvent: {}
+[10.135958] (-) TimerEvent: {}
+[10.236208] (-) TimerEvent: {}
+[10.336567] (-) TimerEvent: {}
+[10.436872] (-) TimerEvent: {}
+[10.537144] (-) TimerEvent: {}
+[10.637407] (-) TimerEvent: {}
+[10.737695] (-) TimerEvent: {}
+[10.838040] (-) TimerEvent: {}
+[10.938435] (-) TimerEvent: {}
+[11.038726] (-) TimerEvent: {}
+[11.139032] (-) TimerEvent: {}
+[11.239312] (-) TimerEvent: {}
+[11.300920] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable autonomous_trail_follower\x1b[0m\n'}
+[11.339413] (-) TimerEvent: {}
+[11.439773] (-) TimerEvent: {}
+[11.540093] (-) TimerEvent: {}
+[11.640340] (-) TimerEvent: {}
+[11.740652] (-) TimerEvent: {}
+[11.840924] (-) TimerEvent: {}
+[11.941232] (-) TimerEvent: {}
+[12.041532] (-) TimerEvent: {}
+[12.090675] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] Built target autonomous_trail_follower\n'}
+[12.103150] (41068_ignition_bringup) CommandEnded: {'returncode': 0}
+[12.103762] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'install'}
+[12.114260] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'], 'cwd': '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jarrel'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jarrel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '9016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jarrel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jarrel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/legion:@/tmp/.ICE-unix/2056,unix/legion:/tmp/.ICE-unix/2056'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f19a0fde_a859_40c9_a6f2_1e0eaa4f00a7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K7OIF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.149'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jarrel/git/RS1-Group5/41068_ws/build/41068_ignition_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup:/opt/ros/humble')]), 'shell': False}
+[12.122684] (41068_ignition_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.123153] (41068_ignition_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.123487] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/autonomous_trail_follower\n'}
+[12.123788] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/lidar_sensing_node\n'}
+[12.123902] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/move_bot\n'}
+[12.124050] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/teleop_obstacle_avoid\n'}
+[12.124346] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/autonomous_trail_follower\n'}
+[12.124447] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/manual_trail_inspector\n'}
+[12.124611] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/libcontroller.a\n'}
+[12.124890] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz\n'}
+[12.124960] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml\n'}
+[12.125121] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml\n'}
+[12.125203] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/robot_localization.yaml\n'}
+[12.125253] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/slam_params.yaml\n'}
+[12.125326] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py\n'}
+[12.125440] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition_drone.launch.py\n'}
+[12.125527] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py\n'}
+[12.125876] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png\n'}
+[12.125941] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png\n'}
+[12.126005] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png\n'}
+[12.126062] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png\n'}
+[12.126138] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.config\n'}
+[12.126201] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.sdf\n'}
+[12.126263] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.dae\n'}
+[12.126357] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm/forest_overhead.png\n'}
+[12.126434] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbx\n'}
+[12.126621] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/forest_overhead.png\n'}
+[12.126730] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.config\n'}
+[12.126807] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.sdf\n'}
+[12.126867] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.config\n'}
+[12.126911] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.sdf\n'}
+[12.126973] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png\n'}
+[12.127044] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png\n'}
+[12.127105] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png\n'}
+[12.127158] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.config\n'}
+[12.127227] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.sdf\n'}
+[12.127301] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png\n'}
+[12.127347] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.config\n'}
+[12.127421] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.sdf\n'}
+[12.127608] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/common_properties.urdf.xacro\n'}
+[12.127688] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.gazebo.xacro\n'}
+[12.127767] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.urdf.xacro\n'}
+[12.127838] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/base_link.dae\n'}
+[12.127906] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/bumper.dae\n'}
+[12.127971] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl\n'}
+[12.128036] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_chassis.dae\n'}
+[12.128102] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_plate.dae\n'}
+[12.128165] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/wheel.dae\n'}
+[12.128230] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/wheel.urdf.xacro\n'}
+[12.128376] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/large_demo.sdf\n'}
+[12.128438] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf\n'}
+[12.128677] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/common_properties.urdf.xacro\n'}
+[12.128753] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/hull.dae\n'}
+[12.128821] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fl.dae\n'}
+[12.128887] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fr.dae\n'}
+[12.128945] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rl.dae\n'}
+[12.129000] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rr.dae\n'}
+[12.129054] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.config\n'}
+[12.129109] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.sdf\n'}
+[12.129163] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.gazebo.xacro\n'}
+[12.129243] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.urdf.xacro\n'}
+[12.129297] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/1.png\n'}
+[12.129345] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/2.png\n'}
+[12.129396] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/3.png\n'}
+[12.129461] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/4.png\n'}
+[12.129530] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/5.png\n'}
+[12.129675] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup\n'}
+[12.129816] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup\n'}
+[12.129940] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.sh\n'}
+[12.130038] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.dsv\n'}
+[12.130137] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.sh\n'}
+[12.130235] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.dsv\n'}
+[12.130335] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.bash\n'}
+[12.130427] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.sh\n'}
+[12.130522] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.zsh\n'}
+[12.130610] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.dsv\n'}
+[12.130691] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv\n'}
+[12.139845] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/packages/41068_ignition_bringup\n'}
+[12.140320] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig.cmake\n'}
+[12.140429] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig-version.cmake\n'}
+[12.140509] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jarrel/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.xml\n'}
+[12.141634] (-) TimerEvent: {}
+[12.142379] (41068_ignition_bringup) CommandEnded: {'returncode': 0}
+[12.171757] (41068_ignition_bringup) JobEnded: {'identifier': '41068_ignition_bringup', 'rc': 0}
+[12.172516] (-) EventReactorShutdown: {}

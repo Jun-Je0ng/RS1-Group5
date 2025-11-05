@@ -9,27 +9,46 @@
 #include <chrono>
 #include <cmath>
 #include <string>
+#include <vector>
 
 
 class AutonomousTrailFollower : public rclcpp::Node {
 public:
  AutonomousTrailFollower()
  : Node("autonomous_trail_follower"),
-   linear_vel_(declare_parameter("linear_velocity", 0.25)),
-   angular_vel_(declare_parameter("angular_velocity", 1.0)),
+   linear_vel_(declare_parameter("linear_velocity", 1.5)),
+   angular_vel_(declare_parameter("angular_velocity", 1.5)),
    obstacle_detected_(false),
    trail_detected_(false),
    trail_centroid_x_(0.0),
    trail_centroid_y_(0.0),
-   angular_gain_(declare_parameter("angular_gain", 0.002)),
-   max_angular_speed_(declare_parameter("max_angular_speed", 1.5)),
+   angular_gain_(declare_parameter("angular_gain", 0.5)),
+   max_angular_speed_(declare_parameter("max_angular_speed", 2.0)),
    color_sample_window_px_(declare_parameter("color_sample_window_px", 40)),
    last_image_width_(0),
    has_color_sample_(false),
-   last_trail_color_bgr_(0.0, 0.0, 0.0, 0.0) {
+   last_trail_color_bgr_(0.0, 0.0, 0.0, 0.0),
+   rgb_log_interval_ms_(declare_parameter("rgb_log_interval_ms", 1000)),
+   max_trail_color_bgr_(0.0, 0.0, 0.0, 0.0),
+   max_trail_color_margin_(declare_parameter("max_trail_color_margin", 30.0)),
+   color_within_bounds_(true),
+   color_avoid_active_(false),
+   color_avoid_spin_direction_(1.0),
+   last_trail_error_(0.0) {
 
    const std::string image_topic =
        declare_parameter<std::string>("image_topic", "/camera/image");
+
+   const std::vector<double> max_rgb_default{120.0, 117.0, 52.0};
+   auto max_rgb =
+       declare_parameter<std::vector<double>>("max_trail_color_rgb", max_rgb_default);
+   if (max_rgb.size() != 3) {
+     RCLCPP_WARN(this->get_logger(),
+                 "Parameter 'max_trail_color_rgb' must have exactly 3 elements. Using defaults.");
+     max_rgb = max_rgb_default;
+   }
+   max_trail_color_bgr_ = cv::Scalar(max_rgb[2], max_rgb[1], max_rgb[0]);
+
    cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
    obstacle_sub_ = this->create_subscription<std_msgs::msg::Bool>(
        "/obstacle_detected", rclcpp::SystemDefaultsQoS(),
@@ -113,25 +132,44 @@ private:
      } else {
        msg.angular.z = 0.8;
      }
-   } else if (trail_detected_) {
-     const double image_center = last_image_width_ > 0 ? last_image_width_ / 2.0 : 320.0;
-     double error = trail_centroid_x_ - image_center;
-     msg.angular.z = std::clamp(-error * angular_gain_, -max_angular_speed_, max_angular_speed_);
-     const double error_ratio = std::min(1.0, std::abs(error) / std::max(image_center, 1.0));
-     msg.linear.x = std::clamp(linear_vel_ * (1.0 - error_ratio), 0.05, linear_vel_);
-     RCLCPP_INFO_THROTTLE(
-         this->get_logger(), *this->get_clock(), 2000,
-         "Following trail: error=%.1f angular=%.2f linear=%.2f", error, msg.angular.z,
-         msg.linear.x);
-     if (has_color_sample_) {
-       RCLCPP_INFO_THROTTLE(
-           this->get_logger(), *this->get_clock(), 3000,
-           "Trail colour sample (RGB): [%.0f, %.0f, %.0f]", last_trail_color_bgr_[2],
-           last_trail_color_bgr_[1], last_trail_color_bgr_[0]);
-     }
-   } else {
-     return;
-   }
+  } else if (trail_detected_) {
+    const double image_center = last_image_width_ > 0 ? last_image_width_ / 2.0 : 320.0;
+    double error = trail_centroid_x_ - image_center;
+    last_trail_error_ = error;
+    if (std::abs(error) > 1.0) {
+      color_avoid_spin_direction_ = error >= 0.0 ? 1.0 : -1.0;
+    }
+
+    if (color_avoid_active_) {
+      const double turn_speed = std::min(0.8, max_angular_speed_);
+      const double reverse_speed = std::min(0.5, linear_vel_ * 0.5);
+      msg.angular.z = color_avoid_spin_direction_ * turn_speed;
+      msg.linear.x = -reverse_speed;
+      RCLCPP_WARN_THROTTLE(
+          this->get_logger(), *this->get_clock(), 1500,
+          "Trail colour sample [RGB]=[%.0f, %.0f, %.0f] nearing/exceeding limit "
+          "[%.0f, %.0f, %.0f]; rerouting.",
+          last_trail_color_bgr_[2], last_trail_color_bgr_[1], last_trail_color_bgr_[0],
+          max_trail_color_bgr_[2], max_trail_color_bgr_[1], max_trail_color_bgr_[0]);
+    } else {
+      msg.angular.z = std::clamp(-error * angular_gain_, -max_angular_speed_, max_angular_speed_);
+      const double error_ratio = std::min(1.0, std::abs(error) / std::max(image_center, 1.0));
+      msg.linear.x = std::clamp(linear_vel_ * (1.0 - error_ratio), 0.05, linear_vel_);
+      RCLCPP_INFO_THROTTLE(
+          this->get_logger(), *this->get_clock(), 2000,
+          "Following trail: error=%.1f angular=%.2f linear=%.2f", error, msg.angular.z,
+          msg.linear.x);
+    }
+
+    if (has_color_sample_ && !color_avoid_active_) {
+      RCLCPP_INFO_THROTTLE(
+          this->get_logger(), *this->get_clock(), rgb_log_interval_ms_,
+          "Trail colour sample (RGB): [%.0f, %.0f, %.0f]", last_trail_color_bgr_[2],
+          last_trail_color_bgr_[1], last_trail_color_bgr_[0]);
+    }
+  } else {
+    return;
+  }
 
 
    cmd_vel_pub_->publish(msg);
@@ -153,8 +191,18 @@ private:
  int last_image_width_;
  bool has_color_sample_;
  cv::Scalar last_trail_color_bgr_;
+ int rgb_log_interval_ms_;
+ cv::Scalar max_trail_color_bgr_;
+ double max_trail_color_margin_;
+ bool color_within_bounds_;
+ bool color_avoid_active_;
+ double color_avoid_spin_direction_;
+ double last_trail_error_;
 
  void update_trail_color_sample(const cv::Mat &image, const cv::Mat &mask) {
+   color_within_bounds_ = false;
+   color_avoid_active_ = false;
+
    if (color_sample_window_px_ <= 0) {
      has_color_sample_ = false;
      return;
@@ -175,8 +223,8 @@ private:
    }
 
    const cv::Rect roi(x0, y0, x1 - x0, y1 - y0);
-   cv::Mat image_roi = image(roi);
-   cv::Mat mask_roi = mask(roi);
+   const cv::Mat image_roi = image(roi);
+   const cv::Mat mask_roi = mask(roi);
 
    const int sample_pixels = cv::countNonZero(mask_roi);
    if (sample_pixels == 0) {
@@ -188,6 +236,20 @@ private:
 
    last_trail_color_bgr_ = mean_bgr;
    has_color_sample_ = true;
+   const cv::Scalar warn_bgr(
+       std::max(max_trail_color_bgr_[0] - max_trail_color_margin_, 0.0),
+       std::max(max_trail_color_bgr_[1] - max_trail_color_margin_, 0.0),
+       std::max(max_trail_color_bgr_[2] - max_trail_color_margin_, 0.0));
+   color_within_bounds_ = mean_bgr[0] <= max_trail_color_bgr_[0] &&
+                          mean_bgr[1] <= max_trail_color_bgr_[1] &&
+                          mean_bgr[2] <= max_trail_color_bgr_[2];
+   const bool in_warning_band = mean_bgr[0] > warn_bgr[0] || mean_bgr[1] > warn_bgr[1] ||
+                                mean_bgr[2] > warn_bgr[2];
+   color_avoid_active_ = !color_within_bounds_ || in_warning_band;
+
+   if (color_avoid_active_ && std::abs(last_trail_error_) > 1.0) {
+     color_avoid_spin_direction_ = last_trail_error_ >= 0.0 ? 1.0 : -1.0;
+  }
  }
 };
 

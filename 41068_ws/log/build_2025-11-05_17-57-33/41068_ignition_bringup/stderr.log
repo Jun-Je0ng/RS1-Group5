@@ -1,0 +1,16 @@
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In constructor ‘[01m[KAutonomousTrailFollower::AutonomousTrailFollower()[m[K’:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:33:4:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KAutonomousTrailFollower[m[K’ does not have any field named ‘[01m[Kmax_trail_color_margin_[m[K’
+   33 |    [01;31m[Kmax_trail_color_margin_[m[K(declare_parameter("max_trail_color_margin", 10.0)),
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In member function ‘[01m[Kvoid AutonomousTrailFollower::timer_callback()[m[K’:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:147:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kover_limit[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  147 |       const bool [01;35m[Kover_limit[m[K = !color_within_bounds_;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In member function ‘[01m[Kvoid AutonomousTrailFollower::update_trail_color_sample(const cv::Mat&, const cv::Mat&)[m[K’:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:238:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_trail_color_margin_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_trail_color_bgr_[m[K’?
+  238 |    const cv::Scalar warn_bgr(max_trail_color_bgr_[0] - [01;31m[Kmax_trail_color_margin_[m[K,
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                        [32m[Kmax_trail_color_bgr_[m[K
+gmake[2]: *** [CMakeFiles/autonomous_trail_follower.dir/build.make:76: CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/autonomous_trail_follower.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
