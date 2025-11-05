@@ -1,3 +1,0 @@
-[console_scripts]
-gui_node = rs1_gui.gui_node:main
-

@@ -1,1 +1,0 @@
-/home/student/RS1-Group5/41068_ws/src/build/41068_ignition_bringup/ament_cmake_core/41068_ignition_bringupConfig.cmake

@@ -4,15 +4,19 @@
 #include "sensor_msgs/msg/image.hpp"
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
+#include <functional>
+#include <memory>
 #include <termios.h>
 #include <unistd.h>
 #include <chrono>
+#include <cmath>
 
 class AutonomousTrailFollower : public rclcpp::Node {
 public:
   AutonomousTrailFollower()
   : Node("autonomous_trail_follower"), linear_vel_(0.25), angular_vel_(1.0),
-    obstacle_detected_(false), trail_detected_(false) {
+    obstacle_detected_(false), trail_detected_(false),
+    trail_centroid_x_(0.0), trail_centroid_y_(0.0) {   // initialize centroids
 
     // Publishers & Subscribers
     cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
@@ -92,30 +96,20 @@ private:
     auto msg = geometry_msgs::msg::Twist();
 
     if (obstacle_detected_) {
-      // Obstacle → turn away from center while staying on trail
-      if (trail_detected_) {
-        double error = trail_centroid_x_ - (640 / 2);  // 640 = image width
-        msg.angular.z = -error * 0.002;  // P controller
-        msg.linear.x = 0.1;  // creep forward
-      } else {
-        msg.angular.z = 0.8;  // blind turn left
-      }
+      // If obstacle is detected, stop forward motion and turn in place to avoid.
+      msg.linear.x = 0.0;
+      msg.angular.z = angular_vel_;
     } else if (trail_detected_) {
-      // Normal trail following
-      double error = trail_centroid_x_ - (640 / 2);
-      msg.angular.z = -error * 0.002;
+      // Simple proportional controller to center on trail centroid.
+      // NOTE: this uses a nominal image center (320). Adjust if camera resolution differs.
+      const double image_center_x = 320.0;
+      double error = trail_centroid_x_ - image_center_x;
       msg.linear.x = linear_vel_;
+      msg.angular.z = -0.002 * error;  // gain tuned small to avoid oscillation
     } else {
-      // No trail → stop or teleop
-      char key = getch();
-      switch (key) {
-        case 'w': case 'W': case 65: msg.linear.x = linear_vel_; break;
-        case 's': case 'S': case 66: msg.linear.x = -linear_vel_ * 0.5; break;
-        case 'a': case 'A': case 68: msg.angular.z = angular_vel_; break;
-        case 'd': case 'D': case 67: msg.angular.z = -angular_vel_; break;
-        case ' ': msg.linear.x = 0.0; msg.angular.z = 0.0; break;
-        default: return;
-      }
+      // No trail and no obstacle -> stop
+      msg.linear.x = 0.0;
+      msg.angular.z = 0.0;
     }
 
     cmd_vel_pub_->publish(msg);
