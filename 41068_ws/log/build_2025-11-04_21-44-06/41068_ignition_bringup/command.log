@@ -1,0 +1,2 @@
+Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup -- -j22 -l22
+Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup -- -j22 -l22

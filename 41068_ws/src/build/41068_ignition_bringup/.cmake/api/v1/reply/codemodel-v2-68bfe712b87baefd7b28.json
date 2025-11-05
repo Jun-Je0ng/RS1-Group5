@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1e845ea3501035a1b8d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "41068_ignition_bringup",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "41068_ignition_bringup_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-41068_ignition_bringup_uninstall-1d14c1de3aa1014f4940.json",
+					"name" : "41068_ignition_bringup_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-04a8b820c4a326a0327a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waypoint_follower::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waypoint_follower-8487cb450d8b784663a0.json",
+					"name" : "waypoint_follower",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waypoint_manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waypoint_manager-a239db222b527d92c23f.json",
+					"name" : "waypoint_manager",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jun/git/Robotics-Studio-1/41068_ws/src/build/41068_ignition_bringup",
+		"source" : "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -7,7 +7,7 @@
         <geometry>
           <mesh>
             <uri>model://forest_terrain/materials/textures/Elevated_Terrain_Test.dae</uri>
-            <scale>80 80 80</scale>  <!-- make the mesh large enough -->
+            <scale>50 50 50</scale>  <!-- make the mesh large enough -->
           </mesh>
         </geometry>
       </collision>
@@ -17,7 +17,7 @@
         <geometry>
           <mesh>
             <uri>model://forest_terrain/materials/textures/Elevated_Terrain_Test.dae</uri>
-            <scale>80 80 80</scale>
+            <scale>50 50 50</scale>
           </mesh>
         </geometry>
 

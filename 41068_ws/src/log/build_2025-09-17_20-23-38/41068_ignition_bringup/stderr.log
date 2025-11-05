@@ -1,0 +1,7 @@
+WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[31mCMake Error at cmake_install.cmake:86 (file):
+  file INSTALL cannot find
+  "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/urdf_drone":
+  No such file or directory.
+
+[0m

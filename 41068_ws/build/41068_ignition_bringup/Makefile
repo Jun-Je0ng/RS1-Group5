@@ -197,6 +197,80 @@ uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/41068_ignition_bringup_uninstall.dir/build.make CMakeFiles/41068_ignition_bringup_uninstall.dir/build
 .PHONY : 41068_ignition_bringup_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named waypoint_follower
+
+# Build rule for target.
+waypoint_follower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_follower
+.PHONY : waypoint_follower
+
+# fast build rule for target.
+waypoint_follower/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/build
+.PHONY : waypoint_follower/fast
+
+#=============================================================================
+# Target rules for targets named waypoint_manager
+
+# Build rule for target.
+waypoint_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_manager
+.PHONY : waypoint_manager
+
+# fast build rule for target.
+waypoint_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/build
+.PHONY : waypoint_manager/fast
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/waypoint_manager.o: src/waypoint_manager.cpp.o
+.PHONY : src/waypoint_manager.o
+
+# target to build an object file
+src/waypoint_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.o
+.PHONY : src/waypoint_manager.cpp.o
+
+src/waypoint_manager.i: src/waypoint_manager.cpp.i
+.PHONY : src/waypoint_manager.i
+
+# target to preprocess a source file
+src/waypoint_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.i
+.PHONY : src/waypoint_manager.cpp.i
+
+src/waypoint_manager.s: src/waypoint_manager.cpp.s
+.PHONY : src/waypoint_manager.s
+
+# target to generate assembly for a file
+src/waypoint_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_manager.dir/build.make CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.s
+.PHONY : src/waypoint_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +286,14 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... waypoint_follower"
+	@echo "... waypoint_manager"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/waypoint_manager.o"
+	@echo "... src/waypoint_manager.i"
+	@echo "... src/waypoint_manager.s"
 .PHONY : help
 
 

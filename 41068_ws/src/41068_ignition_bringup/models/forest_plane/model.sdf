@@ -27,10 +27,7 @@
             </plane>
             </geometry>
             <material>
-                <!-- <diffuse>0.8 0.8 0.8 1</diffuse> -->
-                <ambient>1.0 1.0 1.0 1</ambient>
-                <diffuse>1.0 1.0 1.0 1</diffuse>
-                <!--<specular>1.0 1.0 1.0 1</specular>-->
+  
                 <pbr>
                     <metal>
                     <albedo_map>
@@ -43,3 +40,4 @@
     </link>
 </model>
 </sdf>
+

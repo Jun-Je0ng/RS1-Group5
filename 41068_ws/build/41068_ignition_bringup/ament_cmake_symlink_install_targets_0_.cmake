@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/waypoint_follower" "/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/waypoint_manager" "TARGETS" "waypoint_follower" "waypoint_manager" "DESTINATION" "lib/41068_ignition_bringup")

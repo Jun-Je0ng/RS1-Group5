@@ -1,0 +1,85 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
+[35m[1mConsolidate compiler generated dependencies of target waypoint_manager[0m
+[35m[1mConsolidate compiler generated dependencies of target waypoint_follower[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.o[0m
+[ 75%] Built target waypoint_follower
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:105:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  105 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:32:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   32 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:[m[K In constructor ‘[01m[KWaypointManager::WaypointManager()[m[K’:
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id_[m[K’ was not declared in this scope
+   36 |     [01;31m[Kframe_id_[m[K          = declare_parameter<std::string>("frame_id", "odom");
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krepublish_rate_hz_[m[K’ was not declared in this scope
+   37 |     [01;31m[Krepublish_rate_hz_[m[K = declare_parameter<double>("republish_rate_hz", 1.0);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope
+   41 |     [01;31m[Kwaypoints_[m[K = {
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:47:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K;[m[K’ token
+   47 |     }[01;31m[K;[m[K
+      |      [01;31m[K^[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:41:18:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   41 |     waypoints_ = [01;36m[K{[m[K
+      |                  [01;36m[K^[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+   50 |     [01;31m[Kpub_[m[K = create_publisher<geometry_msgs::msg::PoseStamped>("next_waypoint", 10);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+   51 |     [01;31m[Ksub_[m[K = create_subscription<std_msgs::msg::Bool>(
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:53:35:[m[K [01;31m[Kerror: [m[K‘[01m[KreachedCb[m[K’ is not a member of ‘[01m[KWaypointManager[m[K’
+   53 |       std::bind(&WaypointManager::[01;31m[KreachedCb[m[K, this, std::placeholders::_1));
+      |                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   57 |     [01;31m[Ktimer_[m[K = create_wall_timer(
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:59:35:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishCurrent[m[K’ is not a member of ‘[01m[KWaypointManager[m[K’
+   59 |       std::bind(&WaypointManager::[01;31m[KpublishCurrent[m[K, this));
+      |                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishCurrent[m[K’ was not declared in this scope
+   61 |     [01;31m[KpublishCurrent[m[K();  // publish the first goal immediately
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:[m[K At global scope:
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:105:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  105 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/waypoint_manager.cpp:11:40:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped makePoseQuat(double, double, double, double, const string&, const rclcpp::Time&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   11 | static geometry_msgs::msg::PoseStamped [01;35m[KmakePoseQuat[m[K(
+      |                                        [01;35m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/waypoint_manager.dir/build.make:76: CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/waypoint_manager.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
