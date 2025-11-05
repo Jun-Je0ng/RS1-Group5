@@ -16,6 +16,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(rcl_interfaces REQUIRED)
 
 # Library for controller and skidsteer
 add_library(controller src/controller.cpp src/skidsteer.cpp)
@@ -40,6 +41,11 @@ ament_target_dependencies(autonomous_trail_follower
   cv_bridge
   OpenCV
 )
+target_link_libraries(autonomous_trail_follower ${OpenCV_LIBS})
+target_include_directories(autonomous_trail_follower PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
 add_executable(teleop_with_obstacle_avoidance src/teleop_with_obstacle_avoidance.cpp)
 ament_target_dependencies(teleop_with_obstacle_avoidance
   rclcpp
@@ -47,35 +53,30 @@ ament_target_dependencies(teleop_with_obstacle_avoidance
   std_msgs
   sensor_msgs
 )
-target_link_libraries(autonomous_trail_follower ${OpenCV_INCLUDE_DIRS})
-target_include_directories(autonomous_trail_follower PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-)
 # Executable for MoveBot
 add_executable(move_bot src/main_move_bot.cpp)  # Note: This might need adjustment if main.cpp is reused
 target_link_libraries(move_bot controller)
 
-# Waypoint manager
-add_executable(waypoint_manager src/waypoint_manager.cpp)
-ament_target_dependencies(waypoint_manager rclcpp geometry_msgs std_msgs)
-
-# Command multiplexer (selects manual vs autonomy)
-add_executable(cmd_mux src/cmd_mux.cpp)
+# Waypoint and teleop helpers
+add_executable(cmd_mux src/waypoint/cmd_mux.cpp)
 ament_target_dependencies(cmd_mux rclcpp geometry_msgs std_msgs)
 
-# Manual driver (publishes constant lin_x / ang_z)
-add_executable(manual_driver src/manual_driver.cpp)
-ament_target_dependencies(manual_driver rclcpp geometry_msgs)
-add_executable(waypoint_follower src/mainway.cpp)
-ament_target_dependencies(waypoint_follower rclcpp geometry_msgs nav_msgs std_msgs)
+add_executable(manual_driver src/waypoint/manual_driver.cpp)
+ament_target_dependencies(manual_driver rclcpp geometry_msgs rcl_interfaces)
+
+add_executable(waypoint_manager src/waypoint/waypoint_manager.cpp)
+ament_target_dependencies(waypoint_manager rclcpp geometry_msgs std_msgs)
 
 # Install targets
-install(TARGETS move_bot lidar_sensing_node autonomous_trail_follower teleop_with_obstacle_avoidance controller
-  waypoint_follower
-  waypoint_manager
+install(TARGETS
+  move_bot
+  lidar_sensing_node
+  autonomous_trail_follower
+  teleop_with_obstacle_avoidance
+  controller
   cmd_mux
   manual_driver
+  waypoint_manager
   DESTINATION lib/${PROJECT_NAME}
 )
 

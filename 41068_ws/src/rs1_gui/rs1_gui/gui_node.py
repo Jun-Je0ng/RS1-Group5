@@ -17,7 +17,7 @@ from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 import time
 from nav2_msgs.action import NavigateToPose, NavigateThroughPoses
-
+from rclpy.task import Future
 from sensor_msgs.msg import PointCloud2
 from sensor_msgs_py import point_cloud2 as pc2  # ROS2 helper to decode PointCloud2
 
@@ -79,15 +79,22 @@ class RosBackend(Node):
         self.cmd_pub.publish(msg)
 
     # ---- Nav2 actions ----
-    async def ensure_servers(self):
-        # wait for action servers to be ready (poll)
-        if not self.nav_to_pose_ac.server_is_ready():
-            await self.nav_to_pose_ac.wait_for_server()
-        if not self.nav_through_poses_ac.server_is_ready():
-            await self.nav_through_poses_ac.wait_for_server()
+    def _poll_nav_servers(self):
+        if not self._nav_pose_ready and self.nav_to_pose_ac.server_is_ready():
+            self._nav_pose_ready = True
+            self.get_logger().info('NavigateToPose action server ready.')
+        if not self._nav_path_ready and self.nav_through_poses_ac.server_is_ready():
+            self._nav_path_ready = True
+            self.get_logger().info('NavigateThroughPoses action server ready.')
+        if self._nav_pose_ready and self._nav_path_ready:
+            # Both servers available; stop polling
+            self._nav_ready_timer.cancel()
 
-    async def send_nav_goal(self, x: float, y: float, yaw_deg: float):
-        await self.ensure_servers()
+    def send_nav_goal(self, x: float, y: float, yaw_deg: float) -> Future:
+        outer = Future()
+        if not self._nav_pose_ready:
+            outer.set_result((False, 'NavigateToPose action server not ready yet'))
+            return outer
         goal = NavigateToPose.Goal()
         goal.pose = PoseStamped()
         goal.pose.header.stamp = self.get_clock().now().to_msg()
@@ -96,16 +103,14 @@ class RosBackend(Node):
         goal.pose.pose.orientation = yaw_to_quat(math.radians(yaw_deg))
 
         send_future = self.nav_to_pose_ac.send_goal_async(goal, feedback_callback=self._nav_feedback)
-        goal_handle = await send_future
-        if not goal_handle.accepted:
-            return False, 'Goal rejected by server'
-        result = await goal_handle.get_result_async()
-        # result.status is an int enum; 4 means SUCCEEDED in rclpy action API
-        ok = (getattr(result, 'status', 0) == 4)
-        return ok, ('SUCCEEDED' if ok else f'Ended with status={result.status}')
+        send_future.add_done_callback(lambda fut: self._handle_nav_goal_response(fut, outer))
+        return outer
 
-    async def send_nav_through(self, pts: List[tuple]):
-        await self.ensure_servers()
+    def send_nav_through(self, pts: List[tuple]) -> Future:
+        outer = Future()
+        if not self._nav_path_ready:
+            outer.set_result((False, 'NavigateThroughPoses action server not ready yet'))
+            return outer
         g = NavigateThroughPoses.Goal()
         g.poses = []
         for (x, y, yaw_deg) in pts:
@@ -117,12 +122,33 @@ class RosBackend(Node):
             g.poses.append(ps)
 
         send_future = self.nav_through_poses_ac.send_goal_async(g, feedback_callback=self._nav_feedback)
-        goal_handle = await send_future
-        if not goal_handle.accepted:
-            return False, 'Path goal rejected by server'
-        result = await goal_handle.get_result_async()
-        ok = (getattr(result, 'status', 0) == 4)
-        return ok, ('SUCCEEDED' if ok else f'Ended with status={result.status}')
+        send_future.add_done_callback(lambda fut: self._handle_nav_goal_response(fut, outer))
+        return outer
+
+    def _handle_nav_goal_response(self, send_future, outer: Future):
+        try:
+            goal_handle = send_future.result()
+        except Exception as exc:  # pragma: no cover - defensive logging path
+            outer.set_result((False, f'Failed to send goal: {exc}'))
+            return
+
+        if goal_handle is None or not goal_handle.accepted:
+            outer.set_result((False, 'Goal rejected by server'))
+            return
+
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(lambda fut: self._handle_nav_result(fut, outer))
+
+    def _handle_nav_result(self, result_future, outer: Future):
+        try:
+            result = result_future.result()
+        except Exception as exc:  # pragma: no cover - defensive logging path
+            outer.set_result((False, f'Failed to get result: {exc}'))
+            return
+
+        status = getattr(result, 'status', 0)
+        ok = (status == 4)
+        outer.set_result((ok, 'SUCCEEDED' if ok else f'Ended with status={status}'))
 
     def _nav_feedback(self, feedback_msg):
         # Hook for live updates if you want (distance remaining, etc.)
