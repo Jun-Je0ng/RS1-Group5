@@ -45,8 +45,9 @@ ament_target_dependencies(teleop_with_obstacle_avoidance
   rclcpp
   geometry_msgs
   std_msgs
+  sensor_msgs
 )
-target_link_libraries(autonomous_trail_follower ${OpenCV_LIBS})
+target_link_libraries(autonomous_trail_follower ${OpenCV_INCLUDE_DIRS})
 target_include_directories(autonomous_trail_follower PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
