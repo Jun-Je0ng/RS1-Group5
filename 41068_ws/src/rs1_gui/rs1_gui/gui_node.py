@@ -334,7 +334,7 @@ class LidarViewer(QtWidgets.QWidget):
     def __init__(self, node: RosBackend, default_topic="/scan"):
         super().__init__()
         self.node = node
-        self._zoom = 60.0  # pixels per meter (bigger => zoom in)
+        self._zoom = 10.0  # pixels per meter (bigger => zoom in)
         self._max_points = 5000
 
         # UI
@@ -391,7 +391,7 @@ class _LidarCanvas(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self._pts = None
-        self._zoom = 60.0
+        self._zoom = 10.0
         self.setAutoFillBackground(True)
         pal = self.palette()
         pal.setColor(self.backgroundRole(), QtGui.QColor(17, 17, 17))
@@ -453,7 +453,7 @@ class PointCloudViewer(QtWidgets.QWidget):
     def __init__(self, node: RosBackend, default_topic="/camera/depth/points", default_proj="XY"):
         super().__init__()
         self.node = node
-        self._zoom = 60.0               # pixels per meter
+        self._zoom = 10.0               # pixels per meter
         self._max_points = 20000        # cap for speed
         self._proj = default_proj       # "XY" | "XZ" | "YZ"
 
@@ -534,7 +534,7 @@ class _CloudCanvas(QtWidgets.QWidget):
         self._xyz = None
         self._intensity = None
         self._proj = "XY"
-        self._zoom = 60.0
+        self._zoom = 10.0
         self.setAutoFillBackground(True)
         pal = self.palette()
         pal.setColor(self.backgroundRole(), QtGui.QColor(17, 17, 17))
@@ -617,10 +617,15 @@ class Gui(QtWidgets.QWidget):
         self.node = node
         self.setWindowTitle('RS1 Waypoint GUI (Nav2)')
         self.resize(1200, 700)
+        self._apply_styles()
 
         # ----- LEFT: controls panel -----
-        left = QtWidgets.QWidget()
+        left = QtWidgets.QFrame()
+        left.setObjectName('controlPanel')
         grid = QtWidgets.QGridLayout(left)
+        grid.setContentsMargins(18, 18, 18, 18)
+        grid.setHorizontalSpacing(12)
+        grid.setVerticalSpacing(10)
         r = 0
 
         # Teleop
@@ -648,6 +653,8 @@ class Gui(QtWidgets.QWidget):
 
         # Multi-waypoint
         self.path_edit = QtWidgets.QPlainTextEdit()
+        self.path_edit.setObjectName('pathEditor')
+        self.path_edit.setMinimumHeight(120)
         self.path_edit.setPlaceholderText("x,y,yaw_deg per line")
         self.btn_send_path = QtWidgets.QPushButton('Go Through Poses')
         grid.addWidget(QtWidgets.QLabel('Waypoints'), r, 0, 1, 6); r += 1
@@ -667,6 +674,7 @@ class Gui(QtWidgets.QWidget):
 
         # Camera
         cam_group = QtWidgets.QGroupBox("Camera")
+        cam_group.setObjectName('cameraGroup')
         cam_v = QtWidgets.QVBoxLayout(cam_group)
         self.cam = CameraViewer(self.node, default_topic="/camera/image")  # <- your new topic
         cam_v.addWidget(self.cam, 1)
@@ -718,6 +726,109 @@ class Gui(QtWidgets.QWidget):
         self.ui_timer.start(100)  # 10 Hz
 
 
+    def _apply_styles(self):
+        self.setAttribute(QtCore.Qt.WidgetAttribute.WA_StyledBackground, True)
+        pal = self.palette()
+        pal.setColor(QtGui.QPalette.ColorRole.Window, QtGui.QColor('#0f111a'))
+        pal.setColor(QtGui.QPalette.ColorRole.Base, QtGui.QColor('#161826'))
+        pal.setColor(QtGui.QPalette.ColorRole.Text, QtGui.QColor('#f0f3ff'))
+        pal.setColor(QtGui.QPalette.ColorRole.WindowText, QtGui.QColor('#f0f3ff'))
+        self.setPalette(pal)
+
+        self.setStyleSheet("""
+            QWidget {
+                font-family: 'Segoe UI', 'Ubuntu', sans-serif;
+                font-size: 13px;
+                color: #f0f3ff;
+            }
+            QFrame#controlPanel {
+                background-color: #161826;
+                border-radius: 18px;
+                border: 1px solid #22263a;
+            }
+            QGroupBox {
+                background-color: #161826;
+                border: 1px solid #22263a;
+                border-radius: 16px;
+                margin-top: 16px;
+                padding: 14px;
+            }
+            QGroupBox::title {
+                subcontrol-origin: margin;
+                left: 18px;
+                padding: 0 4px;
+                color: #8aa5ff;
+                font-weight: 600;
+            }
+            QLabel {
+                color: #e6e9ff;
+            }
+            QPushButton {
+                background-color: #2f6bff;
+                border-radius: 10px;
+                padding: 8px 14px;
+                border: none;
+                color: #ffffff;
+                font-weight: 600;
+            }
+            QPushButton:hover {
+                background-color: #4b83ff;
+            }
+            QPushButton:pressed {
+                background-color: #2556d6;
+            }
+            QPushButton:disabled {
+                background-color: #364a80;
+                color: #9caacf;
+            }
+            QLineEdit,
+            QPlainTextEdit,
+            QDoubleSpinBox,
+            QComboBox,
+            QTextEdit {
+                background-color: #1f2233;
+                border-radius: 10px;
+                border: 1px solid #2a3048;
+                padding: 6px 8px;
+                selection-background-color: #4b83ff;
+            }
+            QPlainTextEdit#pathEditor {
+                font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            }
+            QSlider::groove:horizontal {
+                height: 8px;
+                background: #2a3048;
+                border-radius: 4px;
+            }
+            QSlider::handle:horizontal {
+                width: 18px;
+                background: #2f6bff;
+                border: 2px solid #0f111a;
+                border-radius: 9px;
+                margin: -6px 0;
+            }
+            QScrollBar:vertical, QScrollBar:horizontal {
+                background: #1b1f2e;
+                border-radius: 8px;
+                margin: 4px;
+            }
+            QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+                background: #2f6bff;
+                border-radius: 8px;
+            }
+            QSplitter::handle {
+                background-color: #1f2233;
+                border-radius: 3px;
+            }
+            QSplitter::handle:horizontal {
+                height: 8px;
+                margin: 6px 12px;
+            }
+            QSplitter::handle:vertical {
+                width: 8px;
+                margin: 12px 6px;
+            }
+        """)
 
     # ---- widgets helpers ----
     def _slider(self, mn, mx, val):
@@ -807,3 +918,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

@@ -56,8 +56,26 @@ target_include_directories(autonomous_trail_follower PUBLIC
 add_executable(move_bot src/main_move_bot.cpp)  # Note: This might need adjustment if main.cpp is reused
 target_link_libraries(move_bot controller)
 
+# Waypoint manager
+add_executable(waypoint_manager src/waypoint_manager.cpp)
+ament_target_dependencies(waypoint_manager rclcpp geometry_msgs std_msgs)
+
+# Command multiplexer (selects manual vs autonomy)
+add_executable(cmd_mux src/cmd_mux.cpp)
+ament_target_dependencies(cmd_mux rclcpp geometry_msgs std_msgs)
+
+# Manual driver (publishes constant lin_x / ang_z)
+add_executable(manual_driver src/manual_driver.cpp)
+ament_target_dependencies(manual_driver rclcpp geometry_msgs)
+add_executable(waypoint_follower src/mainway.cpp)
+ament_target_dependencies(waypoint_follower rclcpp geometry_msgs nav_msgs std_msgs)
+
 # Install targets
 install(TARGETS move_bot lidar_sensing_node autonomous_trail_follower teleop_with_obstacle_avoidance controller
+  waypoint_follower
+  waypoint_manager
+  cmd_mux
+  manual_driver
   DESTINATION lib/${PROJECT_NAME}
 )
 
