@@ -1,0 +1,6 @@
+[ 21%] Built target controller
+[ 50%] Built target teleop_obstacle_avoid
+[ 50%] [32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o[0m
+[ 57%] Built target manual_trail_inspector
+[ 78%] Built target lidar_sensing_node
+[ 92%] Built target move_bot

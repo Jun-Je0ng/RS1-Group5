@@ -1,0 +1,19 @@
+[ 21%] Built target controller
+[ 50%] Built target teleop_obstacle_avoid
+[ 50%] [32mBuilding CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o[0m
+[ 57%] Built target manual_trail_inspector
+[ 78%] Built target lidar_sensing_node
+[ 92%] Built target move_bot
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:[m[K In constructor ‘[01m[KAutonomousTrailFollower::AutonomousTrailFollower()[m[K’:
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:35:4:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KAutonomousTrailFollower[m[K’ does not have any field named ‘[01m[Kcolor_ratio_improvement_margin_[m[K’
+   35 |    [01;31m[Kcolor_ratio_improvement_margin_[m[K(declare_parameter("color_ratio_improvement_margin", 0.05)),
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:40:4:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KAutonomousTrailFollower[m[K’ does not have any field named ‘[01m[Klast_color_ratio_[m[K’
+   40 |    [01;31m[Klast_color_ratio_[m[K(std::numeric_limits<double>::quiet_NaN()),
+      |    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jarrel/git/RS1-Group5/41068_ws/src/41068_ignition_bringup/src/autonomous_trail_follower.cpp:41:4:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KAutonomousTrailFollower[m[K’ does not have any field named ‘[01m[Kcolor_avoid_last_state_[m[K’
+   41 |    [01;31m[Kcolor_avoid_last_state_[m[K(false) {
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/autonomous_trail_follower.dir/build.make:76: CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/autonomous_trail_follower.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
