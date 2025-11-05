@@ -1,0 +1,191 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rian/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
+[ 37%] [32mBuilding CXX object CMakeFiles/cmd_mux.dir/src/cmd_mux.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/manual_driver.dir/src/manual_driver.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/waypoint_follower.dir/src/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/waypoint_manager.dir/src/waypoint_manager.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable manual_driver[0m
+[ 62%] Built target manual_driver
+[ 75%] [32m[1mLinking CXX executable waypoint_manager[0m
+[ 75%] Built target waypoint_manager
+[ 87%] [32m[1mLinking CXX executable cmd_mux[0m
+[ 87%] Built target cmd_mux
+[100%] [32m[1mLinking CXX executable waypoint_follower[0m
+[100%] Built target waypoint_follower
+-- Install configuration: ""
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_follower
+-- Set runtime path of "/home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_follower" to ""
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_manager
+-- Set runtime path of "/home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_manager" to ""
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/cmd_mux
+-- Set runtime path of "/home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/cmd_mux" to ""
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/manual_driver
+-- Set runtime path of "/home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/manual_driver" to ""
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/slam_params.yaml
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition_drone.launch.py
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.zsh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.ps1
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_ps1.py
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/.colcon_install_layout
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.sh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.ps1
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.zsh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.sh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.bash
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/COLCON_IGNORE
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.bash
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_sh.py
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/logger_all.log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/events.log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/COLCON_IGNORE
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/logger_all.log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/events.log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/logger_all.log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/events.log
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/.built_by
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/COLCON_IGNORE
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/forest_overhead.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm/forest_overhead.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbx
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.urdf.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/wheel.urdf.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_plate.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/bumper.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_chassis.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/wheel.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/base_link.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.gazebo.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/common_properties.urdf.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/large_demo.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fr.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/hull.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fl.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rl.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rr.dae
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/4.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/3.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/2.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/5.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/1.png
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.sdf
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/common_properties.urdf.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.urdf.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.config
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.gazebo.xacro
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.sh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.dsv
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.bash
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.sh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.zsh
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.dsv
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/packages/41068_ignition_bringup
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig.cmake
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig-version.cmake
+-- Installing: /home/rian/git/RS1-Group5/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.xml

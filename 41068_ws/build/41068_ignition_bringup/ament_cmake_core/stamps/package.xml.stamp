@@ -9,6 +9,11 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+
   <!-- ROS IGN -->
   <depend>ros_ign_interfaces</depend>
   <depend>ros_ign_gazebo</depend>

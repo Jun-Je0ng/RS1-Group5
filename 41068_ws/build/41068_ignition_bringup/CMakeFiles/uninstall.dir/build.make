@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup
+CMAKE_SOURCE_DIR = /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup
+CMAKE_BINARY_DIR = /home/rian/git/RS1-Group5/41068_ws/build/41068_ignition_bringup
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rian/git/RS1-Group5/41068_ws/build/41068_ignition_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/src/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/build/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/build/41068_ignition_bringup /home/rian/git/RS1-Group5/41068_ws/build/41068_ignition_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
