@@ -1,3 +1,4 @@
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/autonomous_trail_follower
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_follower
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_manager
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/map_waypoint_manager
@@ -7,6 +8,7 @@
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/robot_localization.yaml
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/slam_params.yaml
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition_drone.launch.py
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png
@@ -67,6 +69,22 @@
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/wheel.urdf.xacro
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/large_demo.sdf
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/common_properties.urdf.xacro
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/hull.dae
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fl.dae
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_fr.dae
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rl.dae
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/meshes/propeller_rr.dae
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.config
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/model.sdf
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.gazebo.xacro
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/parrot.urdf.xacro
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/1.png
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/2.png
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/3.png
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/4.png
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf_drone/thumbnails/5.png
+/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_setter.py
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/click_to_yaml.py
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup
 /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup

@@ -1,0 +1,24 @@
+[0.972s] Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/rs1_gui': PYTHONPATH=/home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rs1_gui build --build-base /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/build install --record /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/install.log --single-version-externally-managed install_data
+[1.378s] running egg_info
+[1.378s] writing ../../build/rs1_gui/rs1_gui.egg-info/PKG-INFO
+[1.379s] writing dependency_links to ../../build/rs1_gui/rs1_gui.egg-info/dependency_links.txt
+[1.380s] writing entry points to ../../build/rs1_gui/rs1_gui.egg-info/entry_points.txt
+[1.380s] writing requirements to ../../build/rs1_gui/rs1_gui.egg-info/requires.txt
+[1.381s] writing top-level names to ../../build/rs1_gui/rs1_gui.egg-info/top_level.txt
+[1.387s] reading manifest file '../../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+[1.393s] writing manifest file '../../build/rs1_gui/rs1_gui.egg-info/SOURCES.txt'
+[1.393s] running build
+[1.393s] running build_py
+[1.393s] copying rs1_gui/gui_node.py -> /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/build/lib/rs1_gui
+[1.394s] running install
+[1.395s] running install_lib
+[1.398s] copying /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/build/lib/rs1_gui/gui_node.py -> /home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages/rs1_gui
+[1.399s] byte-compiling /home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages/rs1_gui/gui_node.py to gui_node.cpython-310.pyc
+[1.417s] running install_data
+[1.417s] running install_egg_info
+[1.421s] removing '/home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages/rs1_gui-0.0.0-py3.10.egg-info' (and everything under it)
+[1.421s] Copying ../../build/rs1_gui/rs1_gui.egg-info to /home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages/rs1_gui-0.0.0-py3.10.egg-info
+[1.423s] running install_scripts
+[1.457s] Installing gui_node script to /home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/rs1_gui
+[1.457s] writing list of installed files to '/home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/install.log'
+[1.505s] Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/rs1_gui' returned '0': PYTHONPATH=/home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jun/git/Robotics-Studio-1/41068_ws/install/rs1_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rs1_gui build --build-base /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/build install --record /home/jun/git/Robotics-Studio-1/41068_ws/build/rs1_gui/install.log --single-version-externally-managed install_data

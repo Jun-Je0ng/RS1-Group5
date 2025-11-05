@@ -310,14 +310,17 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "waypoint_follower" "waypoint_manager" "map_waypoint_manager" "DESTINATION" "lib/41068_ignition_bringup")
+# install("TARGETS" "autonomous_trail_follower" "DESTINATION" "lib/41068_ignition_bringup")
 include("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "config" "launch" "models" "urdf" "worlds" "DESTINATION" "share/41068_ignition_bringup")
-ament_cmake_symlink_install_directory("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup" DIRECTORY "config" "launch" "models" "urdf" "worlds" "DESTINATION" "share/41068_ignition_bringup")
+# install("TARGETS" "waypoint_follower" "waypoint_manager" "map_waypoint_manager" "DESTINATION" "lib/41068_ignition_bringup")
+include("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(PROGRAMS "scripts/click_to_yaml.py" "DESTINATION" "lib/41068_ignition_bringup")
-ament_cmake_symlink_install_programs("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup" PROGRAMS "scripts/click_to_yaml.py" "DESTINATION" "lib/41068_ignition_bringup")
+# install(DIRECTORY "config" "launch" "models" "urdf" "worlds" "urdf_drone" "DESTINATION" "share/41068_ignition_bringup")
+ament_cmake_symlink_install_directory("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup" DIRECTORY "config" "launch" "models" "urdf" "worlds" "urdf_drone" "DESTINATION" "share/41068_ignition_bringup")
+
+# install(PROGRAMS "scripts/waypoint_setter.py" "scripts/click_to_yaml.py" "DESTINATION" "lib/41068_ignition_bringup")
+ament_cmake_symlink_install_programs("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup" PROGRAMS "scripts/waypoint_setter.py" "scripts/click_to_yaml.py" "DESTINATION" "lib/41068_ignition_bringup")
 
 # install(FILES "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup" FILES "/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

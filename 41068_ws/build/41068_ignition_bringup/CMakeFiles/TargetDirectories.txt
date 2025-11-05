@@ -3,6 +3,10 @@
 /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/waypoint_follower.dir
 /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/waypoint_manager.dir
 /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/map_waypoint_manager.dir
+/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/teleop_obstacle_avoid.dir
+/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/autonomous_trail_follower.dir
+/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/manual_trail_inspector.dir
+/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/lidar_sensing_node.dir
 /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/test.dir
 /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/edit_cache.dir
 /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup/CMakeFiles/rebuild_cache.dir

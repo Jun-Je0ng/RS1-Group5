@@ -1,0 +1,376 @@
+[0.000000] (-) TimerEvent: {}
+[0.000290] (-) JobUnselected: {'identifier': 'rs1_gui'}
+[0.000453] (41068_ignition_bringup) JobQueued: {'identifier': '41068_ignition_bringup', 'dependencies': OrderedDict()}
+[0.000607] (41068_ignition_bringup) JobStarted: {'identifier': '41068_ignition_bringup'}
+[0.018366] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'cmake'}
+[0.019759] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'build'}
+[0.020986] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup', '--', '-j22', '-l22'], 'cwd': '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/jun/git/Robotics-Studio-1/41068_ws'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('GZ_SIM_RESOURCE_PATH', ':/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jun'), ('SNAP_COMMON', '/var/snap/code/common'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-au","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/208/usr/share/code/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/jun/snap/code/common/.cache/gio-modules'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('HOME', '/home/jun'), ('CHROME_DESKTOP', 'code.desktop'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/jun/snap/code/208'), ('GTK_PATH', '/snap/code/208/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-1b4e06b2-1.10-main.sock'), ('GTK_IM_MODULE_FILE', '/home/jun/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2008'), ('SYSTEMD_EXEC_PID', '28318'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '208'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '29951'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install:/home/jun/ros2_ws/install:/home/jun/ros2_ws/src/install:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models/forest_terrain/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jun'), ('SNAP_CONTEXT', 'KqbVpa64OLWlP6C4CsT1xuGj4qRofrpUY5uryWRGnnuqUTFg1Zc9'), ('JOURNAL_STREAM', '8:270552'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', 'e3a5acfb'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('RUST_LOG', 'warn'), ('USERNAME', 'jun'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'code'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jun/.local/bin:/tmp/.tmpYqV887:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jun/.vscode/extensions/openai.chatgpt-0.4.35-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/hyeokjun-Yoga:@/tmp/.ICE-unix/28289,unix/hyeokjun-Yoga:/tmp/.ICE-unix/28289'), ('GTK_EXE_PREFIX', '/snap/code/208/usr'), ('INVOCATION_ID', '29c2bfebce1c4d0fa844704da5faa438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('SNAP_DATA', '/var/snap/code/208'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/208/usr/lib/locale'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('IBUS_DISABLE_SNOOPER', '1'), ('XDG_DATA_HOME', '/home/jun/snap/code/208/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H1N4E3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/jun/snap/code/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/jun/snap/code/208/.local/share/glib-2.0/schemas'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup:/home/jun/ros2_ws/install/week10_quad:/home/jun/ros2_ws/install/week10_laser:/home/jun/ros2_ws/install/turtlesim:/home/jun/ros2_ws/install/quiz5:/home/jun/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jun/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jun/ros2_ws/install/a3_skeleton:/home/jun/ros2_ws/src/install/a3_skeleton:/opt/ros/humble'), ('SNAP_COOKIE', 'KqbVpa64OLWlP6C4CsT1xuGj4qRofrpUY5uryWRGnnuqUTFg1Zc9'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:dc15d1cc-c209-4a2a-8c07-57f7a8a7f0aa'), ('GDK_PIXBUF_MODULEDIR', '/snap/code/208/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'code'), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GDK_PIXBUF_MODULE_FILE', '/home/jun/snap/code/common/.cache/gdk-pixbuf-loaders.cache'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('SNAP_LAUNCHER_ARCH_TRIPLET', 'x86_64-linux-gnu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/jun'), ('VSCODE_CODE_CACHE_PATH', '/home/jun/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92'), ('XDG_DATA_DIRS', '/home/jun/snap/code/208/.local/share:/home/jun/snap/code/208:/snap/code/208/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/home/jun/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/code/208'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup:/home/jun/ros2_ws/install/week10_quad:/home/jun/ros2_ws/install/week10_laser:/home/jun/ros2_ws/install/turtlesim:/home/jun/ros2_ws/install/quiz5:/home/jun/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jun/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jun/ros2_ws/install/a3_skeleton:/home/jun/ros2_ws/src/install/a3_skeleton:/opt/ros/humble'), ('VSCODE_PID', '161965')]), 'shell': False}
+[0.099553] (-) TimerEvent: {}
+[0.149258] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199668] (-) TimerEvent: {}
+[0.299922] (-) TimerEvent: {}
+[0.327921] (41068_ignition_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.345563] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400032] (-) TimerEvent: {}
+[0.412908] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.416633] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.426193] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.441403] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.464166] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500240] (-) TimerEvent: {}
+[0.524407] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.527214] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.562933] (41068_ignition_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.600372] (-) TimerEvent: {}
+[0.645655] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.666926] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.694516] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.700424] (-) TimerEvent: {}
+[0.759947] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.769992] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.800541] (-) TimerEvent: {}
+[0.900683] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.900902] (-) TimerEvent: {}
+[0.906911] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.909000] (41068_ignition_bringup) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.911127] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.941314] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.001028] (-) TimerEvent: {}
+[1.018568] (41068_ignition_bringup) StderrLine: {'line': b'WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[1.048926] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.092325] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.093045] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/include>\n'}
+[1.093155] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.101115] (-) TimerEvent: {}
+[1.137368] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.137766] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.143189] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.154674] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.161406] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.201269] (-) TimerEvent: {}
+[1.208174] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.208524] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.215966] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.217720] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.287111] (41068_ignition_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[1.301420] (-) TimerEvent: {}
+[1.304297] (41068_ignition_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup\n'}
+[1.349051] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target waypoint_manager\n'}
+[1.349490] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target teleop_obstacle_avoid\n'}
+[1.349938] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target map_waypoint_manager\n'}
+[1.350049] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target waypoint_follower\n'}
+[1.350329] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target autonomous_trail_follower\n'}
+[1.352423] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target manual_trail_inspector\n'}
+[1.354080] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_sensing_node\n'}
+[1.366700] (41068_ignition_bringup) StdoutLine: {'line': b'[ 13%] Built target waypoint_manager\n'}
+[1.369556] (41068_ignition_bringup) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o\n'}
+[1.369819] (41068_ignition_bringup) StdoutLine: {'line': b'[ 33%] Built target waypoint_follower\n'}
+[1.371535] (41068_ignition_bringup) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.o\n'}
+[1.373195] (41068_ignition_bringup) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.o\n'}
+[1.374032] (41068_ignition_bringup) StdoutLine: {'line': b'[ 53%] Building CXX object CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o\n'}
+[1.374753] (41068_ignition_bringup) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o\n'}
+[1.375184] (41068_ignition_bringup) StdoutLine: {'line': b'[ 73%] Built target map_waypoint_manager\n'}
+[1.401516] (-) TimerEvent: {}
+[1.501956] (-) TimerEvent: {}
+[1.602436] (-) TimerEvent: {}
+[1.702982] (-) TimerEvent: {}
+[1.785151] (41068_ignition_bringup) StderrLine: {'line': b'/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src/main.cpp:9:10: fatal error: nav_msgs/msg/odometry.hpp: No such file or directory\n'}
+[1.785683] (41068_ignition_bringup) StderrLine: {'line': b'    9 | #include "nav_msgs/msg/odometry.hpp"\n'}
+[1.786178] (41068_ignition_bringup) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.786455] (41068_ignition_bringup) StderrLine: {'line': b'compilation terminated.\n'}
+[1.799259] (41068_ignition_bringup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lidar_sensing_node.dir/build.make:90: CMakeFiles/lidar_sensing_node.dir/src/main.cpp.o] Error 1\n'}
+[1.799663] (41068_ignition_bringup) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.803049] (-) TimerEvent: {}
+[1.903262] (-) TimerEvent: {}
+[2.003566] (-) TimerEvent: {}
+[2.103884] (-) TimerEvent: {}
+[2.204199] (-) TimerEvent: {}
+[2.305137] (-) TimerEvent: {}
+[2.405516] (-) TimerEvent: {}
+[2.505834] (-) TimerEvent: {}
+[2.606174] (-) TimerEvent: {}
+[2.706455] (-) TimerEvent: {}
+[2.806766] (-) TimerEvent: {}
+[2.907113] (-) TimerEvent: {}
+[3.007474] (-) TimerEvent: {}
+[3.107800] (-) TimerEvent: {}
+[3.208240] (-) TimerEvent: {}
+[3.308642] (-) TimerEvent: {}
+[3.409003] (-) TimerEvent: {}
+[3.509300] (-) TimerEvent: {}
+[3.609631] (-) TimerEvent: {}
+[3.710012] (-) TimerEvent: {}
+[3.810578] (-) TimerEvent: {}
+[3.910968] (-) TimerEvent: {}
+[4.011329] (-) TimerEvent: {}
+[4.111729] (-) TimerEvent: {}
+[4.212098] (-) TimerEvent: {}
+[4.312477] (-) TimerEvent: {}
+[4.412862] (-) TimerEvent: {}
+[4.513229] (-) TimerEvent: {}
+[4.613626] (-) TimerEvent: {}
+[4.713989] (-) TimerEvent: {}
+[4.814360] (-) TimerEvent: {}
+[4.914749] (-) TimerEvent: {}
+[5.015110] (-) TimerEvent: {}
+[5.115484] (-) TimerEvent: {}
+[5.215854] (-) TimerEvent: {}
+[5.316243] (-) TimerEvent: {}
+[5.416570] (-) TimerEvent: {}
+[5.517037] (-) TimerEvent: {}
+[5.617535] (-) TimerEvent: {}
+[5.717903] (-) TimerEvent: {}
+[5.818287] (-) TimerEvent: {}
+[5.918676] (-) TimerEvent: {}
+[6.018978] (-) TimerEvent: {}
+[6.119234] (-) TimerEvent: {}
+[6.219471] (-) TimerEvent: {}
+[6.319723] (-) TimerEvent: {}
+[6.419995] (-) TimerEvent: {}
+[6.520298] (-) TimerEvent: {}
+[6.620728] (-) TimerEvent: {}
+[6.721099] (-) TimerEvent: {}
+[6.821485] (-) TimerEvent: {}
+[6.921850] (-) TimerEvent: {}
+[7.002904] (41068_ignition_bringup) StdoutLine: {'line': b'[ 80%] Linking CXX executable teleop_obstacle_avoid\n'}
+[7.022010] (-) TimerEvent: {}
+[7.122358] (-) TimerEvent: {}
+[7.222771] (-) TimerEvent: {}
+[7.254157] (41068_ignition_bringup) StdoutLine: {'line': b'[ 80%] Built target teleop_obstacle_avoid\n'}
+[7.322852] (-) TimerEvent: {}
+[7.423148] (-) TimerEvent: {}
+[7.523644] (-) TimerEvent: {}
+[7.624122] (-) TimerEvent: {}
+[7.724411] (-) TimerEvent: {}
+[7.824753] (-) TimerEvent: {}
+[7.925104] (-) TimerEvent: {}
+[8.025514] (-) TimerEvent: {}
+[8.125881] (-) TimerEvent: {}
+[8.226253] (-) TimerEvent: {}
+[8.326749] (-) TimerEvent: {}
+[8.427101] (-) TimerEvent: {}
+[8.527475] (-) TimerEvent: {}
+[8.627748] (-) TimerEvent: {}
+[8.728129] (-) TimerEvent: {}
+[8.828495] (-) TimerEvent: {}
+[8.928788] (-) TimerEvent: {}
+[9.029083] (-) TimerEvent: {}
+[9.129352] (-) TimerEvent: {}
+[9.229660] (-) TimerEvent: {}
+[9.330049] (-) TimerEvent: {}
+[9.430490] (-) TimerEvent: {}
+[9.530924] (-) TimerEvent: {}
+[9.631206] (-) TimerEvent: {}
+[9.731488] (-) TimerEvent: {}
+[9.831769] (-) TimerEvent: {}
+[9.932052] (-) TimerEvent: {}
+[10.032332] (-) TimerEvent: {}
+[10.132704] (-) TimerEvent: {}
+[10.233079] (-) TimerEvent: {}
+[10.333462] (-) TimerEvent: {}
+[10.433831] (-) TimerEvent: {}
+[10.534196] (-) TimerEvent: {}
+[10.634539] (-) TimerEvent: {}
+[10.734901] (-) TimerEvent: {}
+[10.835257] (-) TimerEvent: {}
+[10.935490] (-) TimerEvent: {}
+[11.035955] (-) TimerEvent: {}
+[11.136223] (-) TimerEvent: {}
+[11.236494] (-) TimerEvent: {}
+[11.336861] (-) TimerEvent: {}
+[11.437231] (-) TimerEvent: {}
+[11.537645] (-) TimerEvent: {}
+[11.638029] (-) TimerEvent: {}
+[11.738435] (-) TimerEvent: {}
+[11.838787] (-) TimerEvent: {}
+[11.939177] (-) TimerEvent: {}
+[12.039628] (-) TimerEvent: {}
+[12.139896] (-) TimerEvent: {}
+[12.240235] (-) TimerEvent: {}
+[12.340562] (-) TimerEvent: {}
+[12.441003] (-) TimerEvent: {}
+[12.541355] (-) TimerEvent: {}
+[12.641757] (-) TimerEvent: {}
+[12.742114] (-) TimerEvent: {}
+[12.842459] (-) TimerEvent: {}
+[12.942778] (-) TimerEvent: {}
+[13.043110] (-) TimerEvent: {}
+[13.143369] (-) TimerEvent: {}
+[13.243654] (-) TimerEvent: {}
+[13.344022] (-) TimerEvent: {}
+[13.444418] (-) TimerEvent: {}
+[13.544735] (-) TimerEvent: {}
+[13.645083] (-) TimerEvent: {}
+[13.745483] (-) TimerEvent: {}
+[13.845866] (-) TimerEvent: {}
+[13.946274] (-) TimerEvent: {}
+[14.046671] (-) TimerEvent: {}
+[14.147034] (-) TimerEvent: {}
+[14.247355] (-) TimerEvent: {}
+[14.347822] (-) TimerEvent: {}
+[14.448190] (-) TimerEvent: {}
+[14.548511] (-) TimerEvent: {}
+[14.648856] (-) TimerEvent: {}
+[14.749199] (-) TimerEvent: {}
+[14.849511] (-) TimerEvent: {}
+[14.949759] (-) TimerEvent: {}
+[15.050037] (-) TimerEvent: {}
+[15.150318] (-) TimerEvent: {}
+[15.250621] (-) TimerEvent: {}
+[15.350907] (-) TimerEvent: {}
+[15.451191] (-) TimerEvent: {}
+[15.551495] (-) TimerEvent: {}
+[15.651813] (-) TimerEvent: {}
+[15.752188] (-) TimerEvent: {}
+[15.852553] (-) TimerEvent: {}
+[15.952945] (-) TimerEvent: {}
+[16.053296] (-) TimerEvent: {}
+[16.154669] (-) TimerEvent: {}
+[16.255055] (-) TimerEvent: {}
+[16.355481] (-) TimerEvent: {}
+[16.455756] (-) TimerEvent: {}
+[16.555998] (-) TimerEvent: {}
+[16.656256] (-) TimerEvent: {}
+[16.756539] (-) TimerEvent: {}
+[16.856825] (-) TimerEvent: {}
+[16.957127] (-) TimerEvent: {}
+[17.057747] (-) TimerEvent: {}
+[17.158055] (-) TimerEvent: {}
+[17.258421] (-) TimerEvent: {}
+[17.358777] (-) TimerEvent: {}
+[17.459127] (-) TimerEvent: {}
+[17.559499] (-) TimerEvent: {}
+[17.659903] (-) TimerEvent: {}
+[17.760300] (-) TimerEvent: {}
+[17.860675] (-) TimerEvent: {}
+[17.961030] (-) TimerEvent: {}
+[18.061370] (-) TimerEvent: {}
+[18.161660] (-) TimerEvent: {}
+[18.261952] (-) TimerEvent: {}
+[18.362234] (-) TimerEvent: {}
+[18.462536] (-) TimerEvent: {}
+[18.562892] (-) TimerEvent: {}
+[18.663248] (-) TimerEvent: {}
+[18.732554] (41068_ignition_bringup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/lidar_sensing_node.dir/all] Error 2\n'}
+[18.733103] (41068_ignition_bringup) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[18.763424] (-) TimerEvent: {}
+[18.863763] (-) TimerEvent: {}
+[18.964165] (-) TimerEvent: {}
+[19.064520] (-) TimerEvent: {}
+[19.164828] (-) TimerEvent: {}
+[19.265175] (-) TimerEvent: {}
+[19.365482] (-) TimerEvent: {}
+[19.465804] (-) TimerEvent: {}
+[19.566124] (-) TimerEvent: {}
+[19.666412] (-) TimerEvent: {}
+[19.766702] (-) TimerEvent: {}
+[19.866979] (-) TimerEvent: {}
+[19.967274] (-) TimerEvent: {}
+[20.067667] (-) TimerEvent: {}
+[20.168024] (-) TimerEvent: {}
+[20.268394] (-) TimerEvent: {}
+[20.343525] (41068_ignition_bringup) StdoutLine: {'line': b'[ 86%] Linking CXX executable manual_trail_inspector\n'}
+[20.368522] (-) TimerEvent: {}
+[20.468887] (-) TimerEvent: {}
+[20.569254] (-) TimerEvent: {}
+[20.669635] (-) TimerEvent: {}
+[20.769984] (-) TimerEvent: {}
+[20.870328] (-) TimerEvent: {}
+[20.970684] (-) TimerEvent: {}
+[21.071044] (-) TimerEvent: {}
+[21.171421] (-) TimerEvent: {}
+[21.271782] (-) TimerEvent: {}
+[21.372142] (-) TimerEvent: {}
+[21.472524] (-) TimerEvent: {}
+[21.572894] (-) TimerEvent: {}
+[21.648603] (41068_ignition_bringup) StdoutLine: {'line': b'[ 86%] Built target manual_trail_inspector\n'}
+[21.673051] (-) TimerEvent: {}
+[21.773426] (-) TimerEvent: {}
+[21.873776] (-) TimerEvent: {}
+[21.974185] (-) TimerEvent: {}
+[22.074556] (-) TimerEvent: {}
+[22.174886] (-) TimerEvent: {}
+[22.275234] (-) TimerEvent: {}
+[22.375587] (-) TimerEvent: {}
+[22.475941] (-) TimerEvent: {}
+[22.576270] (-) TimerEvent: {}
+[22.676630] (-) TimerEvent: {}
+[22.776966] (-) TimerEvent: {}
+[22.877297] (-) TimerEvent: {}
+[22.977641] (-) TimerEvent: {}
+[23.077991] (-) TimerEvent: {}
+[23.178322] (-) TimerEvent: {}
+[23.278677] (-) TimerEvent: {}
+[23.379009] (-) TimerEvent: {}
+[23.479338] (-) TimerEvent: {}
+[23.579690] (-) TimerEvent: {}
+[23.680025] (-) TimerEvent: {}
+[23.780367] (-) TimerEvent: {}
+[23.880767] (-) TimerEvent: {}
+[23.981083] (-) TimerEvent: {}
+[24.081485] (-) TimerEvent: {}
+[24.181848] (-) TimerEvent: {}
+[24.282191] (-) TimerEvent: {}
+[24.382550] (-) TimerEvent: {}
+[24.482892] (-) TimerEvent: {}
+[24.583243] (-) TimerEvent: {}
+[24.683610] (-) TimerEvent: {}
+[24.783966] (-) TimerEvent: {}
+[24.884313] (-) TimerEvent: {}
+[24.984671] (-) TimerEvent: {}
+[25.085008] (-) TimerEvent: {}
+[25.185349] (-) TimerEvent: {}
+[25.285697] (-) TimerEvent: {}
+[25.386039] (-) TimerEvent: {}
+[25.486419] (-) TimerEvent: {}
+[25.586776] (-) TimerEvent: {}
+[25.687057] (-) TimerEvent: {}
+[25.787363] (-) TimerEvent: {}
+[25.887714] (-) TimerEvent: {}
+[25.988064] (-) TimerEvent: {}
+[26.088444] (-) TimerEvent: {}
+[26.188808] (-) TimerEvent: {}
+[26.289167] (-) TimerEvent: {}
+[26.389514] (-) TimerEvent: {}
+[26.489847] (-) TimerEvent: {}
+[26.590093] (-) TimerEvent: {}
+[26.660089] (41068_ignition_bringup) StdoutLine: {'line': b'[ 93%] Linking CXX executable autonomous_trail_follower\n'}
+[26.690243] (-) TimerEvent: {}
+[26.790465] (-) TimerEvent: {}
+[26.890704] (-) TimerEvent: {}
+[26.991000] (-) TimerEvent: {}
+[27.091339] (-) TimerEvent: {}
+[27.191728] (-) TimerEvent: {}
+[27.292163] (-) TimerEvent: {}
+[27.392462] (-) TimerEvent: {}
+[27.492720] (-) TimerEvent: {}
+[27.592984] (-) TimerEvent: {}
+[27.693257] (-) TimerEvent: {}
+[27.793529] (-) TimerEvent: {}
+[27.893801] (-) TimerEvent: {}
+[27.994100] (-) TimerEvent: {}
+[28.094423] (-) TimerEvent: {}
+[28.147276] (41068_ignition_bringup) StdoutLine: {'line': b'[ 93%] Built target autonomous_trail_follower\n'}
+[28.149129] (41068_ignition_bringup) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[28.194518] (-) TimerEvent: {}
+[28.294767] (-) TimerEvent: {}
+[28.395029] (-) TimerEvent: {}
+[28.495301] (-) TimerEvent: {}
+[28.595579] (-) TimerEvent: {}
+[28.695864] (-) TimerEvent: {}
+[28.796160] (-) TimerEvent: {}
+[28.896449] (-) TimerEvent: {}
+[28.996698] (-) TimerEvent: {}
+[29.096940] (-) TimerEvent: {}
+[29.197202] (-) TimerEvent: {}
+[29.297483] (-) TimerEvent: {}
+[29.397767] (-) TimerEvent: {}
+[29.498078] (-) TimerEvent: {}
+[29.598367] (-) TimerEvent: {}
+[29.698643] (-) TimerEvent: {}
+[29.798902] (-) TimerEvent: {}
+[29.899163] (-) TimerEvent: {}
+[29.999484] (-) TimerEvent: {}
+[30.004080] (41068_ignition_bringup) CommandEnded: {'returncode': 2}
+[30.053623] (41068_ignition_bringup) JobEnded: {'identifier': '41068_ignition_bringup', 'rc': 2}
+[30.064108] (-) EventReactorShutdown: {}

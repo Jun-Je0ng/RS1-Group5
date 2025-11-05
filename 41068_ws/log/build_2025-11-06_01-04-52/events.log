@@ -1,0 +1,492 @@
+[0.000000] (-) TimerEvent: {}
+[0.000443] (-) JobUnselected: {'identifier': 'rs1_gui'}
+[0.000480] (41068_ignition_bringup) JobQueued: {'identifier': '41068_ignition_bringup', 'dependencies': OrderedDict()}
+[0.000810] (41068_ignition_bringup) JobStarted: {'identifier': '41068_ignition_bringup'}
+[0.008930] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'cmake'}
+[0.009482] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'build'}
+[0.009941] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup', '--', '-j22', '-l22'], 'cwd': '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/jun/git/Robotics-Studio-1/41068_ws'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('GZ_SIM_RESOURCE_PATH', ':/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jun'), ('SNAP_COMMON', '/var/snap/code/common'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-au","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/208/usr/share/code/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/jun/snap/code/common/.cache/gio-modules'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('HOME', '/home/jun'), ('CHROME_DESKTOP', 'code.desktop'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/jun/snap/code/208'), ('GTK_PATH', '/snap/code/208/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-1b4e06b2-1.10-main.sock'), ('GTK_IM_MODULE_FILE', '/home/jun/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2008'), ('SYSTEMD_EXEC_PID', '28318'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '208'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '29951'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install:/home/jun/ros2_ws/install:/home/jun/ros2_ws/src/install:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models/forest_terrain/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jun'), ('SNAP_CONTEXT', 'KqbVpa64OLWlP6C4CsT1xuGj4qRofrpUY5uryWRGnnuqUTFg1Zc9'), ('JOURNAL_STREAM', '8:270552'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', 'e3a5acfb'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('RUST_LOG', 'warn'), ('USERNAME', 'jun'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'code'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jun/.local/bin:/tmp/.tmpYqV887:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jun/.vscode/extensions/openai.chatgpt-0.4.35-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/hyeokjun-Yoga:@/tmp/.ICE-unix/28289,unix/hyeokjun-Yoga:/tmp/.ICE-unix/28289'), ('GTK_EXE_PREFIX', '/snap/code/208/usr'), ('INVOCATION_ID', '29c2bfebce1c4d0fa844704da5faa438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('SNAP_DATA', '/var/snap/code/208'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/208/usr/lib/locale'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('IBUS_DISABLE_SNOOPER', '1'), ('XDG_DATA_HOME', '/home/jun/snap/code/208/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H1N4E3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/jun/snap/code/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/jun/snap/code/208/.local/share/glib-2.0/schemas'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup:/home/jun/ros2_ws/install/week10_quad:/home/jun/ros2_ws/install/week10_laser:/home/jun/ros2_ws/install/turtlesim:/home/jun/ros2_ws/install/quiz5:/home/jun/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jun/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jun/ros2_ws/install/a3_skeleton:/home/jun/ros2_ws/src/install/a3_skeleton:/opt/ros/humble'), ('SNAP_COOKIE', 'KqbVpa64OLWlP6C4CsT1xuGj4qRofrpUY5uryWRGnnuqUTFg1Zc9'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:dc15d1cc-c209-4a2a-8c07-57f7a8a7f0aa'), ('GDK_PIXBUF_MODULEDIR', '/snap/code/208/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'code'), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GDK_PIXBUF_MODULE_FILE', '/home/jun/snap/code/common/.cache/gdk-pixbuf-loaders.cache'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('SNAP_LAUNCHER_ARCH_TRIPLET', 'x86_64-linux-gnu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/jun'), ('VSCODE_CODE_CACHE_PATH', '/home/jun/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92'), ('XDG_DATA_DIRS', '/home/jun/snap/code/208/.local/share:/home/jun/snap/code/208:/snap/code/208/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/home/jun/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/code/208'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup:/home/jun/ros2_ws/install/week10_quad:/home/jun/ros2_ws/install/week10_laser:/home/jun/ros2_ws/install/turtlesim:/home/jun/ros2_ws/install/quiz5:/home/jun/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jun/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jun/ros2_ws/install/a3_skeleton:/home/jun/ros2_ws/src/install/a3_skeleton:/opt/ros/humble'), ('VSCODE_PID', '161965')]), 'shell': False}
+[0.035263] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100281] (-) TimerEvent: {}
+[0.128363] (41068_ignition_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.133819] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.152414] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.153724] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.157241] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.163206] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.170652] (41068_ignition_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.189961] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.191340] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.200353] (-) TimerEvent: {}
+[0.205941] (41068_ignition_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.235698] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.243235] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.253773] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.264179] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.275414] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.282053] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.300449] (-) TimerEvent: {}
+[0.350772] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.355848] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.356779] (41068_ignition_bringup) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.361436] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.386277] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.386492] (41068_ignition_bringup) StdoutLine: {'line': b"-- Checking for module 'opencv4'\n"}
+[0.400539] (-) TimerEvent: {}
+[0.402929] (41068_ignition_bringup) StdoutLine: {'line': b'--   Found opencv4, version 4.5.4\n'}
+[0.455068] (41068_ignition_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.491910] (41068_ignition_bringup) StderrLine: {'line': b'WARNING: Package name "41068_ignition_bringup" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[0.500910] (-) TimerEvent: {}
+[0.510752] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.532960] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.533175] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/src>\n'}
+[0.533256] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.554744] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.555038] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.557295] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.562260] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.564762] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.584886] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.585183] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.587269] (41068_ignition_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.592625] (41068_ignition_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.601004] (-) TimerEvent: {}
+[0.617267] (41068_ignition_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[0.626280] (41068_ignition_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup\n'}
+[0.653962] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target map_waypoint_manager\n'}
+[0.654172] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target waypoint_follower\n'}
+[0.657208] (41068_ignition_bringup) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target waypoint_manager\n'}
+[0.658611] (41068_ignition_bringup) StdoutLine: {'line': b'[  5%] Building CXX object CMakeFiles/controller.dir/src/controller.cpp.o\n'}
+[0.659307] (41068_ignition_bringup) StdoutLine: {'line': b'[ 11%] Building CXX object CMakeFiles/controller.dir/src/skidsteer.cpp.o\n'}
+[0.660136] (41068_ignition_bringup) StdoutLine: {'line': b'[ 17%] Building CXX object CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.o\n'}
+[0.661208] (41068_ignition_bringup) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.o\n'}
+[0.665299] (41068_ignition_bringup) StdoutLine: {'line': b'[ 29%] Building CXX object CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o\n'}
+[0.665858] (41068_ignition_bringup) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o\n'}
+[0.668218] (41068_ignition_bringup) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o\n'}
+[0.668539] (41068_ignition_bringup) StdoutLine: {'line': b'[ 52%] Built target waypoint_follower\n'}
+[0.673329] (41068_ignition_bringup) StdoutLine: {'line': b'[ 64%] Built target waypoint_manager\n'}
+[0.701110] (-) TimerEvent: {}
+[0.801305] (-) TimerEvent: {}
+[0.901517] (-) TimerEvent: {}
+[0.995194] (41068_ignition_bringup) StdoutLine: {'line': b'[ 70%] Linking CXX static library libcontroller.a\n'}
+[1.001621] (-) TimerEvent: {}
+[1.046253] (41068_ignition_bringup) StdoutLine: {'line': b'[ 70%] Built target controller\n'}
+[1.101749] (-) TimerEvent: {}
+[1.202008] (-) TimerEvent: {}
+[1.302263] (-) TimerEvent: {}
+[1.402669] (-) TimerEvent: {}
+[1.502937] (-) TimerEvent: {}
+[1.603190] (-) TimerEvent: {}
+[1.703416] (-) TimerEvent: {}
+[1.803671] (-) TimerEvent: {}
+[1.903936] (-) TimerEvent: {}
+[2.004192] (-) TimerEvent: {}
+[2.104458] (-) TimerEvent: {}
+[2.204743] (-) TimerEvent: {}
+[2.305023] (-) TimerEvent: {}
+[2.405300] (-) TimerEvent: {}
+[2.505597] (-) TimerEvent: {}
+[2.605926] (-) TimerEvent: {}
+[2.706249] (-) TimerEvent: {}
+[2.806708] (-) TimerEvent: {}
+[2.907093] (-) TimerEvent: {}
+[3.007512] (-) TimerEvent: {}
+[3.107795] (-) TimerEvent: {}
+[3.208121] (-) TimerEvent: {}
+[3.308460] (-) TimerEvent: {}
+[3.408810] (-) TimerEvent: {}
+[3.509155] (-) TimerEvent: {}
+[3.609490] (-) TimerEvent: {}
+[3.709816] (-) TimerEvent: {}
+[3.810148] (-) TimerEvent: {}
+[3.895061] (41068_ignition_bringup) StdoutLine: {'line': b'[ 76%] Linking CXX executable teleop_obstacle_avoid\n'}
+[3.910304] (-) TimerEvent: {}
+[4.010639] (-) TimerEvent: {}
+[4.095526] (41068_ignition_bringup) StdoutLine: {'line': b'[ 76%] Built target teleop_obstacle_avoid\n'}
+[4.110791] (-) TimerEvent: {}
+[4.211117] (-) TimerEvent: {}
+[4.311448] (-) TimerEvent: {}
+[4.411814] (-) TimerEvent: {}
+[4.512163] (-) TimerEvent: {}
+[4.612502] (-) TimerEvent: {}
+[4.712808] (-) TimerEvent: {}
+[4.813154] (-) TimerEvent: {}
+[4.913495] (-) TimerEvent: {}
+[5.013791] (-) TimerEvent: {}
+[5.114205] (-) TimerEvent: {}
+[5.214548] (-) TimerEvent: {}
+[5.314895] (-) TimerEvent: {}
+[5.415234] (-) TimerEvent: {}
+[5.515641] (-) TimerEvent: {}
+[5.616025] (-) TimerEvent: {}
+[5.716384] (-) TimerEvent: {}
+[5.816652] (-) TimerEvent: {}
+[5.916987] (-) TimerEvent: {}
+[6.017351] (-) TimerEvent: {}
+[6.117749] (-) TimerEvent: {}
+[6.218114] (-) TimerEvent: {}
+[6.318498] (-) TimerEvent: {}
+[6.418910] (-) TimerEvent: {}
+[6.519263] (-) TimerEvent: {}
+[6.619616] (-) TimerEvent: {}
+[6.720013] (-) TimerEvent: {}
+[6.820378] (-) TimerEvent: {}
+[6.920758] (-) TimerEvent: {}
+[7.021098] (-) TimerEvent: {}
+[7.121441] (-) TimerEvent: {}
+[7.221819] (-) TimerEvent: {}
+[7.322177] (-) TimerEvent: {}
+[7.422538] (-) TimerEvent: {}
+[7.522914] (-) TimerEvent: {}
+[7.623249] (-) TimerEvent: {}
+[7.723600] (-) TimerEvent: {}
+[7.824056] (-) TimerEvent: {}
+[7.924387] (-) TimerEvent: {}
+[8.024760] (-) TimerEvent: {}
+[8.125115] (-) TimerEvent: {}
+[8.225421] (-) TimerEvent: {}
+[8.325658] (-) TimerEvent: {}
+[8.425923] (-) TimerEvent: {}
+[8.526176] (-) TimerEvent: {}
+[8.626428] (-) TimerEvent: {}
+[8.726722] (-) TimerEvent: {}
+[8.827001] (-) TimerEvent: {}
+[8.927302] (-) TimerEvent: {}
+[9.027645] (-) TimerEvent: {}
+[9.128013] (-) TimerEvent: {}
+[9.228338] (-) TimerEvent: {}
+[9.328666] (-) TimerEvent: {}
+[9.429022] (-) TimerEvent: {}
+[9.529354] (-) TimerEvent: {}
+[9.629714] (-) TimerEvent: {}
+[9.730041] (-) TimerEvent: {}
+[9.836119] (-) TimerEvent: {}
+[9.936463] (-) TimerEvent: {}
+[10.036802] (-) TimerEvent: {}
+[10.137150] (-) TimerEvent: {}
+[10.237568] (-) TimerEvent: {}
+[10.337978] (-) TimerEvent: {}
+[10.438339] (-) TimerEvent: {}
+[10.538728] (-) TimerEvent: {}
+[10.639101] (-) TimerEvent: {}
+[10.739469] (-) TimerEvent: {}
+[10.839813] (-) TimerEvent: {}
+[10.940169] (-) TimerEvent: {}
+[11.040535] (-) TimerEvent: {}
+[11.140940] (-) TimerEvent: {}
+[11.241273] (-) TimerEvent: {}
+[11.341674] (-) TimerEvent: {}
+[11.442040] (-) TimerEvent: {}
+[11.542363] (-) TimerEvent: {}
+[11.642699] (-) TimerEvent: {}
+[11.743021] (-) TimerEvent: {}
+[11.843355] (-) TimerEvent: {}
+[11.943705] (-) TimerEvent: {}
+[12.044037] (-) TimerEvent: {}
+[12.144376] (-) TimerEvent: {}
+[12.244726] (-) TimerEvent: {}
+[12.345056] (-) TimerEvent: {}
+[12.445378] (-) TimerEvent: {}
+[12.545696] (-) TimerEvent: {}
+[12.646005] (-) TimerEvent: {}
+[12.746325] (-) TimerEvent: {}
+[12.846643] (-) TimerEvent: {}
+[12.946970] (-) TimerEvent: {}
+[13.047276] (-) TimerEvent: {}
+[13.147639] (-) TimerEvent: {}
+[13.248030] (-) TimerEvent: {}
+[13.348355] (-) TimerEvent: {}
+[13.448716] (-) TimerEvent: {}
+[13.534658] (41068_ignition_bringup) StdoutLine: {'line': b'[ 82%] Linking CXX executable lidar_sensing_node\n'}
+[13.548842] (-) TimerEvent: {}
+[13.649172] (-) TimerEvent: {}
+[13.749514] (-) TimerEvent: {}
+[13.849888] (-) TimerEvent: {}
+[13.950213] (-) TimerEvent: {}
+[14.050534] (-) TimerEvent: {}
+[14.150886] (-) TimerEvent: {}
+[14.212167] (41068_ignition_bringup) StdoutLine: {'line': b'[ 82%] Built target lidar_sensing_node\n'}
+[14.251036] (-) TimerEvent: {}
+[14.351354] (-) TimerEvent: {}
+[14.451675] (-) TimerEvent: {}
+[14.552010] (-) TimerEvent: {}
+[14.652333] (-) TimerEvent: {}
+[14.752665] (-) TimerEvent: {}
+[14.853000] (-) TimerEvent: {}
+[14.953304] (-) TimerEvent: {}
+[14.963975] (41068_ignition_bringup) StdoutLine: {'line': b'[ 88%] Linking CXX executable manual_trail_inspector\n'}
+[15.053456] (-) TimerEvent: {}
+[15.153786] (-) TimerEvent: {}
+[15.254109] (-) TimerEvent: {}
+[15.354417] (-) TimerEvent: {}
+[15.454735] (-) TimerEvent: {}
+[15.555031] (-) TimerEvent: {}
+[15.655337] (-) TimerEvent: {}
+[15.755644] (-) TimerEvent: {}
+[15.855970] (-) TimerEvent: {}
+[15.956279] (-) TimerEvent: {}
+[16.056572] (-) TimerEvent: {}
+[16.115759] (41068_ignition_bringup) StdoutLine: {'line': b'[ 88%] Built target manual_trail_inspector\n'}
+[16.156733] (-) TimerEvent: {}
+[16.257044] (-) TimerEvent: {}
+[16.357349] (-) TimerEvent: {}
+[16.457649] (-) TimerEvent: {}
+[16.557981] (-) TimerEvent: {}
+[16.658290] (-) TimerEvent: {}
+[16.758607] (-) TimerEvent: {}
+[16.858950] (-) TimerEvent: {}
+[16.959257] (-) TimerEvent: {}
+[17.059674] (-) TimerEvent: {}
+[17.159893] (-) TimerEvent: {}
+[17.260085] (-) TimerEvent: {}
+[17.360277] (-) TimerEvent: {}
+[17.460468] (-) TimerEvent: {}
+[17.560662] (-) TimerEvent: {}
+[17.660883] (-) TimerEvent: {}
+[17.761084] (-) TimerEvent: {}
+[17.861278] (-) TimerEvent: {}
+[17.961474] (-) TimerEvent: {}
+[18.061675] (-) TimerEvent: {}
+[18.161883] (-) TimerEvent: {}
+[18.262530] (-) TimerEvent: {}
+[18.362745] (-) TimerEvent: {}
+[18.462948] (-) TimerEvent: {}
+[18.563160] (-) TimerEvent: {}
+[18.663363] (-) TimerEvent: {}
+[18.763562] (-) TimerEvent: {}
+[18.863759] (-) TimerEvent: {}
+[18.964046] (-) TimerEvent: {}
+[19.064263] (-) TimerEvent: {}
+[19.164483] (-) TimerEvent: {}
+[19.227531] (41068_ignition_bringup) StdoutLine: {'line': b'[ 94%] Linking CXX executable map_waypoint_manager\n'}
+[19.264623] (-) TimerEvent: {}
+[19.339545] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] Linking CXX executable autonomous_trail_follower\n'}
+[19.364737] (-) TimerEvent: {}
+[19.464949] (-) TimerEvent: {}
+[19.565188] (-) TimerEvent: {}
+[19.665443] (-) TimerEvent: {}
+[19.765701] (-) TimerEvent: {}
+[19.865911] (-) TimerEvent: {}
+[19.966131] (-) TimerEvent: {}
+[20.052425] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] Built target map_waypoint_manager\n'}
+[20.066254] (-) TimerEvent: {}
+[20.166485] (-) TimerEvent: {}
+[20.266751] (-) TimerEvent: {}
+[20.366970] (-) TimerEvent: {}
+[20.454103] (41068_ignition_bringup) StdoutLine: {'line': b'[100%] Built target autonomous_trail_follower\n'}
+[20.467064] (-) TimerEvent: {}
+[20.468840] (41068_ignition_bringup) CommandEnded: {'returncode': 0}
+[20.470129] (41068_ignition_bringup) JobProgress: {'identifier': '41068_ignition_bringup', 'progress': 'install'}
+[20.483069] (41068_ignition_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup'], 'cwd': '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/jun/git/Robotics-Studio-1/41068_ws'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('GZ_SIM_RESOURCE_PATH', ':/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models'), ('LANGUAGE', 'en_AU:en'), ('USER', 'jun'), ('SNAP_COMMON', '/var/snap/code/common'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-au","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/208/usr/share/code/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/jun/snap/code/common/.cache/gio-modules'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SNAP_UID', '1000'), ('SHLVL', '1'), ('HOME', '/home/jun'), ('CHROME_DESKTOP', 'code.desktop'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/jun/snap/code/208'), ('GTK_PATH', '/snap/code/208/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-1b4e06b2-1.10-main.sock'), ('GTK_IM_MODULE_FILE', '/home/jun/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2008'), ('SYSTEMD_EXEC_PID', '28318'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '208'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '29951'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install:/home/jun/ros2_ws/install:/home/jun/ros2_ws/src/install:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models/forest_terrain/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jun'), ('SNAP_CONTEXT', 'KqbVpa64OLWlP6C4CsT1xuGj4qRofrpUY5uryWRGnnuqUTFg1Zc9'), ('JOURNAL_STREAM', '8:270552'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', 'e3a5acfb'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('RUST_LOG', 'warn'), ('USERNAME', 'jun'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'code'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jun/.local/bin:/tmp/.tmpYqV887:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jun/.vscode/extensions/openai.chatgpt-0.4.35-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/hyeokjun-Yoga:@/tmp/.ICE-unix/28289,unix/hyeokjun-Yoga:/tmp/.ICE-unix/28289'), ('GTK_EXE_PREFIX', '/snap/code/208/usr'), ('INVOCATION_ID', '29c2bfebce1c4d0fa844704da5faa438'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('SNAP_DATA', '/var/snap/code/208'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/208/usr/lib/locale'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('IBUS_DISABLE_SNOOPER', '1'), ('XDG_DATA_HOME', '/home/jun/snap/code/208/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H1N4E3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/jun/snap/code/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/jun/snap/code/208/.local/share/glib-2.0/schemas'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup:/home/jun/ros2_ws/install/week10_quad:/home/jun/ros2_ws/install/week10_laser:/home/jun/ros2_ws/install/turtlesim:/home/jun/ros2_ws/install/quiz5:/home/jun/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jun/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jun/ros2_ws/install/a3_skeleton:/home/jun/ros2_ws/src/install/a3_skeleton:/opt/ros/humble'), ('SNAP_COOKIE', 'KqbVpa64OLWlP6C4CsT1xuGj4qRofrpUY5uryWRGnnuqUTFg1Zc9'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:dc15d1cc-c209-4a2a-8c07-57f7a8a7f0aa'), ('GDK_PIXBUF_MODULEDIR', '/snap/code/208/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'code'), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GDK_PIXBUF_MODULE_FILE', '/home/jun/snap/code/common/.cache/gdk-pixbuf-loaders.cache'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('SNAP_LAUNCHER_ARCH_TRIPLET', 'x86_64-linux-gnu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jun/git/Robotics-Studio-1/41068_ws/build/41068_ignition_bringup'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/jun'), ('VSCODE_CODE_CACHE_PATH', '/home/jun/.config/Code/CachedData/e3a5acfb517a443235981655413d566533107e92'), ('XDG_DATA_DIRS', '/home/jun/snap/code/208/.local/share:/home/jun/snap/code/208:/snap/code/208/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('SNAP_EUID', '1000'), ('PYTHONPATH', '/home/jun/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/code/208'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup:/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup:/home/jun/ros2_ws/install/week10_quad:/home/jun/ros2_ws/install/week10_laser:/home/jun/ros2_ws/install/turtlesim:/home/jun/ros2_ws/install/quiz5:/home/jun/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jun/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jun/ros2_ws/install/a3_skeleton:/home/jun/ros2_ws/src/install/a3_skeleton:/opt/ros/humble'), ('VSCODE_PID', '161965')]), 'shell': False}
+[20.492747] (41068_ignition_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.493308] (41068_ignition_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.493567] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/libcontroller.a\n'}
+[20.505599] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_follower\n'}
+[20.505865] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/waypoint_manager\n'}
+[20.505934] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/map_waypoint_manager\n'}
+[20.505996] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/teleop_obstacle_avoid\n'}
+[20.515204] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/autonomous_trail_follower\n'}
+[20.526594] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/manual_trail_inspector\n'}
+[20.535835] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/lidar_sensing_node\n'}
+[20.545476] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/41068.rviz\n'}
+[20.545944] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/gazebo_bridge.yaml\n'}
+[20.546054] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/nav2_params.yaml\n'}
+[20.546119] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/robot_localization.yaml\n'}
+[20.546179] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/config/slam_params.yaml\n'}
+[20.546385] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_ignition.launch.py\n'}
+[20.546443] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/launch/41068_navigation.launch.py\n'}
+[20.547485] (41068_ignition_bringup) StderrLine: {'line': b'CMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):\n'}
+[20.547569] (41068_ignition_bringup) StderrLine: {'line': b'  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow\n'}
+[20.547638] (41068_ignition_bringup) StderrLine: {'line': b'  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.\n'}
+[20.547705] (41068_ignition_bringup) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[20.547769] (41068_ignition_bringup) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[20.547832] (41068_ignition_bringup) StderrLine: {'line': b'  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:320 (ament_cmake_symlink_install_directory)\n'}
+[20.547892] (41068_ignition_bringup) StderrLine: {'line': b'  cmake_install.cmake:46 (include)\n'}
+[20.547953] (41068_ignition_bringup) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[20.548012] (41068_ignition_bringup) StderrLine: {'line': b'\n'}
+[20.548293] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/Map.png\n'}
+[20.548366] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/empty_grass.png\n'}
+[20.548432] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/forest_overhead.png\n'}
+[20.548495] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/materials/textures/leaf_litter.png\n'}
+[20.548556] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.config\n'}
+[20.548635] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_plane/model.sdf\n'}
+[20.548824] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/.built_by\n'}
+[20.549002] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/build/COLCON_IGNORE\n'}
+[20.549117] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/.colcon_install_layout\n'}
+[20.549182] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/COLCON_IGNORE\n'}
+[20.549341] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_ps1.py\n'}
+[20.549449] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/_local_setup_util_sh.py\n'}
+[20.549558] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.bash\n'}
+[20.549613] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.ps1\n'}
+[20.549732] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.sh\n'}
+[20.549792] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/local_setup.zsh\n'}
+[20.549848] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.bash\n'}
+[20.549906] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.ps1\n'}
+[20.550031] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.sh\n'}
+[20.550144] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/install/setup.zsh\n'}
+[20.550206] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/COLCON_IGNORE\n'}
+[20.550264] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/events.log\n'}
+[20.550422] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-27_19-31-27/logger_all.log\n'}
+[20.550481] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/events.log\n'}
+[20.550539] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_14-08-20/logger_all.log\n'}
+[20.550658] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/events.log\n'}
+[20.550771] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/build_2025-08-28_15-02-25/logger_all.log\n'}
+[20.550824] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest/events.log\n'}
+[20.550971] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest/logger_all.log\n'}
+[20.551031] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build/events.log\n'}
+[20.551143] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/log/latest_build/logger_all.log\n'}
+[20.551249] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.dae\n'}
+[20.551360] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbm/forest_overhead.png\n'}
+[20.551471] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/Elevated_Terrain_Test.fbx\n'}
+[20.551581] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/forest_overhead.png\n'}
+[20.551705] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.config\n'}
+[20.551824] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/materials/textures/model.sdf\n'}
+[20.551990] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.config\n'}
+[20.552046] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_terrain/model.sdf\n'}
+[20.552158] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall.png\n'}
+[20.552277] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent.png\n'}
+[20.552495] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/materials/textures/forest_wall_transparent_small.png\n'}
+[20.552907] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.config\n'}
+[20.553010] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/forest_wall/model.sdf\n'}
+[20.553072] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/materials/textures/empty_grass.png\n'}
+[20.553426] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.config\n'}
+[20.553673] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/models/grass_plane/model.sdf\n'}
+[20.553759] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/common_properties.urdf.xacro\n'}
+[20.553923] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.gazebo.xacro\n'}
+[20.553985] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/husky.urdf.xacro\n'}
+[20.554045] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/base_link.dae\n'}
+[20.554100] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/bumper.dae\n'}
+[20.554159] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/jpl04_arch_nosensor.stl\n'}
+[20.554321] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_chassis.dae\n'}
+[20.554372] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/top_plate.dae\n'}
+[20.554426] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/meshes/wheel.dae\n'}
+[20.554475] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/urdf/wheel.urdf.xacro\n'}
+[20.554597] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/large_demo.sdf\n'}
+[20.554736] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/worlds/simple_trees.sdf\n'}
+[20.554902] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/lib/41068_ignition_bringup/click_to_yaml.py\n'}
+[20.555021] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/library_path.sh\n'}
+[20.567154] (-) TimerEvent: {}
+[20.567444] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/library_path.dsv\n'}
+[20.576841] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/package_run_dependencies/41068_ignition_bringup\n'}
+[20.577068] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/parent_prefix_path/41068_ignition_bringup\n'}
+[20.577243] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.sh\n'}
+[20.577320] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/ament_prefix_path.dsv\n'}
+[20.577437] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.sh\n'}
+[20.577560] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/environment/path.dsv\n'}
+[20.577734] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.bash\n'}
+[20.577884] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.sh\n'}
+[20.578068] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.zsh\n'}
+[20.578265] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/local_setup.dsv\n'}
+[20.578390] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv\n'}
+[20.589308] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/ament_index/resource_index/packages/41068_ignition_bringup\n'}
+[20.589462] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.597782] (41068_ignition_bringup) StdoutLine: {'line': b'-- Symlinking: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.609759] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig.cmake\n'}
+[20.610243] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/cmake/41068_ignition_bringupConfig-version.cmake\n'}
+[20.610498] (41068_ignition_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/share/41068_ignition_bringup/package.xml\n'}
+[20.610696] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup\n'}
+[20.610799] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/controller.h\n'}
+[20.610902] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/log\n'}
+[20.610988] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/log/latest_build\n'}
+[20.611073] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/log/build_2025-10-09_14-32-27\n'}
+[20.611159] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/log/latest\n'}
+[20.611242] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/build\n'}
+[20.611326] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/skidsteer.h\n'}
+[20.611421] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/lidar_sensing_node.h\n'}
+[20.611503] (41068_ignition_bringup) StdoutLine: {'line': b'-- Installing: /home/jun/git/Robotics-Studio-1/41068_ws/install/41068_ignition_bringup/include/41068_ignition_bringup/install\n'}
+[20.667280] (-) TimerEvent: {}
+[20.767552] (-) TimerEvent: {}
+[20.867834] (-) TimerEvent: {}
+[20.968089] (-) TimerEvent: {}
+[21.068355] (-) TimerEvent: {}
+[21.168610] (-) TimerEvent: {}
+[21.268875] (-) TimerEvent: {}
+[21.369065] (-) TimerEvent: {}
+[21.469253] (-) TimerEvent: {}
+[21.569438] (-) TimerEvent: {}
+[21.669635] (-) TimerEvent: {}
+[21.769835] (-) TimerEvent: {}
+[21.870015] (-) TimerEvent: {}
+[21.970218] (-) TimerEvent: {}
+[22.070425] (-) TimerEvent: {}
+[22.170626] (-) TimerEvent: {}
+[22.270827] (-) TimerEvent: {}
+[22.371017] (-) TimerEvent: {}
+[22.471210] (-) TimerEvent: {}
+[22.571402] (-) TimerEvent: {}
+[22.671595] (-) TimerEvent: {}
+[22.771791] (-) TimerEvent: {}
+[22.871973] (-) TimerEvent: {}
+[22.972172] (-) TimerEvent: {}
+[23.072356] (-) TimerEvent: {}
+[23.172540] (-) TimerEvent: {}
+[23.272717] (-) TimerEvent: {}
+[23.372944] (-) TimerEvent: {}
+[23.473141] (-) TimerEvent: {}
+[23.573327] (-) TimerEvent: {}
+[23.673513] (-) TimerEvent: {}
+[23.773693] (-) TimerEvent: {}
+[23.873898] (-) TimerEvent: {}
+[23.974097] (-) TimerEvent: {}
+[24.074295] (-) TimerEvent: {}
+[24.174508] (-) TimerEvent: {}
+[24.274709] (-) TimerEvent: {}
+[24.374890] (-) TimerEvent: {}
+[24.475054] (-) TimerEvent: {}
+[24.575231] (-) TimerEvent: {}
+[24.675401] (-) TimerEvent: {}
+[24.775797] (-) TimerEvent: {}
+[24.875984] (-) TimerEvent: {}
+[24.976170] (-) TimerEvent: {}
+[25.076340] (-) TimerEvent: {}
+[25.176543] (-) TimerEvent: {}
+[25.276763] (-) TimerEvent: {}
+[25.376970] (-) TimerEvent: {}
+[25.477153] (-) TimerEvent: {}
+[25.577329] (-) TimerEvent: {}
+[25.677514] (-) TimerEvent: {}
+[25.777721] (-) TimerEvent: {}
+[25.877907] (-) TimerEvent: {}
+[25.978102] (-) TimerEvent: {}
+[26.078283] (-) TimerEvent: {}
+[26.178475] (-) TimerEvent: {}
+[26.278667] (-) TimerEvent: {}
+[26.378875] (-) TimerEvent: {}
+[26.479062] (-) TimerEvent: {}
+[26.579260] (-) TimerEvent: {}
+[26.679444] (-) TimerEvent: {}
+[26.779636] (-) TimerEvent: {}
+[26.879821] (-) TimerEvent: {}
+[26.979997] (-) TimerEvent: {}
+[27.080195] (-) TimerEvent: {}
+[27.180380] (-) TimerEvent: {}
+[27.280567] (-) TimerEvent: {}
+[27.380741] (-) TimerEvent: {}
+[27.481246] (-) TimerEvent: {}
+[27.581435] (-) TimerEvent: {}
+[27.681653] (-) TimerEvent: {}
+[27.781872] (-) TimerEvent: {}
+[27.882060] (-) TimerEvent: {}
+[27.982242] (-) TimerEvent: {}
+[28.082418] (-) TimerEvent: {}
+[28.182610] (-) TimerEvent: {}
+[28.283110] (-) TimerEvent: {}
+[28.383304] (-) TimerEvent: {}
+[28.483496] (-) TimerEvent: {}
+[28.583699] (-) TimerEvent: {}
+[28.683895] (-) TimerEvent: {}
+[28.784078] (-) TimerEvent: {}
+[28.884258] (-) TimerEvent: {}
+[28.984464] (-) TimerEvent: {}
+[29.084669] (-) TimerEvent: {}
+[29.184884] (-) TimerEvent: {}
+[29.285100] (-) TimerEvent: {}
+[29.385320] (-) TimerEvent: {}
+[29.485529] (-) TimerEvent: {}
+[29.585742] (-) TimerEvent: {}
+[29.685927] (-) TimerEvent: {}
+[29.786130] (-) TimerEvent: {}
+[29.886337] (-) TimerEvent: {}
+[29.986534] (-) TimerEvent: {}
+[30.010887] (41068_ignition_bringup) CommandEnded: {'returncode': 0}
+[30.027022] (41068_ignition_bringup) JobEnded: {'identifier': '41068_ignition_bringup', 'rc': 0}
+[30.027516] (-) EventReactorShutdown: {}

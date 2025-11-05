@@ -12,7 +12,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
 import cv2
-from geometry_msgs.msg import Twist, PoseStamped, Point, Quaternion
+from geometry_msgs.msg import Twist, PoseStamped, Point, Quaternion, PoseWithCovarianceStamped, PoseArray
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
 import time
@@ -20,13 +20,16 @@ from nav2_msgs.action import NavigateToPose, NavigateThroughPoses
 from rclpy.task import Future
 from sensor_msgs.msg import PointCloud2
 from sensor_msgs_py import point_cloud2 as pc2  # ROS2 helper to decode PointCloud2
+from ros_ign_interfaces.srv import SetEntityPose
+from ros_ign_interfaces.msg import Entity
+from rcl_interfaces.srv import GetParameters
+from rcl_interfaces.msg import ParameterType
+from rclpy.qos import QoSProfile, DurabilityPolicy, ReliabilityPolicy
 
 # Default path-planning waypoints (x, y, yaw_deg). Adjust to match your trail.
 DEFAULT_TRAIL = [
-    (8.0, 62.0, 0.0),
-    (12.5, 63.5, -35.0),
-    (17.0, 58.0, -70.0),
-    (20.5, 52.0, -110.0),
+    (20.793, 59.426, math.degrees(-1.472)),
+    (29.696, 51.403, math.degrees(-1.038)),
 ]
 
 
@@ -51,8 +54,19 @@ class RosBackend(Node):
         super().__init__('rs1_gui_node')
         self.topics = topics
 
+        # parameters describing initial spawn + gazebo entity
+        self.initial_pose = (
+            float(self.declare_parameter('initial_x', 0.0).value),
+            float(self.declare_parameter('initial_y', 0.0).value),
+            float(self.declare_parameter('initial_z', 0.0).value),
+            float(self.declare_parameter('initial_yaw', 0.0).value)  # radians
+        )
+        self.world_name = self.declare_parameter('world', 'simple_trees').value
+        self.entity_name = self.declare_parameter('entity_name', 'husky').value
+
         # publishers (teleop)
         self.cmd_pub = self.create_publisher(Twist, topics.cmd_vel, 10)
+        self.initialpose_pub = self.create_publisher(PoseWithCovarianceStamped, '/initialpose', 10)
 
         # subs (readouts)
         self.latest_pose = (0.0, 0.0, 0.0)  # x, y, yaw (rad)
@@ -67,6 +81,19 @@ class RosBackend(Node):
         self.nav_to_pose_ac = ActionClient(self, NavigateToPose, 'navigate_to_pose')
         self.nav_through_poses_ac = ActionClient(self, NavigateThroughPoses, 'navigate_through_poses')
         self._nav_ready_timer = self.create_timer(0.5, self._poll_nav_servers)
+        self.reset_client = self.create_client(
+            SetEntityPose, f'/world/{self.world_name}/set_entity_pose'
+        )
+        self.map_wp_client = self.create_client(
+            GetParameters, '/map_waypoint_manager/get_parameters'
+        )
+        self.latest_external_targets: List[tuple] = []
+        targets_qos = QoSProfile(depth=1)
+        targets_qos.durability = DurabilityPolicy.TRANSIENT_LOCAL
+        targets_qos.reliability = ReliabilityPolicy.RELIABLE
+        self.targets_sub = self.create_subscription(
+            PoseArray, '/maintenance/targets', self._targets_cb, targets_qos
+        )
 
     # ---- sensors ----
     def odom_cb(self, msg: Odometry):
@@ -83,11 +110,16 @@ class RosBackend(Node):
         self.min_range = min(vals) if vals else float('inf')
 
     # ---- teleop ----
-    def publish_cmd(self, lin: float, ang: float):
+    def publish_cmd(self, lin: float, ang: float, vert: float = 0.0):
         msg = Twist()
         msg.linear.x = lin
+        msg.linear.z = vert
         msg.angular.z = ang
         self.cmd_pub.publish(msg)
+    
+    def emergency_stop(self):
+        self._cancel_all_nav_goals()
+        self.publish_cmd(0.0, 0.0, 0.0)
 
     # ---- Nav2 actions ----
     def _poll_nav_servers(self):
@@ -136,6 +168,68 @@ class RosBackend(Node):
         send_future.add_done_callback(lambda fut: self._handle_nav_goal_response(fut, outer))
         return outer
 
+    def reset_robot(self) -> Future:
+        outer = Future()
+        # Ensure nav is halted before teleport
+        self._cancel_all_nav_goals()
+        if not self.reset_client.service_is_ready():
+            try:
+                ready = self.reset_client.wait_for_service(timeout_sec=0.5)
+            except Exception:
+                ready = False
+            if not ready:
+                outer.set_result((False, 'Reset service not available (check gazebo bridge)'))
+                return outer
+
+        req = SetEntityPose.Request()
+        req.entity = Entity()
+        req.entity.name = self.entity_name
+        req.entity.type = Entity.MODEL
+        req.pose.position.x = self.initial_pose[0]
+        req.pose.position.y = self.initial_pose[1]
+        req.pose.position.z = self.initial_pose[2]
+        req.pose.orientation = yaw_to_quat(self.initial_pose[3])
+
+        future = self.reset_client.call_async(req)
+        future.add_done_callback(lambda fut: self._handle_reset_response(fut, outer))
+        return outer
+    
+    def fetch_trail_from_manager(self) -> Future:
+        outer = Future()
+        if self.map_wp_client is None:
+            outer.set_result((False, 'No parameter service client for map_waypoint_manager'))
+            return outer
+        if not self.map_wp_client.service_is_ready():
+            try:
+                ready = self.map_wp_client.wait_for_service(timeout_sec=0.5)
+            except Exception:
+                ready = False
+            if not ready:
+                outer.set_result((False, 'map_waypoint_manager parameters unavailable'))
+                return outer
+
+        req = GetParameters.Request()
+        req.names = ['manual_waypoints']
+        future = self.map_wp_client.call_async(req)
+        future.add_done_callback(lambda fut: self._handle_trail_param(fut, outer))
+        return outer
+
+    def _targets_cb(self, msg: PoseArray) -> None:
+        pts: List[tuple] = []
+        for pose in msg.poses:
+            x = float(pose.position.x)
+            y = float(pose.position.y)
+            q = pose.orientation
+            yaw = math.degrees(math.atan2(2.0 * (q.w * q.z + q.x * q.y),
+                                          1.0 - 2.0 * (q.y * q.y + q.z * q.z)))
+            pts.append((x, y, yaw))
+        if pts:
+            self.latest_external_targets = pts
+            self.get_logger().info(f"Received {len(pts)} external targets on {msg.header.frame_id}.")
+
+    def get_external_targets(self) -> List[tuple]:
+        return list(self.latest_external_targets)
+
     def _handle_nav_goal_response(self, send_future, outer: Future):
         try:
             goal_handle = send_future.result()
@@ -165,7 +259,85 @@ class RosBackend(Node):
         # Hook for live updates if you want (distance remaining, etc.)
         # feedback_msg.feedback is NavigateToPose_Feedback / NavigateThroughPoses_Feedback
         pass
+
+    def _cancel_all_nav_goals(self):
+        try:
+            if self._nav_pose_ready:
+                self.nav_to_pose_ac.cancel_all_goals_async()
+            if self._nav_path_ready:
+                self.nav_through_poses_ac.cancel_all_goals_async()
+        except Exception:
+            pass
+
+    def _handle_reset_response(self, future, outer: Future):
+        try:
+            result = future.result()
+        except Exception as exc:
+            outer.set_result((False, f'Reset failed: {exc}'))
+            return
+
+        success = getattr(result, 'success', True)
+        if not success:
+            msg = getattr(result, 'status_message', 'reset service returned failure')
+            outer.set_result((False, msg))
+            return
+
+        # publish zero velocity and reset initial pose for nav2
+        self.publish_cmd(0.0, 0.0, 0.0)
+        self._publish_initialpose()
+        outer.set_result((True, 'Robot reset to spawn pose'))
+
+    def _publish_initialpose(self):
+        msg = PoseWithCovarianceStamped()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.frame_id = self.topics.frame_id
+        msg.pose.pose.position.x = self.initial_pose[0]
+        msg.pose.pose.position.y = self.initial_pose[1]
+        msg.pose.pose.position.z = self.initial_pose[2]
+        msg.pose.pose.orientation = yaw_to_quat(self.initial_pose[3])
+
+        # Simple diagonal covariance: ~10 cm position, 10 deg heading
+        cov = msg.pose.covariance
+        cov[0] = cov[7] = cov[14] = 0.1 * 0.1
+        cov[35] = math.radians(10.0) ** 2
+        self.initialpose_pub.publish(msg)
         # --- camera subscription management ---
+    
+    def _handle_trail_param(self, future, outer: Future):
+        try:
+            resp = future.result()
+        except Exception as exc:
+            outer.set_result((False, f'Failed to query map waypoints: {exc}'))
+            return
+
+        if not hasattr(resp, 'values') or len(resp.values) == 0:
+            outer.set_result((False, 'map_waypoint_manager returned no manual_waypoints'))
+            return
+
+        param = resp.values[0]
+        if getattr(param, 'type', ParameterType.PARAMETER_NOT_SET) != ParameterType.PARAMETER_DOUBLE_ARRAY:
+            outer.set_result((False, 'manual_waypoints parameter is not a double array'))
+            return
+
+        values = list(getattr(param, 'double_array_value', []))
+        if not values:
+            outer.set_result((False, 'map_waypoint_manager returned no manual_waypoints'))
+            return
+
+        if len(values) % 3 != 0:
+            self.get_logger().warn('manual_waypoints length not divisible by 3; ignoring trailing values')
+        triplets = []
+        for i in range(0, len(values) - 2, 3):
+            x = float(values[i])
+            y = float(values[i+1])
+            yaw_deg = math.degrees(float(values[i+2]))
+            triplets.append((x, y, yaw_deg))
+
+        if not triplets:
+            outer.set_result((False, 'Parsed trail is empty'))
+            return
+
+        outer.set_result((True, triplets))
     def start_camera_sub(self, topic: str):
         # kill any existing sub
         try:
@@ -668,13 +840,16 @@ class Gui(QtWidgets.QWidget):
 
         # Teleop
         self.lin_slider = self._slider(-200, 200, 0)
+        self.vert_slider = self._slider(-200, 200, 0)
         self.ang_slider = self._slider(-300, 300, 0)
         self.lin_label = QtWidgets.QLabel('Linear: 0.00 m/s')
+        self.vert_label = QtWidgets.QLabel('Vertical: 0.00 m/s')
         self.ang_label = QtWidgets.QLabel('Angular: 0.00 rad/s')
         self.btn_zero  = QtWidgets.QPushButton('Zero Velocity')
 
         grid.addWidget(QtWidgets.QLabel('Teleop (optional)'), r, 0, 1, 6); r += 1
         grid.addWidget(self.lin_label, r, 0, 1, 2); grid.addWidget(self.lin_slider, r, 2, 1, 4); r += 1
+        grid.addWidget(self.vert_label, r, 0, 1, 2); grid.addWidget(self.vert_slider, r, 2, 1, 4); r += 1
         grid.addWidget(self.ang_label, r, 0, 1, 2); grid.addWidget(self.ang_slider, r, 2, 1, 4); r += 1
         grid.addWidget(self.btn_zero, r, 0, 1, 6); r += 1
 
@@ -719,6 +894,14 @@ class Gui(QtWidgets.QWidget):
         grid.addWidget(self.pose_label, r, 0, 1, 6); r += 1
         grid.addWidget(self.scan_label, r, 0, 1, 6); r += 1
         grid.addWidget(self.status, r, 0, 1, 6); r += 1
+        reset_row = QtWidgets.QHBoxLayout()
+        reset_row.setSpacing(8)
+        self.btn_reset = QtWidgets.QPushButton('Reset Robot')
+        self.btn_estop = QtWidgets.QPushButton('Emergency Stop')
+        self.btn_estop.setStyleSheet('background-color: #d1524b; color: #ffffff; font-weight: 700;')
+        reset_row.addWidget(self.btn_reset)
+        reset_row.addWidget(self.btn_estop)
+        grid.addLayout(reset_row, r, 0, 1, 6); r += 1
         self.pose_detail = QtWidgets.QPlainTextEdit()
         self.pose_detail.setReadOnly(True)
         self.pose_detail.setMaximumHeight(100)
@@ -771,6 +954,7 @@ class Gui(QtWidgets.QWidget):
 
         # Signals
         self.lin_slider.valueChanged.connect(self._lin_changed)
+        self.vert_slider.valueChanged.connect(self._vert_changed)
         self.ang_slider.valueChanged.connect(self._ang_changed)
         self.btn_zero.clicked.connect(self._zero)
         self.btn_send_wp.clicked.connect(self._send_wp)
@@ -778,6 +962,8 @@ class Gui(QtWidgets.QWidget):
         self.btn_add_trail.clicked.connect(self._add_trail_waypoint)
         self.btn_clear_trail.clicked.connect(self._clear_trail)
         self.btn_start_follower.clicked.connect(self._send_path)
+        self.btn_reset.clicked.connect(self._reset_robot)
+        self.btn_estop.clicked.connect(self._estop)
 
         # Timers
         self.cmd_timer = QtCore.QTimer(self)
@@ -858,6 +1044,10 @@ class Gui(QtWidgets.QWidget):
             QPlainTextEdit#pathEditor {
                 font-family: 'JetBrains Mono', 'Fira Code', monospace;
             }
+            QPlainTextEdit#poseDetail {
+                font-family: 'JetBrains Mono', 'Fira Code', monospace;
+                background-color: #161826;
+            }
             QSlider::groove:horizontal {
                 height: 8px;
                 background: #2a3048;
@@ -909,12 +1099,16 @@ class Gui(QtWidgets.QWidget):
     
     # ---- teleop handlers ----
     def _lin_changed(self, v): self.lin_label.setText(f'Linear: {v/100.0:.2f} m/s')
+    def _vert_changed(self, v): self.vert_label.setText(f'Vertical: {v/100.0:.2f} m/s')
     def _ang_changed(self, v): self.ang_label.setText(f'Angular: {v/100.0:.2f} rad/s')
     def _zero(self):
-        self.lin_slider.setValue(0); self.ang_slider.setValue(0)
-        self.node.publish_cmd(0.0, 0.0)
+        self.lin_slider.setValue(0); self.vert_slider.setValue(0); self.ang_slider.setValue(0)
+        self.node.publish_cmd(0.0, 0.0, 0.0)
     def _tick_cmd(self):
-        self.node.publish_cmd(self.lin_slider.value()/100.0, self.ang_slider.value()/100.0)
+        lin = self.lin_slider.value()/100.0
+        ang = self.ang_slider.value()/100.0
+        vert = self.vert_slider.value()/100.0
+        self.node.publish_cmd(lin, ang, vert)
 
     # ---- Nav2 actions handlers ----
     def _send_wp(self):
@@ -953,9 +1147,28 @@ class Gui(QtWidgets.QWidget):
         fut.add_done_callback(_done)
 
     def _load_default_trail(self):
-        lines = [f"{x:.3f}, {y:.3f}, {yaw:.1f}" for (x, y, yaw) in DEFAULT_TRAIL]
+        ext = self.node.get_external_targets()
+        if ext:
+            self._set_trail_lines(ext)
+            self.status.setText(f'Status: loaded {len(ext)} external targets')
+            return
+
+        self.status.setText('Status: requesting trail from map_waypoint_manager…')
+        fut = self.node.fetch_trail_from_manager()
+        def _done(_):
+            ok, payload = fut.result()
+            if ok:
+                pts = payload
+                self._set_trail_lines(pts)
+                self.status.setText(f'✅ Loaded {len(pts)} waypoints from map_waypoint_manager')
+            else:
+                self._set_trail_lines(DEFAULT_TRAIL)
+                self.status.setText(f'⚠️ {payload}; fell back to built-in trail ({len(DEFAULT_TRAIL)} pts)')
+        fut.add_done_callback(_done)
+
+    def _set_trail_lines(self, pts: List[tuple]):
+        lines = [f"{x:.3f}, {y:.3f}, {yaw:.1f}" for (x, y, yaw) in pts]
         self.path_edit.setPlainText('\n'.join(lines))
-        self.status.setText(f'Status: loaded {len(DEFAULT_TRAIL)} planned waypoints')
 
     def _add_trail_waypoint(self):
         x = float(self.x_in.value())
@@ -979,6 +1192,23 @@ class Gui(QtWidgets.QWidget):
     def _clear_trail(self):
         self.path_edit.clear()
         self.status.setText('Status: cleared trail waypoints')
+
+    def _reset_robot(self):
+        self._zero()
+        self.lin_slider.setValue(0)
+        self.ang_slider.setValue(0)
+        self._load_default_trail()
+        self.status.setText('Status: resetting robot to spawn…')
+        fut = self.node.reset_robot()
+        def _done(_):
+            ok, msg = fut.result()
+            self.status.setText('✅ Reset complete' if ok else f'❌ {msg}')
+        fut.add_done_callback(_done)
+
+    def _estop(self):
+        self._zero()
+        self.node.emergency_stop()
+        self.status.setText('Status: emergency stop engaged')
 
     # ---- UI refresh ----
     def _refresh_ui(self):

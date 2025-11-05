@@ -156,6 +156,11 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/optional \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/char_traits.h \
@@ -223,10 +228,6 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
@@ -441,7 +442,6 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
   /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/client.hpp \
-  /usr/include/c++/11/optional \
   /usr/include/c++/11/variant \
   /opt/ros/humble/include/rcl/rcl/error_handling.h \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp \
@@ -729,8 +729,235 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp \
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp \
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.hpp \
-  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/tf2/tf2/time.h \
+  /opt/ros/humble/include/tf2/tf2/time.hpp \
+  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+  /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp \
+  /usr/include/kdl/frames.hpp \
+  /usr/include/kdl/utilities/kdl-config.h \
+  /usr/include/kdl/utilities/utility.h \
+  /usr/include/kdl/utilities/kdl-config.h \
+  /usr/include/kdl/frames.inl \
+  /opt/ros/humble/include/tf2/tf2/convert.hpp \
+  /opt/ros/humble/include/tf2/tf2/exceptions.hpp \
+  /opt/ros/humble/include/tf2/tf2/impl/convert.hpp \
+  /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
+  /opt/ros/humble/include/tf2/tf2/buffer_core.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
+  /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp \
+  /opt/ros/humble/include/tf2/tf2/transform_storage.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp
 
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/c++/11/cfloat:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp:
+
+/opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp:
+
+/opt/ros/humble/include/tf2/tf2/impl/convert.hpp:
+
+/opt/ros/humble/include/tf2/tf2/convert.hpp:
+
+/usr/include/kdl/frames.inl:
+
+/usr/include/kdl/utilities/kdl-config.h:
+
+/usr/include/kdl/frames.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp:
+
+/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:
+
+/opt/ros/humble/include/tf2/tf2/time.hpp:
 
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -745,6 +972,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:
 
@@ -766,9 +995,13 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
@@ -860,6 +1093,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_subscription.hpp:
@@ -873,6 +1108,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
+
+/opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
@@ -894,6 +1131,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
@@ -903,6 +1142,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
 
@@ -916,7 +1157,11 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
@@ -956,14 +1201,6 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
@@ -982,6 +1219,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/istream:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp:
+
 /usr/include/c++/11/sstream:
 
 /usr/include/c++/11/stdexcept:
@@ -992,17 +1231,7 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
 
-/usr/include/c++/11/bits/nested_exception.h:
-
-/opt/ros/humble/include/rmw/rmw/publisher_options.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
-
-/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
-
-/usr/include/c++/11/exception:
-
-/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp:
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
@@ -1028,17 +1257,21 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp:
+
 /opt/ros/humble/include/rmw/rmw/security_options.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp:
 
 /usr/include/c++/11/cerrno:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/stdio.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp:
 
-/opt/ros/humble/include/rcl/rcl/graph.h:
+/usr/include/stdio.h:
 
 /usr/include/c++/11/string_view:
 
@@ -1090,17 +1323,25 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/ext/concurrence.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
 
 /usr/include/c++/11/locale:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
 
 /usr/include/c++/11/iosfwd:
 
@@ -1110,6 +1351,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/linux/errno.h:
@@ -1118,9 +1361,25 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/kdl/utilities/utility.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/c++/11/unordered_set:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+/opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
+
+/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
+
+/opt/ros/humble/include/rcl/rcl/graph.h:
+
+/usr/include/c++/11/exception:
+
+/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -1131,6 +1390,10 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
 /usr/include/c++/11/bits/localefwd.h:
+
+/opt/ros/humble/include/tf2/tf2/exceptions.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
 
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp:
 
@@ -1162,12 +1425,6 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
-
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
@@ -1198,6 +1455,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -1207,6 +1466,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
@@ -1224,9 +1485,13 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp:
+
 /opt/ros/humble/include/rmw/rmw/init.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
+
+/opt/ros/humble/include/tf2/tf2/transform_storage.hpp:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
@@ -1278,6 +1543,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/tr1/special_function_util.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
@@ -1289,6 +1556,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp:
 
 /usr/include/pthread.h:
 
@@ -1404,6 +1673,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/bits/std_abs.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
+
 /usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
@@ -1458,6 +1729,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/cmath:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/11/bits/std_function.h:
@@ -1476,6 +1749,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
+
 /usr/include/asm-generic/errno-base.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
@@ -1490,7 +1765,11 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
+/opt/ros/humble/include/tf2/tf2/buffer_core.hpp:
+
 /usr/include/c++/11/cwchar:
+
+/opt/ros/humble/include/tf2/tf2/time.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
 
@@ -1499,6 +1778,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
 /usr/include/c++/11/bits/stl_algobase.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
@@ -1520,6 +1801,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/bits/basic_string.h:
 
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
@@ -1527,6 +1810,20 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
 
@@ -1576,6 +1873,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/pstl/execution_defs.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
@@ -1594,9 +1893,9 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/bits/charconv.h:
 
-/usr/include/c++/11/bits/exception_ptr.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
 
 /usr/include/math.h:
 
@@ -1640,11 +1939,15 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /usr/include/c++/11/bits/hashtable.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/11/cstdio:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -1657,6 +1960,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
@@ -1681,6 +1986,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp:
 
 /usr/include/c++/11/cxxabi.h:
 
@@ -1715,6 +2022,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
 
@@ -1763,6 +2072,12 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/c++/11/optional:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -1846,11 +2161,15 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
+/usr/include/c++/11/math.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/tf2/tf2/visibility_control.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
@@ -1864,6 +2183,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
@@ -1876,9 +2197,15 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rmw/rmw/types.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -1942,9 +2269,13 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
@@ -1974,6 +2305,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rcl/rcl/node.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
+
 /opt/ros/humble/include/rcl/rcl/node_options.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
@@ -1991,6 +2324,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rcl/rcl/time.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
@@ -2052,12 +2387,6 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
 
-/usr/include/c++/11/condition_variable:
-
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/c++/11/optional:
-
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
@@ -2067,6 +2396,10 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
@@ -2078,6 +2411,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
 
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
@@ -2087,6 +2422,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
@@ -2128,6 +2465,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -2162,6 +2501,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 
 /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp:
 
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
@@ -2171,6 +2512,8 @@ CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.o: ../../src/ma
 /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 

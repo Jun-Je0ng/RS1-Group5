@@ -1,1 +1,1 @@
-PySide6:geometry_msgs:nav_msgs:rcl_interfaces:rclpy:sensor_msgs:std_srvs
+PySide6:geometry_msgs:nav2_msgs:nav_msgs:rcl_interfaces:rclpy:ros_ign_interfaces:sensor_msgs:std_srvs

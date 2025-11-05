@@ -236,6 +236,106 @@ map_waypoint_manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/build
 .PHONY : map_waypoint_manager/fast
 
+#=============================================================================
+# Target rules for targets named teleop_obstacle_avoid
+
+# Build rule for target.
+teleop_obstacle_avoid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_obstacle_avoid
+.PHONY : teleop_obstacle_avoid
+
+# fast build rule for target.
+teleop_obstacle_avoid/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/build
+.PHONY : teleop_obstacle_avoid/fast
+
+#=============================================================================
+# Target rules for targets named autonomous_trail_follower
+
+# Build rule for target.
+autonomous_trail_follower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 autonomous_trail_follower
+.PHONY : autonomous_trail_follower
+
+# fast build rule for target.
+autonomous_trail_follower/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/build
+.PHONY : autonomous_trail_follower/fast
+
+#=============================================================================
+# Target rules for targets named manual_trail_inspector
+
+# Build rule for target.
+manual_trail_inspector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manual_trail_inspector
+.PHONY : manual_trail_inspector
+
+# fast build rule for target.
+manual_trail_inspector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/build
+.PHONY : manual_trail_inspector/fast
+
+#=============================================================================
+# Target rules for targets named lidar_sensing_node
+
+# Build rule for target.
+lidar_sensing_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lidar_sensing_node
+.PHONY : lidar_sensing_node
+
+# fast build rule for target.
+lidar_sensing_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/build
+.PHONY : lidar_sensing_node/fast
+
+src/autonomous_trail_follower.o: src/autonomous_trail_follower.cpp.o
+.PHONY : src/autonomous_trail_follower.o
+
+# target to build an object file
+src/autonomous_trail_follower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.o
+.PHONY : src/autonomous_trail_follower.cpp.o
+
+src/autonomous_trail_follower.i: src/autonomous_trail_follower.cpp.i
+.PHONY : src/autonomous_trail_follower.i
+
+# target to preprocess a source file
+src/autonomous_trail_follower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.i
+.PHONY : src/autonomous_trail_follower.cpp.i
+
+src/autonomous_trail_follower.s: src/autonomous_trail_follower.cpp.s
+.PHONY : src/autonomous_trail_follower.s
+
+# target to generate assembly for a file
+src/autonomous_trail_follower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_trail_follower.dir/build.make CMakeFiles/autonomous_trail_follower.dir/src/autonomous_trail_follower.cpp.s
+.PHONY : src/autonomous_trail_follower.cpp.s
+
+src/lidar_sensing_node.o: src/lidar_sensing_node.cpp.o
+.PHONY : src/lidar_sensing_node.o
+
+# target to build an object file
+src/lidar_sensing_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.o
+.PHONY : src/lidar_sensing_node.cpp.o
+
+src/lidar_sensing_node.i: src/lidar_sensing_node.cpp.i
+.PHONY : src/lidar_sensing_node.i
+
+# target to preprocess a source file
+src/lidar_sensing_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.i
+.PHONY : src/lidar_sensing_node.cpp.i
+
+src/lidar_sensing_node.s: src/lidar_sensing_node.cpp.s
+.PHONY : src/lidar_sensing_node.s
+
+# target to generate assembly for a file
+src/lidar_sensing_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_sensing_node.dir/build.make CMakeFiles/lidar_sensing_node.dir/src/lidar_sensing_node.cpp.s
+.PHONY : src/lidar_sensing_node.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -260,6 +360,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_follower.dir/build.make CMakeFiles/waypoint_follower.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/manual_trail_inspector.o: src/manual_trail_inspector.cpp.o
+.PHONY : src/manual_trail_inspector.o
+
+# target to build an object file
+src/manual_trail_inspector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.o
+.PHONY : src/manual_trail_inspector.cpp.o
+
+src/manual_trail_inspector.i: src/manual_trail_inspector.cpp.i
+.PHONY : src/manual_trail_inspector.i
+
+# target to preprocess a source file
+src/manual_trail_inspector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.i
+.PHONY : src/manual_trail_inspector.cpp.i
+
+src/manual_trail_inspector.s: src/manual_trail_inspector.cpp.s
+.PHONY : src/manual_trail_inspector.s
+
+# target to generate assembly for a file
+src/manual_trail_inspector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_trail_inspector.dir/build.make CMakeFiles/manual_trail_inspector.dir/src/manual_trail_inspector.cpp.s
+.PHONY : src/manual_trail_inspector.cpp.s
+
 src/map_waypoint_manager.o: src/map_waypoint_manager.cpp.o
 .PHONY : src/map_waypoint_manager.o
 
@@ -283,6 +407,30 @@ src/map_waypoint_manager.s: src/map_waypoint_manager.cpp.s
 src/map_waypoint_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_waypoint_manager.dir/build.make CMakeFiles/map_waypoint_manager.dir/src/map_waypoint_manager.cpp.s
 .PHONY : src/map_waypoint_manager.cpp.s
+
+src/teleop_with_obstacle_avoidance.o: src/teleop_with_obstacle_avoidance.cpp.o
+.PHONY : src/teleop_with_obstacle_avoidance.o
+
+# target to build an object file
+src/teleop_with_obstacle_avoidance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.o
+.PHONY : src/teleop_with_obstacle_avoidance.cpp.o
+
+src/teleop_with_obstacle_avoidance.i: src/teleop_with_obstacle_avoidance.cpp.i
+.PHONY : src/teleop_with_obstacle_avoidance.i
+
+# target to preprocess a source file
+src/teleop_with_obstacle_avoidance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.i
+.PHONY : src/teleop_with_obstacle_avoidance.cpp.i
+
+src/teleop_with_obstacle_avoidance.s: src/teleop_with_obstacle_avoidance.cpp.s
+.PHONY : src/teleop_with_obstacle_avoidance.s
+
+# target to generate assembly for a file
+src/teleop_with_obstacle_avoidance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_obstacle_avoid.dir/build.make CMakeFiles/teleop_obstacle_avoid.dir/src/teleop_with_obstacle_avoidance.cpp.s
+.PHONY : src/teleop_with_obstacle_avoidance.cpp.s
 
 src/waypoint_manager.o: src/waypoint_manager.cpp.o
 .PHONY : src/waypoint_manager.o
@@ -323,15 +471,31 @@ help:
 	@echo "... test"
 	@echo "... 41068_ignition_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... autonomous_trail_follower"
+	@echo "... lidar_sensing_node"
+	@echo "... manual_trail_inspector"
 	@echo "... map_waypoint_manager"
+	@echo "... teleop_obstacle_avoid"
 	@echo "... waypoint_follower"
 	@echo "... waypoint_manager"
+	@echo "... src/autonomous_trail_follower.o"
+	@echo "... src/autonomous_trail_follower.i"
+	@echo "... src/autonomous_trail_follower.s"
+	@echo "... src/lidar_sensing_node.o"
+	@echo "... src/lidar_sensing_node.i"
+	@echo "... src/lidar_sensing_node.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/manual_trail_inspector.o"
+	@echo "... src/manual_trail_inspector.i"
+	@echo "... src/manual_trail_inspector.s"
 	@echo "... src/map_waypoint_manager.o"
 	@echo "... src/map_waypoint_manager.i"
 	@echo "... src/map_waypoint_manager.s"
+	@echo "... src/teleop_with_obstacle_avoidance.o"
+	@echo "... src/teleop_with_obstacle_avoidance.i"
+	@echo "... src/teleop_with_obstacle_avoidance.s"
 	@echo "... src/waypoint_manager.o"
 	@echo "... src/waypoint_manager.i"
 	@echo "... src/waypoint_manager.s"
