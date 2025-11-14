@@ -21,10 +21,10 @@
       <intensity>5</intensity>
     </light>
     <!-- Drone Gravity -->
-    <gravity>0 0 0</gravity>
+    <!-- <gravity>0 0 0</gravity> -->
 
     <!-- Ground Robot Gravity -->
-    <!-- <gravity>0 0 -9.81</gravity> -->
+    <gravity>0 0 -9.81</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type="adiabatic"/>
     <physics name="default_physics" type="ignored">
@@ -58,65 +58,78 @@
 
  <!-- Forest wall -->
   
-    <!-- Forest walls wrapping terrain ~80x80 m centered at (0,0) -->
+     <!-- Forest walls ~104m x 104m around terrain (centered at 0,0) -->
+    <!-- Segment centers at: -52, -40, -28, -16, -4, 8, 20, 32, 44, 52 -->
 
-    <!-- Bottom edge (y = -40) -->
-    <include><uri>model://forest_wall</uri><name>wall_bottom_01</name><pose>-40.0 -40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_bottom_02</name><pose>-24.0 -40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_bottom_03</name><pose>-8.0  -40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_bottom_04</name><pose> 8.0  -40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_bottom_05</name><pose>24.0  -40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_bottom_06</name><pose>40.0  -40.0 2 1.570796 0 0</pose></include>
+    <!-- Bottom edge (y = -52) -->
+    <include><uri>model://forest_wall</uri><name>wall_bottom_01</name><pose>-52 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_02</name><pose>-40 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_03</name><pose>-28 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_04</name><pose>-16 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_05</name><pose> -4 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_06</name><pose>  8 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_07</name><pose> 20 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_08</name><pose> 32 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_09</name><pose> 44 -52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_bottom_10</name><pose> 52 -52 2 1.570796 0 0</pose></include>
 
-    <!-- Top edge (y = +40) -->
-    <include><uri>model://forest_wall</uri><name>wall_top_01</name><pose>-40.0 40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_top_02</name><pose>-24.0 40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_top_03</name><pose>-8.0  40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_top_04</name><pose> 8.0  40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_top_05</name><pose>24.0  40.0 2 1.570796 0 0</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_top_06</name><pose>40.0  40.0 2 1.570796 0 0</pose></include>
+    <!-- Top edge (y = +52) -->
+    <include><uri>model://forest_wall</uri><name>wall_top_01</name><pose>-52 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_02</name><pose>-40 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_03</name><pose>-28 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_04</name><pose>-16 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_05</name><pose> -4 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_06</name><pose>  8 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_07</name><pose> 20 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_08</name><pose> 32 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_09</name><pose> 44 52 2 1.570796 0 0</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_top_10</name><pose> 52 52 2 1.570796 0 0</pose></include>
 
-    <!-- Left edge (x = -40, yaw +90°) -->
-    <include><uri>model://forest_wall</uri><name>wall_left_01</name><pose>-40.0 -40.0 2 1.570796 0 1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_left_02</name><pose>-40.0 -24.0 2 1.570796 0 1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_left_03</name><pose>-40.0  -8.0 2 1.570796 0 1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_left_04</name><pose>-40.0   8.0 2 1.570796 0 1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_left_05</name><pose>-40.0  24.0 2 1.570796 0 1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_left_06</name><pose>-40.0  40.0 2 1.570796 0 1.570796</pose></include>
+    <!-- Left edge (x = -52, yaw +90°) -->
+    <include><uri>model://forest_wall</uri><name>wall_left_01</name><pose>-52 -52 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_02</name><pose>-52 -40 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_03</name><pose>-52 -28 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_04</name><pose>-52 -16 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_05</name><pose>-52  -4 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_06</name><pose>-52   8 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_07</name><pose>-52  20 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_08</name><pose>-52  32 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_09</name><pose>-52  44 2 1.570796 0 1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_left_10</name><pose>-52  52 2 1.570796 0 1.570796</pose></include>
 
-    <!-- Right edge (x = +40, yaw -90°) -->
-    <include><uri>model://forest_wall</uri><name>wall_right_01</name><pose>40.0 -40.0 2 1.570796 0 -1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_right_02</name><pose>40.0 -24.0 2 1.570796 0 -1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_right_03</name><pose>40.0  -8.0 2 1.570796 0 -1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_right_04</name><pose>40.0   8.0 2 1.570796 0 -1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_right_05</name><pose>40.0  24.0 2 1.570796 0 -1.570796</pose></include>
-    <include><uri>model://forest_wall</uri><name>wall_right_06</name><pose>40.0  40.0 2 1.570796 0 -1.570796</pose></include>
+    <!-- Right edge (x = +52, yaw -90°) -->
+    <include><uri>model://forest_wall</uri><name>wall_right_01</name><pose>52 -52 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_02</name><pose>52 -40 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_03</name><pose>52 -28 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_04</name><pose>52 -16 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_05</name><pose>52  -4 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_06</name><pose>52   8 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_07</name><pose>52  20 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_08</name><pose>52  32 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_09</name><pose>52  44 2 1.570796 0 -1.570796</pose></include>
+    <include><uri>model://forest_wall</uri><name>wall_right_10</name><pose>52  52 2 1.570796 0 -1.570796</pose></include>
 
 <!-- Oak trees -->
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak1</name><pose>-70 -70 -0.3 0 0 0.1</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak2</name><pose>-50 -40 -0.3 0 0 0.5</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak1</name><pose>-30 -30 -0.3 0 0 0.1</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak2</name><pose>-40 -40 -0.3 0 0 0.5</pose></include>
 <include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak3</name><pose>-30 -10 -0.3 0 0 0.2</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak4</name><pose>0 20 -0.3 0 0 -0.3</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak5</name><pose>20 50 -0.3 0 0 0.6</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak6</name><pose>50 70 -0.3 0 0 -0.2</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak7</name><pose>70 30 -0.3 0 0 0.4</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri><name>oak8</name><pose>60 -50 -0.3 0 0 -0.5</pose></include>
+
 
 <!-- Pine trees -->
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine1</name><pose>-60 60 0 0 0 0.3</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine2</name><pose>-30 70 0 0 0 0.1</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine3</name><pose>0 60 0 0 0 -0.4</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine4</name><pose>30 70 0 0 0 0.2</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine5</name><pose>50 60 0 0 0 0.7</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine6</name><pose>70 50 0 0 0 0.1</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine1</name><pose>-20 20 0 0 0 0.3</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine2</name><pose>-10 30 0 0 0 0.1</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine3</name><pose>0 20 0 0 0 -0.4</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine4</name><pose>12 23 0 0 0 0.2</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine5</name><pose>-20 40 0 0 0 0.7</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20tree</uri><name>pine6</name><pose>-30 30 0 0 0 0.1</pose></include>
 
 <!-- Rocks -->
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%201</uri><name>rock1</name><pose>-70 0 0 0 0 0</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%202</uri><name>rock2</name><pose>-50 20 0 0 0 0</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%203</uri><name>rock3</name><pose>-30 40 0 0 0 0</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%204</uri><name>rock4</name><pose>0 60 0 0 0 0</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%205</uri><name>rock5</name><pose>30 30 0 0 0 0</pose></include>
-<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%206</uri><name>rock6</name><pose>60 0 0 0 0 0</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%201</uri><name>rock1</name><pose>-20 10 0 0 0 0</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%202</uri><name>rock2</name><pose>-10 12 0 0 0 0</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%203</uri><name>rock3</name><pose>-25 11 0 0 0 0</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%204</uri><name>rock4</name><pose>25 40 0 0 0 0</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%205</uri><name>rock5</name><pose>40 20 0 0 0 0</pose></include>
+<include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%206</uri><name>rock6</name><pose>10 -50 0 0 0 0</pose></include>
 
 
 

@@ -55,7 +55,7 @@ class ClickToYaml(Node):
         with open(self.filename, 'w') as f:
             yaml.safe_dump(data, f)
 
-        self.get_logger().info(f"✅ Saved {len(self.points)} waypoints to {self.filename}")
+        self.get_logger().info(f"Saved {len(self.points)} waypoints to {self.filename}")
         self.get_logger().info(
             "Next steps:\n"
             "  1) source /opt/ros/humble/setup.bash\n"
@@ -92,4 +92,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

@@ -1,0 +1,108 @@
+[0.236s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.236s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77ef4a26add0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77ef4a26a7a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77ef4a26a7a0>>, mixin_verb=('build',))
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.606s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.642s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name '41068_ignition_bringup'
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.703s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.703s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.707s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install
+[0.708s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/jun/git/Robotics-Studio-1/41068_ws/install
+[0.709s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/models/forest_terrain/install
+[0.710s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/jun/ros2_ws/install
+[0.711s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jun/ros2_ws/src/install
+[0.714s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 445 installed packages in /opt/ros/humble
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.832s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_args' from command line to 'None'
+[0.832s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_target' from command line to 'None'
+[0.832s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.832s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.832s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.832s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.833s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.833s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.833s] Level 5:colcon.colcon_core.verb:set package '41068_ignition_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.833s] DEBUG:colcon.colcon_core.verb:Building package '41068_ignition_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup', 'merge_install': False, 'path': '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.833s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.835s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.836s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup' with build type 'ament_cmake'
+[0.836s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup'
+[0.841s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.842s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.842s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j22 -l22
+[2.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup -- -j22 -l22
+[2.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
+[2.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(41068_ignition_bringup)
+[2.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/build/41068_ignition_bringup
+[2.854s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup' for CMake module files
+[2.856s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup' for CMake config files
+[2.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('41068_ignition_bringup', 'cmake_prefix_path')
+[2.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.ps1'
+[2.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.dsv'
+[2.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.sh'
+[2.862s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib'
+[2.863s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/bin'
+[2.863s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/pkgconfig/41068_ignition_bringup.pc'
+[2.863s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/python3.10/site-packages'
+[2.864s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/bin'
+[2.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.ps1'
+[2.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv'
+[2.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.sh'
+[2.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.bash'
+[2.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.zsh'
+[2.871s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/colcon-core/packages/41068_ignition_bringup)
+[2.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(41068_ignition_bringup)
+[2.873s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup' for CMake module files
+[2.874s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup' for CMake config files
+[2.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('41068_ignition_bringup', 'cmake_prefix_path')
+[2.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.ps1'
+[2.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.dsv'
+[2.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/hook/cmake_prefix_path.sh'
+[2.881s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib'
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/bin'
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/pkgconfig/41068_ignition_bringup.pc'
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/lib/python3.10/site-packages'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/bin'
+[2.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.ps1'
+[2.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.dsv'
+[2.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.sh'
+[2.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.bash'
+[2.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/41068_ignition_bringup/package.zsh'
+[2.888s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/41068_ignition_bringup/share/colcon-core/packages/41068_ignition_bringup)
+[2.889s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.890s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.890s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.890s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.903s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.903s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.903s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.934s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.935s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/local_setup.ps1'
+[2.938s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/_local_setup_util_ps1.py'
+[2.940s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/setup.ps1'
+[2.943s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/local_setup.sh'
+[2.944s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/_local_setup_util_sh.py'
+[2.945s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/setup.sh'
+[2.948s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/local_setup.bash'
+[2.949s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/setup.bash'
+[2.952s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/local_setup.zsh'
+[2.953s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jun/git/Robotics-Studio-1/41068_ws/src/41068_ignition_bringup/install/setup.zsh'

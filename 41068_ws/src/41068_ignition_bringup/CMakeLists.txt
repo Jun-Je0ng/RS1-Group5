@@ -143,6 +143,9 @@ install(TARGETS
   waypoint_follower
   waypoint_manager
   map_waypoint_manager
+  lidar_sensing_node   
+  manual_trail_inspector
+  teleop_obstacle_avoid
   DESTINATION lib/${PROJECT_NAME}
 )
 

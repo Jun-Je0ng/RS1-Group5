@@ -1117,7 +1117,7 @@ class Gui(QtWidgets.QWidget):
         fut = self.node.send_nav_goal(x, y, yaw)
         def _done(_):
             ok, msg = fut.result()
-            self.status.setText('✅ Reached goal' if ok else f'❌ {msg}')
+            self.status.setText('Goal reached' if ok else f'NavigateToPose error: {msg}')
         fut.add_done_callback(_done)
 
     def _parse_path_text(self) -> List[tuple]:
@@ -1143,7 +1143,7 @@ class Gui(QtWidgets.QWidget):
         fut = self.node.send_nav_through(pts)
         def _done(_):
             ok, msg = fut.result()
-            self.status.setText('✅ Completed path' if ok else f'❌ {msg}')
+            self.status.setText('Path completed' if ok else f'NavigateThroughPoses error: {msg}')
         fut.add_done_callback(_done)
 
     def _load_default_trail(self):
@@ -1160,10 +1160,10 @@ class Gui(QtWidgets.QWidget):
             if ok:
                 pts = payload
                 self._set_trail_lines(pts)
-                self.status.setText(f'✅ Loaded {len(pts)} waypoints from map_waypoint_manager')
+                self.status.setText(f'Status: loaded {len(pts)} waypoints from map_waypoint_manager')
             else:
                 self._set_trail_lines(DEFAULT_TRAIL)
-                self.status.setText(f'⚠️ {payload}; fell back to built-in trail ({len(DEFAULT_TRAIL)} pts)')
+                self.status.setText(f'Status: {payload}; using built-in trail ({len(DEFAULT_TRAIL)} poses)')
         fut.add_done_callback(_done)
 
     def _set_trail_lines(self, pts: List[tuple]):
@@ -1196,13 +1196,14 @@ class Gui(QtWidgets.QWidget):
     def _reset_robot(self):
         self._zero()
         self.lin_slider.setValue(0)
+        self.vert_slider.setValue(0)
         self.ang_slider.setValue(0)
         self._load_default_trail()
         self.status.setText('Status: resetting robot to spawn…')
         fut = self.node.reset_robot()
         def _done(_):
             ok, msg = fut.result()
-            self.status.setText('✅ Reset complete' if ok else f'❌ {msg}')
+            self.status.setText('Robot reset complete' if ok else f'Reset failed: {msg}')
         fut.add_done_callback(_done)
 
     def _estop(self):

@@ -224,7 +224,7 @@ class WaypointSetter(Node):
             self._spawn_markers(world_waypoints, model_uris)
 
         self._publish_pose_array(map_waypoints)
-        self.get_logger().info(f"✅ Published {len(map_waypoints)} targets (frame='map'). No repeating timer.")
+        self.get_logger().info(f"Published {len(map_waypoints)} targets (frame='map').")
 
         summary = [
             {"name": f"waypoint_rand_{i+1:02d}", "world": {"x": float(wx), "y": float(wy)}, "map": {"x": float(mx), "y": float(my)}}
